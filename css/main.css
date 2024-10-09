@@ -1,4 +1,75 @@
-main {
-    flex-grow: 1; 
-    padding: 20px;
+.Card {
+    display: flex;
+    margin-top: 10px;
+    width: auto;
+    height: 500px;
+    border-radius: 15px;
+    overflow: hidden;
 }
+
+.Card1, .Card2, .Card3, .Card4 {
+    flex: 1; 
+    height: 100%; 
+    transition: flex 0.5s ease;
+    cursor: pointer;
+    background-size: cover; 
+    background-position: center; 
+}
+
+.Card1:hover, .Card2:hover, .Card3:hover, .Card4:hover {
+    flex: 3;
+
+}
+
+.Card1 h1, .Card2 h1, .Card3 h1, .Card4 h1,
+.Card1 p, .Card2 p, .Card3 p, .Card4 p {
+    border-radius: 10px;
+    margin-left: 10px;
+    max-width: 90%; 
+    backdrop-filter: blur(30px);
+    box-shadow: 0px 0px 30px rgba(227, 228, 237, 0.37);
+    border: 2px solid rgba(255, 255, 255, 0.18);
+    display: flex; 
+    font-family: "Urbanist", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    padding: 10px; 
+}
+
+.Card1 {
+    background-image: url(../imagens/UsinaImagem.jpg);
+}
+
+.Card2 {
+    background-image: url(../imagens/EventosUsina.jpg);
+}
+
+.Card3 {
+    background-image: url(../imagens/SobreNosUsina.jpeg);
+}
+
+.Card4 {
+    background-image: url(../imagens/UsinaImagem.jpg);
+}
+
+button {
+    background-color: yellow; 
+    border: none; 
+    width: 200px; 
+    height: 50px; 
+    border-radius: 10px; 
+    font-size: 16px; 
+    font-weight: bold; 
+    cursor: pointer;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    margin-top: auto; 
+    margin-left: 33%;
+}
+
+button:hover {
+    background-color: #ffd90033; 
+}
+
