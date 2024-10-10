@@ -1,0 +1,26 @@
+
+.textos h1{
+    text-decoration:underline;
+    justify-content: center;
+    margin-left: 45%;
+    align-items: center;
+    font-family: "Afacad Flux", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400; 
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+
+}
+
+.textos p {
+    background-size: 100% 100%;
+    box-shadow: 10px 10px 10px rgba(165, 165, 165, 0.25);
+
+    max-width: 50%;
+    margin-left: 25%;
+    font-family: "Urbanist", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    padding: 10px; 
+}
