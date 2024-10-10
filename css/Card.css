@@ -63,11 +63,9 @@ button {
     font-weight: bold; 
     cursor: pointer;
     display: flex;
-    justify-content: center; 
-    align-items: center; 
-    margin-top: auto; 
-    margin-left: 33%;
+    justify-content: center;  
+    align-items: center;      
+    margin: 0 auto;           
+    margin-top: auto;        
 }
-
-
 
