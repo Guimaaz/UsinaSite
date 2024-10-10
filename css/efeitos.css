@@ -1,0 +1,53 @@
+.efeito {
+    text-decoration: none;
+    padding: 0.5rem 0.75rem;
+    font-size: 18px;
+    font-weight: 600;
+    color: #000000;
+    position: relative;
+    transition: color 0.25s;
+  }
+  .efeito:hover {
+    color: rgb(139, 207, 83);
+  }
+  
+  .efeito::after {
+    position: absolute;
+    content: "";
+    inset: 0;
+    background-color: #fefefe;
+    scale: 1 0;
+    z-index: -1;
+    transition: 0.45s;
+    border-radius: 10px;
+  }
+  .efeito:hover::after {
+    scale: 1 1;
+  }
+
+  .efeitoButton {
+    text-decoration: none;
+    padding: 0.5rem 0.75rem;
+    font-size: 18px;
+    font-weight: 600;
+    color: #000000;
+    position: relative;
+    transition: color 0.25s;
+  }
+  .efeitoButton:hover {
+    color: rgb(255, 255, 255);
+  }
+  
+  .efeitoButton::after {
+    position: absolute;
+    content: "";
+    inset: 0;
+    background-color: #fefefe;
+    scale: 1 0;
+    z-index: -1;
+    transition: 0.45s;
+    border-radius: 10px;
+  }
+  .efeitoButton:hover::after {
+    scale: 1 1;
+  }

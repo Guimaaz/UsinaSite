@@ -54,7 +54,7 @@
 }
 
 button {
-    background-color: yellow; 
+    background-color: rgb(139, 207, 83);
     border: none; 
     width: 200px; 
     height: 50px; 
@@ -69,7 +69,5 @@ button {
     margin-left: 33%;
 }
 
-button:hover {
-    background-color: #ffd90033; 
-}
+
 
