@@ -1,3 +1,9 @@
+
+.textos {
+    margin: 0 auto;
+    max-width: 50%;
+}
+
 .textos h1 {
     text-decoration: underline;
     text-align: center;
