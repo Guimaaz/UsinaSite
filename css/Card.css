@@ -1,10 +1,12 @@
 .Card {
     display: flex;
-    margin-top: 10px;
+    margin-top:-10px;
     width: auto;
     height: 500px;
     border-radius: 15px;
     overflow: hidden;
+    margin: 0;
+    
 }
 
 .Card1, .Card2, .Card3, .Card4 {
@@ -14,6 +16,7 @@
     cursor: pointer;
     background-size: cover; 
     background-position: center; 
+   
 }
 
 .Card1:hover, .Card2:hover, .Card3:hover, .Card4:hover {
@@ -35,10 +38,12 @@
     font-style: normal;
     text-decoration: none;
     padding: 10px; 
+    
 }
 
 .Card1 {
     background-image: url(../imagens/UsinaImagem.jpg);
+    
 }
 
 .Card2 {
@@ -66,6 +71,7 @@ button {
     justify-content: center;  
     align-items: center;      
     margin: 0 auto;           
-    margin-top: auto;        
+    margin-top: auto;  
+       
 }
 

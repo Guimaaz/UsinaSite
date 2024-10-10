@@ -1,9 +1,13 @@
-.logo img {
+img#logo {
     width: auto;
     height: 100px;
     position: relative; 
     transform: translateY(-100px);
     margin-left: 20px;
+   
+    padding: 0;
+    
+
     
 }
 
