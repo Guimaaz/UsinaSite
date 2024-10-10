@@ -1,17 +1,16 @@
 nav {
     backdrop-filter: blur(30px);
-    box-shadow: 10px 10px 10px  rgba(0, 0, 0, 0.178);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.178);
     border: 0px solid rgba(0, 0, 0, 0.18);
-    display: flex; 
+    display: flex;
     justify-content: space-around;
     border-radius: 20px;
     align-items: center;
-    margin-left: 140px; 
+    margin-left: 140px;
     margin-right: 10px;
-    max-width: 90%;
     margin-top: 20px;
-   
-    
+
+
 }
 
 nav a {
@@ -21,22 +20,22 @@ nav a {
     font-size: large;
     font-family: "Afacad Flux", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 400; 
+    font-weight: 400;
     font-style: normal;
     font-variation-settings: "slnt" 0;
-    
+
 }
 
 #login {
     background-color: transparent;
     border: none;
     cursor: pointer;
-    padding: 0; 
+    padding: 0;
     margin: 20px;
-    width : 50px;
+    width: 50px;
 }
 
 button img {
-    width: 70px; 
-    height: 46px; 
+    width: 70px;
+    height: 46px;
 }
