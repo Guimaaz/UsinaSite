@@ -1,7 +1,7 @@
 
 .textos {
     margin: 0 auto;
-    max-width: 80%;
+    max-width: 2500px;
 }
 
 .textos h1 {
@@ -26,6 +26,9 @@
     text-decoration: none;
     padding: 10px;
 }
+
+
+
 
 
 @media (max-width: 768px) {
