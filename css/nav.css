@@ -1,7 +1,7 @@
 nav {
     backdrop-filter: blur(30px);
-    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.37);
-    border: 2px solid rgba(0, 0, 0, 0.18);
+    box-shadow: 10px 10px 10px  rgba(0, 0, 0, 0.178);
+    border: 0px solid rgba(0, 0, 0, 0.18);
     display: flex; 
     justify-content: space-around;
     border-radius: 20px;
@@ -9,6 +9,7 @@ nav {
     margin-left: 140px; 
     margin-right: 10px;
     max-width: 90%;
+    margin-top: 20px;
    
     
 }
