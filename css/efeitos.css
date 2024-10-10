@@ -51,3 +51,32 @@
   .efeitoButton:hover::after {
     scale: 1 1;
   }
+
+  .efeitoRodape {
+    padding: 0.5rem 0.75rem;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #000000; 
+    position: relative;
+    transition: color 0.25s; 
+}
+
+.efeitoRodape:hover {
+    color: rgb(255, 20, 20);
+}
+
+.efeitoRodape::after {
+    position: absolute;
+    content: "";
+    inset: 0;
+    background-color: #fefefe;
+    scale: 1 0;
+    z-index: -1;
+    transition: 0.45s;
+    border-radius: 10px;
+}
+
+.efeitoRodape:hover::after {
+    scale: 1 1;
+}
