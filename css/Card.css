@@ -1,15 +1,18 @@
+
 .Card {
     display: flex;
     margin-top:-10px;
-    width: auto;
+    width: 100%;
     height: 500px;
     border-radius: 15px;
     overflow: hidden;
     margin: 0;
+    padding: 20px;
     
 }
 
 .Card1, .Card2, .Card3, .Card4 {
+    width: auto;
     flex: 1; 
     height: 100%; 
     transition: flex 0.5s ease;
@@ -18,6 +21,8 @@
     background-position: center; 
     margin-right: 10px;
     border-radius: 5px;
+    
+    
    
 }
 
@@ -28,6 +33,8 @@
 
 .Card1 h1, .Card2 h1, .Card3 h1,
 .Card1 p, .Card2 p, .Card3 p {
+    color: white;
+    margin-top: 10px;
     border-radius: 10px;
     margin-left: 10px;
     max-width: 90%; 
@@ -58,7 +65,7 @@
 
 
 
-button {
+.Card button {
     background-color: rgb(139, 207, 83);
     border: none; 
     width: 200px; 
