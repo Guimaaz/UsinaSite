@@ -1,38 +1,55 @@
 .ajuda {
     background-color: #efefef;
     display: flex;
-    flex-direction:column;  
+    flex-direction: column;
     max-width: 100%;
-    height: auto; 
-    border-radius: 0.9375rem; 
+    height: auto;
+    border-radius: 0.9375rem;
     overflow: hidden;
     margin: 0;
-    padding: 1rem; 
-    gap: 2.5rem; 
+    padding: 1rem;
+    gap: 2.5rem;
 }
 
 .ajuda p {
     margin-top: -0.5rem;
-    margin-bottom: 1rem; 
+    margin-bottom: 1rem;
 }
 
 
-.seutexto{
+.seutexto {
     margin-top: 3rem;
 }
+
 .input-text {
-    border: 2px solid #efefef; 
-    border-radius: 15px; 
-    padding: 1rem; 
-    width: 100%; 
-    max-width: 100rem; 
+    border: 2px solid #efefef;
+    border-radius: 15px;
+    padding: 1rem;
+    width: 100%;
+    max-width: 100rem;
     font-size: 1rem;
-    outline: none; 
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    outline: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 
 .input-text::placeholder {
-    color: #aaa; 
-    opacity: 1; 
+    color: #aaa;
+    opacity: 1;
+}
+
+
+form .buttonSub {
+    background-color: rgb(139, 207, 83);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+form .buttonSub:hover {
+    background-color: rgb(107, 160, 64);
 }

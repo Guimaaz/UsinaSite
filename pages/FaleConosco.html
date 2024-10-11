@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/faleconosco.css">
     <link rel="stylesheet" href="../css/container.css">
+    <script src="../js/FaleConosco.js"></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap" rel="stylesheet">
@@ -51,13 +53,48 @@
         <p>Envie-nos algumas informações para que possamos entender seu contato. Contate-nos por telefone, email e de outras formas.  </p>
     </div>
 
-    <div class="seutexto">
-        <h1>Diga-nos o assunto</h1>
-        <div class="input-container">
-            <input type="text" class="input-text" placeholder="seu texto aqui">
+    
+    <form id="contact-form">
+        <div class="seutexto">
+            <h1>Diga-nos o assunto</h1>
+            <div class="input-container">
+                <input type="text" id="assunto" class="input-text" name="assunto" placeholder="Seu texto aqui" required>
+            </div>
         </div>
-    </div>
-
+    
+        <div class="seutexto">
+            <h1>Nome</h1>
+            <div class="input-container">
+                <input type="text" id="nome" class="input-text" name="nome" placeholder="Insira seu nome" required>
+            </div>
+        </div>
+    
+        <div class="seutexto">
+            <h1>Sobrenome</h1>
+            <div class="input-container">
+                <input type="text" id="sobrenome" class="input-text" name="sobrenome" placeholder="Insira seu sobrenome" required>
+            </div>
+        </div>
+    
+        <div class="seutexto">
+            <h1>Número</h1>
+            <div class="input-container">
+                <input type="tel" id="numero" class="input-text" name="numero" placeholder="Insira seu número" required>
+            </div>
+        </div>
+    
+        <div class="seutexto">
+            <h1>Email</h1>
+            <div class="input-container">
+                <input type="email" id="email" class="input-text" name="email" placeholder="Insira seu email" required>
+            </div>
+        </div>
+    
+        <div class="seutexto">
+            <button type="submit" class="buttonSub">Enviar Contato</button>
+        </div>
+    </form>
+    
 
 </div>
 
@@ -66,6 +103,10 @@
 
     <p>Direitos reservados</p>
 </footer>
+
+
+
+
 </body>
 
 </html>
