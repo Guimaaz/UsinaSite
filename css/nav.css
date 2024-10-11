@@ -1,24 +1,21 @@
 nav {
-    backdrop-filter: blur(30px);
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.178);
+    backdrop-filter: blur(1.875rem);
+    box-shadow: 0.625rem 0.625rem 0.625rem rgba(0, 0, 0, 0.178);
     display: flex;
-    justify-content: space-around;
+    gap: 1.875rem;
+    justify-content: center;
     align-items: center;
-    border-radius: 20px;
-    align-items: center;
-    margin-left: 140px;
-    margin-right: 20px;
-    margin-top: 20px;
-    height: 100px;
+    border-radius: 1.25rem;
+    margin-left: 8.75rem;
+    margin-right: 1.25rem;
+    margin-top: 1.25rem;
+    height: 6.25rem;
     margin-bottom: 0;
-
-
 }
 
 nav a {
-   
     color: #000000;
-    margin: 5px;
+    margin: 0.3125rem;
     font-size: large;
     font-family: "Afacad Flux", sans-serif;
     font-optical-sizing: auto;
@@ -26,23 +23,17 @@ nav a {
     font-style: normal;
     font-variation-settings: "slnt" 0;
     margin: 0;
-   
-   
 }
 
 #login {
     background-color: transparent;
     border: none;
     cursor: pointer;
-    margin: 20px;
-    width: 50px;
     margin: 0;
-   
-
-  
+    width: 3.125rem;
 }
 
 button img {
-    width: 70px;
-    height: 46px;
+    width: 4.375rem;
+    height: 2.875rem;
 }
