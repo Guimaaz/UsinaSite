@@ -1,7 +1,7 @@
 .Card {
     display: flex;
     max-width: 100%;
-    height: 31.25rem; 
+    height: 35rem; 
     border-radius: 0.9375rem; 
     overflow: hidden;
     margin: 0;
@@ -25,33 +25,44 @@
     flex: 6;
 }
 
-.Card1 h1, .Card2 h1, .Card3 h1,
+
 .Card1 p, .Card2 p, .Card3 p {
     color: rgb(0, 0, 0);
     margin-top: 1rem; 
     border-radius: 5%;
     margin-left: 1rem; 
-    max-width: 90%; 
-    backdrop-filter: blur(100px);
-    border: 2px solid rgba(255, 255, 255, 0.18);
+    max-width: 90%;      
     display: flex; 
     font-family: "Urbanist", sans-serif;
     font-weight: 400;
     font-style: normal;
     text-decoration: none;
-    padding: 1rem; 
+    padding: 0.5rem; 
+    font-size:medium;
+    
+}
+
+img#card1, img#card2, img#card3 {
+    display: block;
+    width: 100%; 
+    height: 50%; 
+    object-fit: cover; 
+    border-radius: 0.5rem;
 }
 
 .Card1 {
-    background-image: url(../imagens/UsinaImagem.jpg);
+    
+    background-color: #efefee
 }
 
 .Card2 {
-    background-image: url(../imagens/EventosUsina.jpg);
+    background-color: #efefee
+    
 }
 
 .Card3 {
-    background-image: url(../imagens/SobreNosUsina.jpeg);
+   
+    background-color: #efefee;
 }
 
 .Card button {
