@@ -3,7 +3,7 @@ nav {
     box-shadow: 0.625rem 0.625rem 0.625rem rgba(0, 0, 0, 0.178);
     display: flex;
     gap: 1.875rem;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     border-radius: 1.25rem;
     margin-left: 8.75rem;
