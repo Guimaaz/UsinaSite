@@ -33,7 +33,7 @@
     margin-left: 1rem; 
     max-width: 90%; 
     backdrop-filter: blur(100px);
-    border: 2px solid rgba(255, 255, 255, 100);
+    border: 2px solid rgba(255, 255, 255, 0.18);
     /* background-color: rgb(255, 255, 255); */
     display: flex; 
     font-family: "Urbanist", sans-serif;
