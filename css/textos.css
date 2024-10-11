@@ -30,14 +30,17 @@
 
 img#fotoesquerda{
     margin-top: 100px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 img#fotodireita{
     margin-top: 100px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
+h1#patrocinadores {
+    font-size: 20px;
+}
 
 @media (max-width: 768px) {
     .textos h1 {
