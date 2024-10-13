@@ -9,7 +9,7 @@
     gap: 1.875rem; 
 }
 
-.Card1, .Card2, .Card3, .Card4 {
+.Card1, .Card2, .Card3 {
     max-width: 100%;
     flex: 3; 
     height: 100%; 
@@ -19,11 +19,16 @@
     background-position: center; 
     margin-right: 0.15625rem; 
     border-radius: 5%;
+    
 }
 
 .Card1:hover, .Card2:hover, .Card3:hover, .Card4:hover {
     flex: 6;
+    
 }
+
+
+
 
 
 .Card1 p, .Card2 p, .Card3 p {
