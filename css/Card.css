@@ -22,7 +22,7 @@
     
 }
 
-.Card1:hover, .Card2:hover, .Card3:hover, .Card4:hover {
+.Card1:hover, .Card2:hover, .Card3:hover{
     flex: 6;
     
 }
