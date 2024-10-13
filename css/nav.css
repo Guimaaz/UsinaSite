@@ -2,12 +2,13 @@ nav {
     backdrop-filter: blur(1.875rem);
     box-shadow: 0.625rem 0.625rem 0.625rem rgba(0, 0, 0, 0.178);
     display: flex;
-    gap: 1.875rem;
-    justify-content: space-around;
+    gap: 1.800rem;
+    justify-items: center;
+
     align-items: center;
     border-radius: 1.25rem;
     margin-left: 8.75rem;
-    margin-right: 1.25rem;
+    margin-right: 2rem;
     margin-top: 1.25rem;
     height: 6.25rem;
     margin-bottom: 0;
@@ -15,7 +16,7 @@ nav {
 
 nav a {
     color: #000000;
-    margin: 0.3125rem;
+    margin: 0.2500rem;
     font-size: large;
     font-family: "Afacad Flux", sans-serif;
     font-optical-sizing: auto;
