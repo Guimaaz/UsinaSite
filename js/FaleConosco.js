@@ -23,7 +23,7 @@ document.getElementById('contact-form').addEventListener('submit', function(even
     console.log("Email:", email);
 
     
-    alert('Contato enviado com sucesso!');
+    alert('Mensagem enviado com sucesso!');
 
     
     this.reset();
