@@ -1,0 +1,84 @@
+.Login {
+    margin-left: auto;
+    margin-right: auto;
+    width: 30rem;
+    height: 30rem;
+    border-radius: 1.5rem;
+    box-shadow: 0.625rem 0.625rem 0.625rem rgba(0, 0, 0, 0.178);
+    border: 2px solid #efefef;  
+    background-size: contain;
+    overflow: hidden;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    margin-top: -3rem;
+    
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%; 
+    padding: 2rem; 
+    gap: 1rem; 
+   
+}
+
+input#email,
+input#senha {
+    width: 80%; 
+    padding: 0.75rem;
+    border: 1px solid #efefef;  
+    border-radius: 0.5rem;
+}
+
+button#submit {    
+    width: 50%; 
+    height: 3.125rem; 
+    border-radius: 0.625rem;  
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    background-color: rgb(139, 207, 83);
+    border: 2px solid #efefef;  
+    
+}
+
+.Login h1{
+    text-decoration: none;
+    text-align: center;
+    font-family: "Afacad Flux", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2rem;
+    font-variation-settings: "slnt" 0;
+}
+
+.ancoraslogin {
+    display: flex;
+    justify-content: center; 
+    gap: 2rem; 
+}
+
+a#forgotpassword,
+a#withoutlogin {
+    color: rgb(0, 0, 0);
+    border-radius: 5%;
+    font-family: "Urbanist", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: underline;
+    padding: 0.5rem;
+    font-size: medium;
+}
+
+
+
+
