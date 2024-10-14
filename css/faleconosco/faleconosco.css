@@ -42,18 +42,18 @@
 }
 
 
-form .buttonSub {
-    margin-top:1rem;
+form button {
     background-color: rgb(139, 207, 83);
-    color: #fff;
     border: none;
-    padding: 10px 20px;
-    border-radius: 7px;
+    width: 12.5rem;
+    height: 3.125rem;
+    border-radius: 0.625rem;
+    font-size: 1rem;
+    font-weight: bold;
     cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
-}
-
-form .buttonSub:hover {
-    background-color: rgb(107, 160, 64);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 ;
+    margin-top: 1rem;
 }
