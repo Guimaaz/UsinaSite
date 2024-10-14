@@ -1,4 +1,5 @@
 .ajuda {
+    box-shadow: 0.625rem 0.625rem 0.625rem rgba(0, 0, 0, 0.178);
     background-color: #efefef;
     display: flex;
     flex-direction: column;
@@ -11,6 +12,11 @@
     gap: 2.5rem;
 }
 
+.assunto h1 {
+    font-size:larger;
+    margin-top: 1rem;
+    
+}
 .ajuda p {
     margin-top: -0.5rem;
     margin-bottom: 1rem;

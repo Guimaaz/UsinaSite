@@ -5,7 +5,7 @@
     height: 30rem;
     border-radius: 1.5rem;
     box-shadow: 0.625rem 0.625rem 0.625rem rgba(0, 0, 0, 0.178);
-    border: 2px solid #efefef;  
+    background-color: #efefee;
     background-size: contain;
     overflow: hidden;
     display: flex; 
@@ -28,6 +28,9 @@ form {
 
 input#email,
 input#senha {
+    box-shadow: 0.625rem 0.625rem 0.625rem rgba(0, 0, 0, 0.1);
+  
+    background-color: #efefef;
     width: 80%; 
     padding: 0.75rem;
     border: 1px solid #efefef;  
