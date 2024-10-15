@@ -69,7 +69,7 @@ img#card3{
 
 .Card1, .Card2, .Card3{
     box-shadow: 0.625rem 0.625rem 0.625rem rgba(0, 0, 0, 0.178);
-    border: 1px solid #efefef;
+    
 
     background-color: #efefee
 }

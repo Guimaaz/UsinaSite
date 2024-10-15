@@ -16,7 +16,8 @@
 .textos p {
     border-radius: 0.3125rem; 
     background-size: 100% 100%;
-    box-shadow: 0.625rem 0.625rem 0.625rem rgba(0, 0, 0, 0.25); 
+    
+    box-shadow: 0.625rem 0.625rem 0.625rem rgba(0, 0, 0, 0.1); 
     max-width: 80%;
     margin: 1.25rem auto; 
     font-family: "Urbanist", sans-serif;
