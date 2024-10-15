@@ -1,6 +1,7 @@
-.Cardnivel1 a {
+.Cardnivel1 a, .Cardnivel2 a, .Cardnivel3 a, .Cardnivel4 a{
     text-decoration: none;
 }
+
 .Cardnivel1, .Cardnivel2, .Cardnivel3, .Cardnivel4 {
     display: flex;
     max-width: 100%;
