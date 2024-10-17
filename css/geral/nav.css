@@ -1,3 +1,7 @@
+/* IMPORTANTE : LIMITE RESPONSIVO DA NAV = WIDTH : 1197
+FAZER O MENU HAMBURGUER APARTIR DESSA MEDIDA */
+
+
 nav {
     max-width: 100%;
     backdrop-filter: blur(1.875rem);
@@ -12,6 +16,8 @@ nav {
     height: 6.25rem;
     
 }
+
+
 
 nav a {
     display: flex;

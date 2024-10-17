@@ -4,9 +4,10 @@
     height: 35rem;
     border-radius: 0.9375rem;
     overflow: hidden;
-    margin: 0;
+    margin: 0 auto;
     gap: 1.875rem;
-    padding : 1rem;
+    padding: 1.5rem;
+
 }
 
 
@@ -60,7 +61,7 @@
 img#card1,
 img#card2,
 img#card3 {
-    display: block;
+    display: flex;
     width: 100%;
     height: 50%;
     object-fit: cover;
@@ -90,68 +91,24 @@ img#card3 {
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    margin-top: auto;
+
 }
 
-@media (min-width: 992px) and (max-width: 1199px) {
 
-    .Card {
-        display: flex; 
-        flex-direction: column; 
-        justify-content: center; 
-        align-items: center; 
-        max-width: 100%;
-        height: auto; 
-        border-radius: 0.9375rem;
-        overflow: hidden;
-          gap: 1.875rem;
-    }
-
-    img#card1,
-    img#card2,
-    img#card3 {
+@media (max-width: 1200px) {
+    .container {
         display: block;
-        width: 100%;
-        height: 50%;
-        object-fit: cover;
-        border-radius: 0.5rem;
     }
 
-    .Card1,
-    .Card2,
-    .Card3 {
-        
-        text-align: center;
-        margin: 2rem 0; 
-        align-items: center;
-        justify-content: center;
-        max-width: 90%; 
-        height: auto; 
-        cursor: pointer;
-        background-size: cover;
-        background-position: center;
-        border-radius: 5%;
-    }
-
-    .Card button {
-        margin-top: 2rem; 
-    }
-
-}
-
-
-
-@media (min-width: 768px) and (max-width: 991px)  {
     .Card {
-        display: flex; 
-        flex-direction: column; 
-        justify-content: center; 
-        align-items: center; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         max-width: 100%;
-        height: auto; 
+        height: auto;
         border-radius: 0.9375rem;
         overflow: hidden;
-        padding: 2rem;
         gap: 1.875rem;
     }
 
@@ -168,13 +125,13 @@ img#card3 {
     .Card1,
     .Card2,
     .Card3 {
+        transition:none;
         text-align: center;
-        padding: 2rem; 
-        margin: 2rem 0; 
+        margin: 2rem 0;
         align-items: center;
         justify-content: center;
-        max-width: 90%; 
-        height: auto; 
+        max-width: 90%;
+        height: auto;
         cursor: pointer;
         background-size: cover;
         background-position: center;
@@ -182,82 +139,156 @@ img#card3 {
     }
 
     .Card button {
-        margin-top: 2rem; 
+        margin-bottom: 2rem;
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 992px) {
+    .container {
+        display: block;
+    }
 
-    .col-md-2.text-center {
+    .Card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+        height: auto;
+        border-radius: 0.9375rem;
+        overflow: hidden;
+        gap: 1.875rem;
+    }
+
+    img#card1,
+    img#card2,
+    img#card3 {
+        display: block;
+        width: 100%;
+        height: 50%;
+        object-fit: cover;
+        border-radius: 0.5rem;
+    }
+
+    .Card1,
+    .Card2,
+    .Card3 {
+        transition:none;
+        text-align: center;
+        margin: 2rem 0;
+        align-items: center;
+        justify-content: center;
+        max-width: 100%;
+        height: 50%;
+        cursor: pointer;
+        background-size: cover;
+        background-position: center;
+        border-radius: 5%;
+    }
+
+    .Card button {
+        margin-bottom: 2rem;
+    }
+
+}
+
+
+
+@media (max-width: 768px) {
+    .container {
+        display: block;
+    }
+
+    .Card {
+        display: block;
+        flex-direction: row;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+        border-radius: 0.9375rem;
+        overflow: hidden;
+
+
+    }
+
+    img#card1,
+    img#card2,
+    img#card3 {
+        display: block;
+        width: 100%;
+        height: 50%;
+        object-fit: cover;
+        border-radius: 0.5rem;
+    }
+
+    .Card1:hover,
+    .Card2:hover,
+    .Card3:hover {
         display: none;
-    }
-    .Card {
-       
-        display: flex; 
-        align-items: center;
-        flex-direction: column; 
-        justify-content: center; 
-        align-items: center; 
-        max-width: 100%;
-        height: auto; 
-        border-radius: 0.9375rem;
-        overflow: hidden;
-        padding: 2rem;
-        gap: 1.875rem;
-    }
 
-    
-    img#card1,
-    img#card2,
-    img#card3 {
-        display: block;
-        width: 100%;
-        height: 50%;
-        object-fit: cover;
-        border-radius: 0.5rem;
     }
 
     .Card1,
     .Card2,
     .Card3 {
-        margin-right: 2rem;
-        text-align: center;
-        padding: 2rem; 
-        margin: 2rem 0; 
-        align-items: center;
-        justify-content: center;
-        max-width: 90%; 
-        height: auto; 
+        transition:none;
+        max-width: 100%;
+        height: 10%;
         cursor: pointer;
-        background-size: cover;
         background-position: center;
         border-radius: 5%;
+        padding-bottom: 0.25rem;
     }
 
-    .Card button {
-        margin-top: 2rem; 
-    }
+
+
 }
 
 @media (max-width: 576px) {
-    .col-md-2.text-center {
-        display: none;
+
+    .container {
+        padding: 0 auto;
     }
 
     .Card {
-        display: none;
-       
+        display: block;
+        flex-direction: row;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+        border-radius: 0.9375rem;
+        overflow: hidden;
+
     }
 
-    
-
-    .Card button {
-        margin-top: 1.5rem;
-    }
-
-    .container {
+    img#card1,
+    img#card2,
+    img#card3 {
+        display: block;
         width: 100%;
-        margin: 0 auto;
-        padding: 0 1rem;
+        height: 50%;
+        object-fit: cover;
+        border-radius: 0.5rem;
+    }
+
+    .Card1:hover,
+    .Card2:hover,
+    .Card3:hover {
+        display: none;
+
+    }
+
+    .Card1,
+    .Card2,
+    .Card3 {
+        transition:none;
+        max-width: 100%;
+        height: 10%;
+        cursor: pointer;
+        background-position: center;
+        border-radius: 5%;
+        padding-bottom: 0.25rem;
     }
 }

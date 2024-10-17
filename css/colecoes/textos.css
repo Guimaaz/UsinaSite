@@ -48,7 +48,16 @@ h1#patrocinadores {
     }
 
     .textos p {
-        max-width: 90%;
+        max-width: 100%; 
         font-size: 1em;
+        margin: 0.625rem auto; 
+        padding: 1rem; 
+    }
+
+    .col-md-8 {
+        display: block; 
     }
 }
+
+
+
