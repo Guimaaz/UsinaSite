@@ -4,15 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio</title>
-    <link rel="stylesheet" href="../css/nav.css">
-    <link rel="stylesheet" href="../css/body.css">
-    <link rel="stylesheet" href="../css/Card.css">
-    <link rel="stylesheet" href="../css/logo.css">
-    <link rel="stylesheet" href="../css/efeitos.css">
-    <link rel="stylesheet" href="../css/textos.css">
-    <link rel="stylesheet" href="../css/footer.css">
-    <link rel="stylesheet" href="../css/container.css">
+    <title>FaleConosco</title>
+    <link rel="stylesheet" href="../css/geral/nav.css">
+    <link rel="stylesheet" href="../css/geral/body.css">
+    <link rel="stylesheet" href="../css/geral/logo.css">
+    <link rel="stylesheet" href="../css/geral/efeitos.css">
+    <link rel="stylesheet" href="../css/geral/footer.css">
+    <link rel="stylesheet" href="../css/faleconosco/faleconosco.css">
+    <link rel="stylesheet" href="../css/geral/container.css">
+    <script src="../js/FaleConosco.js"></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap" rel="stylesheet">
@@ -22,22 +23,91 @@
         rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <link rel="shortcut icon" href="../imagens/imgeral/UsinaLogo.ico" type="image/x-icon">
 </head>
 
 <body>
 
     <nav>
         <a href="../index.html" class="efeito">Coleções</a>
-        <a href="./pages/historia.html" class="efeito">História</a>
-        <a href="./pages/NosApoie.html" class="efeito">Nos Apoie</a>
-        <a href="./pages/Loja.html" class="efeito">Loja</a>
-        <a href="./pages/Eventos.html" class="efeito">Eventos</a>
-        <a href="./pages/Noticias.html" class="efeito">Noticias</a>
-        <a href="./pages/Boletim.html" class="efeito">Boletim</a>
-        <a href="./pages/FaleConosco.html" class="efeito">Fale conosco</a>
-        <a href="./pages/Apoiadores.html" class="efeito">Apoiadores</a>
-        <a href="#"><button id="login"><img src="../imagens/Login.png" alt=""></button></a>
+        <a href="./historia.html" class="efeito">História</a>
+        <a href="./NosApoie.html" class="efeito">Nos Apoie</a>
+        <a href="./Loja.html" class="efeito">Loja</a>
+        <a href="./Eventos.html" class="efeito">Eventos</a>
+        <a href="./Noticias.html" class="efeito">Noticias</a>
+        <a href="./Boletim.html" class="efeito">Boletim</a>
+        <a href="./FaleConosco.html" class="efeito">Fale conosco</a>
+        <a href="./Apoiadores.html" class="efeito">Apoiadores</a>
+        <a href="./Login.html"><button id="login"><img src="../imagens/imgeral/Login.png" alt=""></button></a>
 
     </nav>
 
-    <img id="logo" src="../imagens/UsinaLogo.png" alt="">
+    <img id="logo" src="../imagens/imgeral/UsinaLogo.png" alt="">
+
+
+    <div class="container">
+
+        <div class="ajuda">
+            <h1>Entre em contato <br>com a gente</h1>
+            <p>Envie-nos algumas informações para que possamos entender seu contato. Contate-nos por telefone, email e
+                de outras formas. </p>
+        </div>
+
+
+        <form id="contact-form">
+            <div class="assunto">
+                <h1>Diga-nos o assunto</h1>
+                <div class="input-container">
+                    <input type="text" class="input-text" name="assunto" placeholder="Seu texto aqui" required>
+                </div>
+
+
+                <h1>Nome</h1>
+
+                <input type="text" class="input-text" name="nome" placeholder="Insira seu nome" required>
+
+
+
+
+                <h1>Sobrenome</h1>
+
+                <input type="text" class="input-text" name="sobrenome" placeholder="Insira seu sobrenome" required>
+
+
+
+                <h1>Número</h1>
+
+                <input type="tel" class="input-text" name="numero" placeholder="Insira seu número" required>
+
+
+
+
+                <h1>Email</h1>
+
+                <input type="email" class="input-text" name="email" placeholder="Insira seu email" required>
+
+                <h1>De onde nos conheceu?</h1>
+
+                <input type="text " class="input-text" name="conheceu" placeholder="Insira de onde nos conhece"
+                    required>
+
+
+                <button class="efeitoButton" type="submit">Enviar Contato</button>
+
+        </form>
+
+
+    </div>
+
+
+    <footer><a class="efeitoRodape" href="">Devs</a>
+
+        <p>Direitos reservados</p>
+    </footer>
+
+
+
+
+</body>
+
+</html>

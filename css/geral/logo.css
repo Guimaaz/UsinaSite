@@ -1,0 +1,14 @@
+img#logo {
+    width: auto;
+    height: 6.25rem; 
+    position: relative;
+    transform: translateY(-6.25rem); 
+    margin-left: 1.25rem; 
+    padding: 0;
+}
+
+@media (max-width: 768px) {
+    .logo img {
+        height: 5rem; 
+    }
+}
