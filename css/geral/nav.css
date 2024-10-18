@@ -53,12 +53,15 @@ button img {
 
 @media (max-width: 1197px) {
     nav {
-        width: 100%;
+        max-width: 100%;
         flex-direction: column;
         justify-content: flex-start;
         height: 4rem;
         padding: 20px;
         margin: 0;
+        top: 2rem;
+        margin-left: 9rem;
+        margin-right: 3rem;
         backdrop-filter: blur(1.875rem);
         box-shadow: 0.625rem 0.625rem 0.625rem rgba(0, 0, 0, 0.178);
         border-radius: 1.25rem;
@@ -67,8 +70,11 @@ button img {
     }
 
     #logo {
-        position: relative;
-        left: 20px;
+        position: absolute;
+        top: 3rem; 
+        left: 10px; 
+        width: 60px; 
+        height: auto;
     }
 
     .menu-links {
@@ -101,3 +107,4 @@ button img {
         z-index: 10;
     }
 }
+ 
