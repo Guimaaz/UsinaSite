@@ -1,0 +1,143 @@
+.Cardnivel1 a, .Cardnivel2 a, .Cardnivel3 a, .Cardnivel4 a{
+    text-decoration: none;
+}
+
+.Cardnivel1, .Cardnivel2, .Cardnivel3, .Cardnivel4 {
+    display: flex;
+    max-width: 100%;
+    height: 35rem;
+    border-radius: 0.9375rem;
+    overflow: hidden;
+    margin: 0;
+    padding: 1.25rem;
+    gap: 1.875rem;
+}
+
+
+
+
+
+.Cardn11,
+.Cardn12,
+.Cardn13, 
+.Cardn21,
+.Cardn22,
+.Cardn23,
+.Cardn31,
+.Cardn32,
+.Cardn33,
+.Cardn41,
+.Cardn42,
+.Cardn43 {
+    max-width: 100%;
+    flex: 3;
+    height: 100%;
+    transition: flex 0.5s ease;
+    cursor: pointer;
+    background-size: cover;
+    background-position: center;
+    margin-right: 0.15625rem;
+    border-radius: 5%;
+
+}
+
+.Cardn11:hover,
+.Cardn12:hover,
+.Cardn13:hover, 
+.Cardn21:hover,
+.Cardn22:hover,
+.Cardn23:hover,
+.Cardn31:hover,
+.Cardn32:hover,
+.Cardn33:hover,
+.Cardn41:hover,
+.Cardn42:hover,
+.Cardn43:hover {
+    flex: 6;
+
+}
+
+
+
+
+
+.Cardn11 p,
+.Cardn12 p,
+.Cardn13 p, 
+.Cardn21 p,
+.Cardn22 p,
+.Cardn23 p,
+.Cardn31 p,
+.Cardn32 p,
+.Cardn33 p,
+.Cardn41 p,
+.Cardn42 p,
+.Cardn43 p {
+    color: rgb(0, 0, 0);
+    margin-top: 1rem;
+    border-radius: 5%;
+    margin-left: 1rem;
+    max-width: 90%;
+    display: flex;
+    font-family: "Urbanist", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    padding: 0.5rem;
+    font-size: medium;
+
+}
+
+img#Cardn11img,
+img#Cardn12img,
+img#Cardn13img, 
+img#Cardn21img,
+img#Cardn22img,
+img#Cardn23img,
+img#Cardn31img,
+img#Cardn32img,
+img#Cardn33img,
+img#Cardn41img,
+img#Cardn42img,
+img#Cardn43img {
+    display: block;
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+
+.Cardn11,
+.Cardn12,
+.Cardn13, 
+.Cardn21,
+.Cardn22,
+.Cardn23,
+.Cardn31,
+.Cardn32,
+.Cardn33,
+.Cardn41,
+.Cardn42,
+.Cardn43  {
+    box-shadow: 0.625rem 0.625rem 0.625rem rgba(0, 0, 0, 0.178);
+    border: 1px solid #efefef;
+
+    background-color: #efefee
+}
+
+
+.Cardnivel1 button, .Cardnivel2 button, .Cardnivel3 button, .Cardnivel4 button{
+    background-color: rgb(139, 207, 83);
+    border: none;
+    width: 12.5rem;
+    height: 3.125rem;
+    border-radius: 0.625rem;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: auto;
+}

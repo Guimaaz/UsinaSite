@@ -1,0 +1,47 @@
+/* IMPORTANTE : LIMITE RESPONSIVO DA NAV = WIDTH : 1197
+FAZER O MENU HAMBURGUER APARTIR DESSA MEDIDA */
+
+
+nav {
+    max-width: 100%;
+    backdrop-filter: blur(1.875rem);
+    box-shadow: 0.625rem 0.625rem 0.625rem rgba(0, 0, 0, 0.178);
+    display: flex;
+    justify-content: space-evenly; 
+    align-items: center;
+    border-radius: 1.25rem;
+    margin-left: 8rem;
+    margin-right: 1rem;
+    margin-top: 1.25rem;
+    height: 6.25rem;
+    
+}
+
+
+
+nav a {
+    display: flex;
+    max-width: 100%;
+    color: #000000;
+    font-size: large;
+    font-family: "Afacad Flux", sans-serif;
+    font-weight: 100;
+    
+}
+
+#login {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    width: 3.125rem;
+}
+
+button img {
+    width: 4.375rem;
+    height: 2.875rem;
+}
+
+
+
+
+
