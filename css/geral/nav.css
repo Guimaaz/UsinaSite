@@ -16,6 +16,7 @@ nav {
 
 nav a {
     display: flex;
+    max-width: 100%;
     color: #000000;
     font-size: large;
     font-family: "Afacad Flux", sans-serif;
