@@ -1,23 +1,18 @@
-/* IMPORTANTE : LIMITE RESPONSIVO DA NAV = WIDTH : 1197
-FAZER O MENU HAMBURGUER APARTIR DESSA MEDIDA */
-
-
 nav {
     max-width: 100%;
     backdrop-filter: blur(1.875rem);
     box-shadow: 0.625rem 0.625rem 0.625rem rgba(0, 0, 0, 0.178);
     display: flex;
-    justify-content: space-evenly; 
+    justify-content: space-evenly;
     align-items: center;
     border-radius: 1.25rem;
     margin-left: 8rem;
     margin-right: 1rem;
-    margin-top: 1.25rem;
+    margin-top: 1.5rem;
     height: 6.25rem;
-    
+    background-color: rgba(255, 255, 255, 0.9);
+    position: relative;
 }
-
-
 
 nav a {
     display: flex;
@@ -26,7 +21,7 @@ nav a {
     font-size: large;
     font-family: "Afacad Flux", sans-serif;
     font-weight: 100;
-    
+    text-decoration: none;
 }
 
 #login {
@@ -41,7 +36,68 @@ button img {
     height: 2.875rem;
 }
 
+.menu-burguer {
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+    position: absolute;
+    right: 20px;
+}
 
+.menu-links {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex: 1;
+}
 
+@media (max-width: 1197px) {
+    nav {
+        width: 100%;
+        flex-direction: column;
+        justify-content: flex-start;
+        height: 4rem;
+        padding: 20px;
+        margin: 0;
+        backdrop-filter: blur(1.875rem);
+        box-shadow: 0.625rem 0.625rem 0.625rem rgba(0, 0, 0, 0.178);
+        border-radius: 1.25rem;
+        background-color: rgba(255, 255, 255, 0.9);
+        z-index: 10;
+    }
 
+    #logo {
+        position: relative;
+        left: 20px;
+    }
 
+    .menu-links {
+        display: none;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.9);
+        position: absolute;
+        top: 60px;
+        left: 0;
+        z-index: 10;
+        padding: 10px;
+    }
+
+    .menu-links.show {
+        display: flex; 
+    }
+
+    .menu-burguer {
+        display: block;
+    }
+
+    nav a {
+        color: #000;
+        font-size: 1.25rem;
+        padding: 10px;
+        text-align: center;
+        width: 100%;
+        z-index: 10;
+    }
+}
