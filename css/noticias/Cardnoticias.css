@@ -141,3 +141,51 @@ img#Cardn43img {
     margin: 0 auto;
     margin-top: auto;
 }
+
+@media (max-width :1200px) {
+    .Cardnivel1, .Cardnivel2, .Cardnivel3, .Cardnivel4 {
+        display: block;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+        height: auto;
+        border-radius: 0.9375rem;
+        overflow: hidden;
+        gap: 1.875rem;
+    }
+
+.Cardn11,
+.Cardn12,
+.Cardn13, 
+.Cardn21,
+.Cardn22,
+.Cardn23,
+.Cardn31,
+.Cardn32,
+.Cardn33,
+.Cardn41,
+.Cardn42,
+.Cardn43 {
+    transition:none;
+        text-align: center;
+        margin: 2rem 0;
+        align-items: center;
+        justify-content: center;
+        max-width: 100%;
+        height: 50%;
+        cursor: pointer;
+        background-size: cover;
+        background-position: center;
+        border-radius: 5%;
+}
+
+.Cardnivel1 button, .Cardnivel2 button, .Cardnivel3 button, .Cardnivel4 button{
+    margin-bottom: 2rem;
+}
+
+img#Cardn31img {
+    height: 10%;
+}
+
+}
