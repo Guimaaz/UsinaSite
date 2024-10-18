@@ -29,8 +29,11 @@
 
 <body>
     
-   
+    
     <nav>
+        <i data-lucide="menu" class='menu-burguer' onclick="toggleMenu()"></i>
+
+    <div class="menu-links">
         <a href="./index.html" id="ancora" class="efeito">Coleções</a>
         <a href="./pages/historia.html" id="ancora" class="efeito">História</a>
         <a href="./pages/NosApoie.html" id="ancora" class="efeito">Nos Apoie</a>
@@ -40,18 +43,21 @@
         <a href="./pages/Boletim.html" id="ancora" class="efeito">Boletim</a>
         <a href="./pages/FaleConosco.html" id="ancora" class="efeito">Fale conosco</a>
         <a href="./pages/Apoiadores.html" id="ancora" class="efeito">Apoiadores</a>
-        <a href="./pages/Login.html"><button id="login"><img src="./imagens/imgeral/Login.png" alt=""></button></a>
-        
+        <a href="./pages/Login.html">
+            <button id="login">
+                <img src="./imagens/imgeral/Login.png" alt="Login">
+            </button>
+        </a>
+    </div>
+</nav>
 
-    </nav>
 
-    
+<img id="logo" src="./imagens/imgeral/UsinaLogo.png" alt="" style="z-index: 10;">
 
-    <img id="logo" src="./imagens/imgeral/UsinaLogo.png" alt="">
 
-    <div class="container">
-        <div class="Card">
-            <div class="Card1">
+<div class="container">
+    <div class="Card">
+        <div class="Card1">
                 <img id="card1" src="./imagens/imgeral/UsinaImagem.jpg" alt="">
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam facilis tenetur esse, deleniti itaque maxime voluptatem excepturi provident quidem </p> 
                 <button class="efeitoButton">Saiba Mais</button>
@@ -109,5 +115,15 @@
   
    
 </body>
+<script>
+    function toggleMenu() {
+        const menu = document.querySelector('.menu-links');
+        menu.classList.toggle('show');
+    }
+</script>
+<script src="https://unpkg.com/lucide@latest"></script>
+<script>
+    lucide.createIcons()
+</script>
 
 </html>
