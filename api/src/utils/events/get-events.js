@@ -1,8 +1,9 @@
+// biome-ignore lint/style/useDefaultParameterLast: <explanation>
 function getEvents(eventDb, whichEvent = 'all', eventId) {
-  if(whichEvent === 'all') {
-    const events = eventDb.get("SELECT * FROM events", (err, events) => {
+  if (whichEvent === 'all') {
+    const events = eventDb.get('SELECT * FROM events', (err, events) => {
       if (err) {
-        return res.status(500).send({ message: "Internal server error" });
+        return res.status(500).send({ message: 'Internal server error' })
       }
     })
 
@@ -10,11 +11,15 @@ function getEvents(eventDb, whichEvent = 'all', eventId) {
   }
 
   if (whichEvent === 'one') {
-    const event = eventDb.get("SELECT * FROM events WHERE id = ?", [eventId], (err, event) => {
-      if (err) {
-        return res.status(500).send({ message: "Internal server error" });
+    const event = eventDb.get(
+      'SELECT * FROM events WHERE id = ?',
+      [eventId],
+      (err, event) => {
+        if (err) {
+          return res.status(500).send({ message: 'Internal server error' })
+        }
       }
-    })
+    )
 
     return event
   }

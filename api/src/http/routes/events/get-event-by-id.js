@@ -1,6 +1,6 @@
-const { eventDb } = require("../../../db")
+const { eventDb } = require('../../../db')
 
-const getEvents = require("../../../utils/events/get-events")
+const getEvents = require('../../../utils/events/get-events')
 
 async function getEventByIdRoute(app) {
   app.get('/events/:id', async (req, res) => {
@@ -10,7 +10,7 @@ async function getEventByIdRoute(app) {
       const event = getEvents(eventDb, 'one', id)
 
       return res.status(200).send({ event })
-    } catch(err) { 
+    } catch (err) {
       throw new Error('Error at filtering event', err)
     }
   })

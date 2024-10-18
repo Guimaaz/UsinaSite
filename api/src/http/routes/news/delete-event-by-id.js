@@ -1,5 +1,5 @@
-const { newsDb } = require("../../../db")
-const deleteNews = require("../../../utils/news/delete-news")
+const { newsDb } = require('../../../db')
+const deleteNews = require('../../../utils/news/delete-news')
 
 async function deleteNewsByIdRoute(app) {
   app.delete('/events/:id', async (req, res) => {
@@ -9,7 +9,7 @@ async function deleteNewsByIdRoute(app) {
       deleteNews(newsDb, id)
 
       return res.status(200).send({ message: 'Event deleted successfully' })
-    } catch(err) { 
+    } catch (err) {
       throw new Error('Error at filtering event', err)
     }
   })

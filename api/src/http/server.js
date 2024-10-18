@@ -20,7 +20,7 @@ const getNewsByIdRoute = require('./routes/news/get-news-by-id')
 const app = fastify()
 
 app.register(cors, {
-  origin: '*'
+  origin: '*',
 })
 
 // AUTH ROUTES
@@ -39,8 +39,10 @@ app.register(deleteNewsByIdRoute)
 app.register(getAllNewsRoute)
 app.register(getNewsByIdRoute)
 
-app.listen({
-  port: 3333
-}).then(() => {
-  console.log('Server running at 3333')
-})
+app
+  .listen({
+    port: 3333,
+  })
+  .then(() => {
+    console.log('Server running at 3333')
+  })

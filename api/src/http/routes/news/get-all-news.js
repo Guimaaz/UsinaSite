@@ -1,6 +1,6 @@
-const { newsDb } = require("../../../db")
+const { newsDb } = require('../../../db')
 
-const getNews = require("../../../utils/news/get-news")
+const getNews = require('../../../utils/news/get-news')
 
 async function getAllNewsRoute(app) {
   app.get('/news', async (req, res) => {
@@ -8,7 +8,7 @@ async function getAllNewsRoute(app) {
       const news = getNews(newsDb, 'all')
 
       return res.status(200).send({ news })
-    } catch(err) { 
+    } catch (err) {
       throw new Error('Error at filtering news', err)
     }
   })
