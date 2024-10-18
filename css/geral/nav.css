@@ -20,7 +20,7 @@ nav {
 
 
 nav a {
-    display: none;
+    display: flex;
     max-width: 100%;
     color: #000000;
     font-size: large;
