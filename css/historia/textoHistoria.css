@@ -42,3 +42,20 @@ img#card1{
     object-fit: contain;
     border-radius: 0.5rem;
 }
+
+@media (max-width: 768px) {
+    .textoHistoria h1 {
+        font-size: 1.5em;
+        margin: 1.25rem 0;
+    }
+
+    .textoHistoria p {
+        max-width: 100%; 
+        font-size: 1em;
+        margin: 0.625rem auto; 
+        padding: 1rem; 
+    }
+
+    
+}
+
