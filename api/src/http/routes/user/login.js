@@ -2,7 +2,7 @@ const bcrypt = require('bcryptjs')
 const jwt = require('jsonwebtoken')
 const { userDb } = require('../../../db')
 const validateIfUserExists = require('../../../utils/auth/validate-if-user-exists')
-const env = require('../../../env')
+// const env = require('../../../env')
 
 async function login(app) {
   app.post('/auth/login', async (req, res) => {
@@ -22,7 +22,7 @@ async function login(app) {
       }
 
       // Gera um token JWT
-      const token = jwt.sign({ id: user.id }, env.JWT_SECRET, {
+      const token = jwt.sign({ id: user.id }, process.env.JWT_SECRET, {
         expiresIn: 86400, // Token expira em 24 horas
       })
 

@@ -1,7 +1,7 @@
 const bcrypt = require('bcryptjs')
 const { userDb } = require('../../../db')
 
-import validateIfUserExists from '../../../utils/auth/validate-if-user-exists'
+const { validateIfUserExists } = require('../../../utils/auth/validate-if-user-exists')
 
 async function signUp(app) {
   app.post('/auth/signup', async (req, res) => {
