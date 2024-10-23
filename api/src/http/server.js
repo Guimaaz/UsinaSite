@@ -1,5 +1,8 @@
+require('dotenv').config()
+
 const fastify = require('fastify')
 const cors = require('@fastify/cors')
+const mongoose = require('mongoose')
 
 // AUTH ROUTES
 const signUp = require('./routes/user/sign-up')
@@ -13,9 +16,23 @@ const deleteEventByIdRoute = require('./routes/events/delete-event-by-id')
 
 // NEWS ROUTES
 const createNewsRoute = require('./routes/news/create-news')
-const deleteNewsByIdRoute = require('./routes/news/delete-event-by-id')
+const deleteNewsByIdRoute = require('./routes/news/delete-news-by-id')
 const getAllNewsRoute = require('./routes/news/get-all-news')
+
 const getNewsByIdRoute = require('./routes/news/get-news-by-id')
+
+// const env = require('../env')
+
+mongoose.connect(String(process.env.MONGO_URL))
+const db = mongoose.connection
+
+db.on('error', err => {
+  console.error(err)
+})
+
+db.once('open', () => {
+  console.log('[MONGODB] Connection established')
+})
 
 const app = fastify()
 

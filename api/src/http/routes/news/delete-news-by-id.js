@@ -2,7 +2,7 @@ const { newsDb } = require('../../../db')
 const deleteNews = require('../../../utils/news/delete-news')
 
 async function deleteNewsByIdRoute(app) {
-  app.delete('/events/:id', async (req, res) => {
+  app.delete('/news/:id', async (req, res) => {
     try {
       const { id } = req.params
 
