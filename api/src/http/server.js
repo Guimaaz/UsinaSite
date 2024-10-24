@@ -20,13 +20,19 @@ const deleteNewsByIdRoute = require('./routes/news/delete-news-by-id')
 const getAllNewsRoute = require('./routes/news/get-all-news')
 
 const getNewsByIdRoute = require('./routes/news/get-news-by-id')
-const { client } = require('../db/client')
 
 // const env = require('../env')
 
-client
-  .connect()
-  .then(() => console.log('[MONGOOSE] Client connected sucessfully'))
+mongoose.connect(String(process.env.MONGO_URL))
+const db = mongoose.connection
+
+db.on('error', err => {
+  console.log(err)
+})
+
+db.on('open', () => {
+  console.log('[MONGOOSE] Connection estabilished')
+})
 
 const app = fastify()
 

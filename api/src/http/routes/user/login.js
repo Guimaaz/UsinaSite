@@ -1,7 +1,7 @@
 const bcrypt = require('bcryptjs')
 const jwt = require('jsonwebtoken')
-const { userDb } = require('../../../db')
-const validateIfUserExists = require('../../../utils/auth/validate-if-user-exists')
+
+const validadeIfUserExists = require('../../../utils/auth/validade-if-user-exists')
 // const env = require('../../../env')
 
 async function login(app) {
@@ -10,19 +10,19 @@ async function login(app) {
 
     try {
       // // Verifica se o usuário existe
-      const user = validateIfUserExists(userDb, username, { asPromise: true })
+      const user = await validadeIfUserExists(username, password, true)
 
       if (!user) {
         return res.status(400).send({ message: 'User not found' })
       }
       // Verifica se a senha está correta
-      const passwordIsValid = bcrypt.compareSync(password, user.password)
+      const passwordIsValid = bcrypt.compareSync(password, user[0].passwordHash)
       if (!passwordIsValid) {
         return res.status(401).send({ message: 'Invalid password' })
       }
 
       // Gera um token JWT
-      const token = jwt.sign({ id: user.id }, process.env.JWT_SECRET, {
+      const token = jwt.sign({ id: user[0]._id }, process.env.JWT_SECRET, {
         expiresIn: 86400, // Token expira em 24 horas
       })
 
