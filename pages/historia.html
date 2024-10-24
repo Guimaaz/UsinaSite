@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../css/geral/footer.css">
     <link rel="stylesheet" href="../css/geral/container.css">
     <link rel="stylesheet" href="../css/historia/textoHistoria.css">
+    <link rel="stylesheet" href="../css/historia/cardHistoria.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap" rel="stylesheet">
@@ -38,42 +39,38 @@
         <a href="./Boletim.html" id="ancora" class="efeito">Boletim</a>
         <a href="./FaleConosco.html" id="ancora" class="efeito">Fale conosco</a>
         <a href="./Apoiadores.html" id="ancora" class="efeito">Apoiadores</a>
-        <a href="./Login.html">
-            <button id="login">
-                <img src="../imagens/imgeral/Login.png" alt="Login">
+        <a href="./Login.html" id="CelularLogin"  class="efeito">Login</a>
+            <button id="login" class="loginicon">
+                <img src="./imagens/imgeral/Login.png" alt="Login">
             </button>
         </a>
     </div>
 </nav>
     <img id="logo" src="../imagens/imgeral/UsinaLogo.png" alt="">
 
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="textoHistoria">
-                    <h1>História</h1>
-                    <p> Incinerador Vergueiro , inaugurado em 1965 no bairro Ipiranga , São Paulo , foi responsável pela
-                        liberação de substâncias tóxicas como dioxinas e furanos, que podem causar câncer, malformações
-                        e mutações genéticas. Em 1974, a Escola Estadual Cel. Raul Humaitá foi fundada nas proximidades
-                        do Incinerador Vergueiro , o que era um risco significativo para os alunos devido à poluição.
-                    </p>
 
-                    <p> 1977, o Incinerador Vergueiro começou a receber lixo hospitalar, que liberava cinzas
-                        contaminadas
-                        com substâncias tóxicas, aumentando a poluição do ar. Esse risco era grave para a população,
-                        principalmente
-                        na região do Ipiranga. Em 2002, o incinerador foi finalmente desativado, marcando um futuro para
-                        a
-                        população
-                        do Ipiranga e um futuro mais ecológico para São Paulo .</p>
+    <div class="textoHistoria">
+        <h1>História</h1>
+        <h2 id="ano1965">1965</h2>
+        <img id="imagem1965" src="../imagens/imagensnoticias/UsinaImagem.jpg" alt="" style="display: none;">
+        
+        
+        <h2 id="ano1974">1974</h2>
+        <img id="imagem1974" src="../imagens/imagensnoticias/UsinaImagem.jpg" alt="" style="display: none;">
 
-                    <div class="CardHistoria">
-                        <img id="card1" src="../imagens/imagensnoticias/UsinaImagem.jpg" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
+        <h2 id="ano1977">1977</h2>
+        <img id="imagem1977" src="../imagens/imagensnoticias/UsinaImagem.jpg" alt="" style="display: none;">
+
+        <h2 id="ano2002">2002</h2>
+        <img id="imagem2002" src="../imagens/imagensnoticias/UsinaImagem.jpg" alt="" style="display: none;">
     </div>
+
+      
+
+
+        
+   
+
 
 
     <footer><a class="efeitoRodape" href="./pages/Devs.html">Devs</a>
@@ -84,14 +81,16 @@
 </body>
 <script>
     function toggleMenu() {
-     const menu = document.querySelector('.menu-links');  // Seletor correto
-     menu.classList.toggle('show');
- }
- 
-     
- </script>
- <script src="https://unpkg.com/lucide@latest"></script>
- <script>
-     lucide.createIcons()
- </script>
+        const menu = document.querySelector('.menu-links');
+        menu.classList.toggle('show');
+    }
+
+
+</script>
+<script src="https://unpkg.com/lucide@latest"></script>
+<script>
+    lucide.createIcons()
+</script>
+
+<script src="../js/Historia.js"></script>
 </html>

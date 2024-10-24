@@ -3,7 +3,6 @@ nav {
     backdrop-filter: blur(1.875rem);
     box-shadow: 0.625rem 0.625rem 0.625rem rgba(0, 0, 0, 0.178);
     display: flex;
-    justify-content: space-evenly;
     align-items: center;
     border-radius: 1.25rem;
     margin-left: 8rem;
@@ -51,7 +50,20 @@ button img {
     flex: 1;
 }
 
+#CelularLogin {
+    display: none;
+}
+
 @media (max-width: 1197px) {
+
+    .loginicon {
+        display: none;
+    }
+
+   #CelularLogin{
+    display: block;
+   }
+
     nav {
         max-width: 100%;
         flex-direction: column;
@@ -67,13 +79,14 @@ button img {
         border-radius: 1.25rem;
         background-color: rgba(255, 255, 255, 0.9);
         z-index: 10;
+        
     }
 
     #logo {
         position: absolute;
-        top: 3rem; 
-        left: 10px; 
-        width: 60px; 
+        top: 3rem;
+        left: 10px;
+        width: 60px;
         height: auto;
     }
 
@@ -88,10 +101,12 @@ button img {
         left: 0;
         z-index: 10;
         padding: 10px;
+        border-radius: 1rem;
+        
     }
 
     .menu-links.show {
-        display: flex; 
+        display: flex;
     }
 
     .menu-burguer {
@@ -99,6 +114,7 @@ button img {
     }
 
     nav a {
+        display: block;
         color: #000;
         font-size: 1.25rem;
         padding: 10px;
@@ -107,4 +123,3 @@ button img {
         z-index: 10;
     }
 }
- 

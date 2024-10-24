@@ -1,21 +1,62 @@
-.CardHistoria {
-    justify-content: center;
-    display: flex;
-    max-width: 100%;
-    height: 20rem;
-    border-radius: 0.9375rem;
-    overflow: hidden;
-    margin: 0;
-    padding: 1.25rem;
-    gap: 1.875rem;
+h2 {
+    border-radius: 0.3125rem;
+    background-size: 100% 100%;
+    box-shadow: 0.625rem 0.625rem 0.625rem rgba(0, 0, 0, 0.25);
+    position: relative;
+    text-align: center;
+    width: 30%; 
+    margin: 20px auto; 
+    padding: 10px;
+    background-color: #efefef;
+    font-family: "Urbanist", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    transition: width 0.5s ease, padding 0.5s ease; 
+}
+
+
+
+
+
+h2.expanded {
+    width: 100%; 
+    padding: 3rem; 
+    text-decoration: none;
+}
+
+
+#ano1965.expanded:before {
+    content: 'Em 1965, o Incinerador Vergueiro foi inaugurado no bairro Ipiranga, na cidade de São Paulo. Incinerando toneladas e toneladas de lixo, na forma de resíduos domiciliares, defensivos agrícolas e resíduos de estabelecimentos comerciais. Resultando na liberação abundante de dioxinas e furanos, substâncias altamente tóxicas que causam câncer, malformações e mutações genéticas. Além da liberação de gases tóxicos como o dióxido de carbono, que em altas concentrações forma chuva ácida e polui o ar.';
+    
+}
+#ano1974.expanded:before {
+    content: 'Em 1974, foi fundada a Escola Estadual Cel. Raul Humaitá, próxima do Incinerador Vergueiro, sendo um grande risco para os alunos dessa escola, já que a poluição causada pelo incinerador de lixo, com a liberação de substância tóxicas (dioxinas e furanos) deixam os alunas dessa escola com o risco de contrair câncer, levar a problemas respiratórias e cardiovasculares. ';
     
 }
 
-img#card1{
+#ano1977.expanded:before {
+    content: 'Em 1977, o Incinerador Vergueiro começou a receber lixo hospitalar, que libera cinzas contaminadas com substâncias tóxicas, como dioxinas e metais pesados, que aumentam a poluição do ar. Tanto que as emissões geradas podem ser mais tóxicas do que os próprios produtos incinerados. Ou seja, com a queima de lixo hospitalar, o risco de prejudicar a saúde das pessoas que moram perto do incinerador duplica, sendo um risco grave para a população.';
+}
+
+#ano2002.expanded:before {
+    content: 'Em 2002, após muita luta da população de São Paulo, mais especificamente na região do Ipiranga, na zona sul de São Paulo, o incinerador vergueiro foi finalmente desativado, sendo um marco para a população do Ipiranga, resultando em um futuro mais ecológico para São Paulo.';
+}
+
+
+
+#imagem1965, #imagem1974, #imagem1977, #imagem2002 {
     
-    display: block;
-    width: auto;
+    max-width: 40%;
     height: auto;
-    object-fit: contain;
-    border-radius: 0.5rem;
+    margin: 20px auto;
+    display: none;
+    opacity: 0; 
+    transition: opacity 0.5s ease;
+}
+
+
+h2.expanded + #imagem1965, h2.expanded + #imagem1974,h2.expanded + #imagem1977, h2.expanded + #imagem2002{
+    display: block;
+    opacity: 1; 
 }
