@@ -21,17 +21,17 @@ form {
     justify-content: center;
     align-items: center;
     max-width: 100%; 
-    padding: 2rem; 
+    padding: 1rem; 
     gap: 1rem; 
    
 }
 
 input#usuario,
-input#senha {
+input#senha,
+input#email {
     box-shadow: 0.625rem 0.625rem 0.625rem rgba(0, 0, 0, 0.1);
-  
     background-color: #efefef;
-    max-width: 80%; 
+    max-width: 100%; 
     padding: 0.75rem;
     border: 1px solid #efefef;  
     border-radius: 0.5rem;
@@ -65,8 +65,7 @@ button#submit {
 }
 
 .ancoraslogin {
-    display: flex;
-    justify-content: center; 
+    display: inline-flex;
     gap: 2rem; 
 }
 
