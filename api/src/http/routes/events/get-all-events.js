@@ -1,3 +1,4 @@
+const EventController = require('../../../controllers/EventController')
 const { eventDb } = require('../../../db')
 
 const getEvents = require('../../../utils/events/get-events')
@@ -5,7 +6,9 @@ const getEvents = require('../../../utils/events/get-events')
 async function getAllEventsRoute(app) {
   app.get('/events', async (req, res) => {
     try {
-      const events = getEvents(eventDb, 'all')
+      const eventController = new EventController(...Array(5), res)
+
+      const events = await eventController.getAll()
 
       return res.status(200).send({ events })
     } catch (err) {

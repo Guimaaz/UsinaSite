@@ -1,8 +1,5 @@
-const { eventDb } = require('../../../db')
+const EventController = require('../../../controllers/EventController')
 const { matchImageUrl, matchDate } = require('../../../utils/regex')
-
-const validateIfEventExists = require('../../../utils/events/validate-if-event-exists')
-const createEvent = require('../../../utils/events/create-event')
 
 async function createEventRoute(app) {
   app.post('/events/create', async (req, res) => {
@@ -14,9 +11,18 @@ async function createEventRoute(app) {
       }
 
       matchImageUrl(imageUrl, res)
-      matchDate()
+      matchDate(eventDate, res)
 
-      const eventExists = validateIfEventExists(eventDb, { name })
+      const eventController = new EventController(
+        undefined,
+        name,
+        content,
+        imageUrl,
+        eventDate,
+        res
+      )
+
+      const eventExists = await eventController.validateIfExists('name')
 
       if (eventExists) {
         return res
@@ -24,9 +30,9 @@ async function createEventRoute(app) {
           .send({ message: `Event named "${name}" already exists` })
       }
 
-      createEvent(eventDb, { name, content, imageUrl, eventDate })
+      eventController.store()
     } catch (err) {
-      throw new Error('Error at creating event', err)
+      console.log(err)
     }
   })
 }

@@ -1,17 +1,14 @@
-const { eventDb } = require('../../../db')
-
-const getEvents = require('../../../utils/events/get-events')
+const EventController = require('../../../controllers/EventController')
 
 async function getEventByIdRoute(app) {
   app.get('/events/:id', async (req, res) => {
     try {
       const { id } = req.params
+      const eventController = new EventController(id, ...Array(4), res)
 
-      const event = getEvents(eventDb, 'one', id)
-
-      return res.status(200).send({ event })
+      await eventController.getById()
     } catch (err) {
-      throw new Error('Error at filtering event', err)
+      console.log(err)
     }
   })
 }

@@ -1,12 +1,12 @@
-const { eventDb } = require('../../../db')
-const deleteEvent = require('../../../utils/events/delete-event')
+const EventController = require('../../../controllers/EventController')
 
 async function deleteEventByIdRoute(app) {
   app.delete('/events/:id', async (req, res) => {
     try {
       const { id } = req.params
+      const eventController = new EventController(id, ...Array(4), res)
 
-      deleteEvent(eventDb, id)
+      await eventController.delete(id)
 
       return res.status(200).send({ message: 'Event deleted successfully' })
     } catch (err) {
