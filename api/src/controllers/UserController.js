@@ -2,7 +2,6 @@ const bcrypt = require('bcryptjs')
 
 const User = require('../db/models/User')
 
-// biome-ignore lint/complexity/noStaticOnlyClass: <explanation>
 class UserController {
   username
   email
