@@ -12,7 +12,9 @@
 
 
 
-
+ .Card a {
+    text-decoration: none;
+}
 
 .Card1,
 .Card2,
@@ -225,7 +227,7 @@ img#card3 {
     .Card1:hover,
     .Card2:hover,
     .Card3:hover {
-        display: none;
+        display: block;
 
     }
 
@@ -274,7 +276,7 @@ img#card3 {
     .Card1:hover,
     .Card2:hover,
     .Card3:hover {
-        display: none;
+        display: block;
 
     }
 
