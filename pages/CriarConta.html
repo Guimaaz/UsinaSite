@@ -52,9 +52,10 @@
     <div class="Login">
         <form id="loginArea">
             <h1>Cadastre suas informações</h1>
+            <input type="email" id="email" class="input-email" name="email" placeholder="Insira seu E-mail" required>
             <input type="text" id="usuario" class="input-text" name="usuario" placeholder="Insira seu nome de usuário">
             <input type="password" id="senha" class="input-password" name="password" placeholder="Insira sua senha">
-            <button class="efeitoButton" id="submit">Cadastrar</button>
+            <button class="efeitoButton" id="submit" type="submit">Cadastrar</button>
             <div class="ancoraslogin">
                 
                 <a id="withoutlogin" href="./Login.html">Já possuo uma conta</a>
@@ -67,8 +68,11 @@
         <p>Direitos reservados</p>
     </footer>
     
+
 </body>
+<script src="../js/criarConta.js"></script>
 <script>
+
     function toggleMenu() {
      const menu = document.querySelector('.menu-links');  // Seletor correto
      menu.classList.toggle('show');
