@@ -80,3 +80,18 @@
 .efeitoRodape:hover::after {
     scale: 1 1;
 }
+
+.spinner {
+  border: 3px solid #f3f3f3; /* Cor do fundo do spinner */
+  border-top: 3px solid #4CAF50; /* Cor da borda de rotação */
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  animation: spin 1s linear infinite;
+  margin-left: 8px; /* Espaço entre o texto e o spinner */
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
