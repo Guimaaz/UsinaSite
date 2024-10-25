@@ -19,7 +19,7 @@ const getAllNewsRoute = require('./routes/news/get-all-news')
 
 const getNewsByIdRoute = require('./routes/news/get-news-by-id')
 
-const env = require('../env')
+const env = require('../utils/env')
 
 mongoose.connect(env.MONGO_URL)
 const db = mongoose.connection

@@ -2,7 +2,7 @@ const bcrypt = require('bcryptjs')
 const jwt = require('jsonwebtoken')
 
 const UserController = require('../../../db/controllers/UserController')
-const env = require('../../../env')
+const env = require('../../../utils/env')
 
 async function login(app) {
   app.post('/auth/login', async (req, res) => {
