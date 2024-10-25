@@ -4,15 +4,15 @@ h2 {
     box-shadow: 0.625rem 0.625rem 0.625rem rgba(0, 0, 0, 0.25);
     position: relative;
     text-align: center;
-    width: 30%; 
-    margin: 20px auto; 
+    width: 30%;
+    margin: 20px auto;
     padding: 10px;
     background-color: #efefef;
     font-family: "Urbanist", sans-serif;
     font-weight: 400;
     font-style: normal;
     text-decoration: none;
-    transition: width 0.5s ease, padding 0.5s ease; 
+    transition: width 0.5s ease, padding 0.5s ease;
 }
 
 
@@ -20,19 +20,20 @@ h2 {
 
 
 h2.expanded {
-    width: 100%; 
-    padding: 3rem; 
+    width: 100%;
+    padding: 3rem;
     text-decoration: none;
 }
 
 
 #ano1965.expanded:before {
     content: 'Em 1965, o Incinerador Vergueiro foi inaugurado no bairro Ipiranga, na cidade de São Paulo. Incinerando toneladas e toneladas de lixo, na forma de resíduos domiciliares, defensivos agrícolas e resíduos de estabelecimentos comerciais. Resultando na liberação abundante de dioxinas e furanos, substâncias altamente tóxicas que causam câncer, malformações e mutações genéticas. Além da liberação de gases tóxicos como o dióxido de carbono, que em altas concentrações forma chuva ácida e polui o ar.';
-    
+
 }
+
 #ano1974.expanded:before {
     content: 'Em 1974, foi fundada a Escola Estadual Cel. Raul Humaitá, próxima do Incinerador Vergueiro, sendo um grande risco para os alunos dessa escola, já que a poluição causada pelo incinerador de lixo, com a liberação de substância tóxicas (dioxinas e furanos) deixam os alunas dessa escola com o risco de contrair câncer, levar a problemas respiratórias e cardiovasculares. ';
-    
+
 }
 
 #ano1977.expanded:before {
@@ -51,20 +52,37 @@ h2.expanded {
     content: 'Em 2019, a população que vive próxima ao incinerador de lixo desativado, que inclui artistas, arquitetos e vizinhos da área começou as negociações com a prefeitura de São Paulo, mais especificamente, com o concelho do meio ambiente dentro da subprefeitura (Cades Ipiranga), para a ocupação desse lugar abandonado que por 20 anos ficou sem paradeiro.';
 }
 
+#ano2022.expanded:before {
+    content: 'Foi a partir de julho de 2022, o grupo que posteriormente daria início ao projeto da Usina Eco-Cultural, começaram a ocupar o Incinerador Vergueiro abandonado, promovendo palestras, oficinas e eventos artísticos para a população da zona sul, com o objetivo inicial da criação de um museu dedicado ao meio ambiente e um mercado de produtos orgânicos para ressignificar esse espaço que trouxe tanta dor para a comunidade, dando um uso social para um espaço abandonado';
+
+}
 
 
-#imagem1965, #imagem1974, #imagem1977, #imagem2002, #imagem2004, #imagem2019{
-    
+
+#imagem1965,
+#imagem1974,
+#imagem1977,
+#imagem2002,
+#imagem2004,
+#imagem2019,
+#imagem2022 {
+
     max-width: 40%;
     height: auto;
     margin: 20px auto;
     display: none;
-    opacity: 0; 
+    opacity: 0;
     transition: opacity 0.5s ease;
 }
 
 
-h2.expanded + #imagem1965, h2.expanded + #imagem1974,h2.expanded + #imagem1977, h2.expanded + #imagem2002, h2.expanded + #imagem2004, h2.expanded + #imagem2019{
+h2.expanded+#imagem1965,
+h2.expanded+#imagem1974,
+h2.expanded+#imagem1977,
+h2.expanded+#imagem2002,
+h2.expanded+#imagem2004,
+h2.expanded+#imagem2019,
+h2.expanded+#iamgem2022 {
     display: block;
-    opacity: 1; 
+    opacity: 1;
 }
