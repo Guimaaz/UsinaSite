@@ -1,8 +1,5 @@
-const { newsDb } = require('../../../db')
 const { matchImageUrl } = require('../../../utils/regex')
-
-const validateIfNewsExists = require('../../../utils/news/validate-if-news-exists')
-const createNews = require('../../../utils/news/create-news')
+const NewsController = require('../../../controllers/NewsController')
 
 async function createNewsRoute(app) {
   app.post('/news/create', async (req, res) => {
@@ -12,20 +9,27 @@ async function createNewsRoute(app) {
       if (!content || !title || !imageUrl) {
         return res.status(400).send({ message: 'Invalid data' })
       }
-
       matchImageUrl(imageUrl, res)
 
-      const newsExists = validateIfNewsExists(eventDb, { title })
+      const newsController = new NewsController(
+        undefined,
+        title,
+        content,
+        imageUrl,
+        res
+      )
+
+      const newsExists = await newsController.validateIfExists('title')
 
       if (newsExists) {
         return res
           .status(400)
-          .send({ message: `Event named "${title}" already exists` })
+          .send({ message: `News named "${title}" already exists` })
       }
 
-      createNews(newsDb, { title, content, imageUrl })
+      newsController.store()
     } catch (err) {
-      throw new Error('Error at creating news', err)
+      console.log(err)
     }
   })
 }

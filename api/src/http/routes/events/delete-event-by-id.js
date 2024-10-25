@@ -7,8 +7,6 @@ async function deleteEventByIdRoute(app) {
       const eventController = new EventController(id, ...Array(4), res)
 
       await eventController.delete(id)
-
-      return res.status(200).send({ message: 'Event deleted successfully' })
     } catch (err) {
       throw new Error('Error at filtering event', err)
     }

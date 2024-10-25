@@ -1,3 +1,4 @@
+const NewsController = require('../../../controllers/NewsController')
 const { newsDb } = require('../../../db')
 const deleteNews = require('../../../utils/news/delete-news')
 
@@ -6,9 +7,9 @@ async function deleteNewsByIdRoute(app) {
     try {
       const { id } = req.params
 
-      deleteNews(newsDb, id)
+      const newsController = new NewsController(id, ...Array(3), res)
 
-      return res.status(200).send({ message: 'Event deleted successfully' })
+      await newsController.delete()
     } catch (err) {
       throw new Error('Error at filtering event', err)
     }

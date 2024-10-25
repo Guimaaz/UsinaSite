@@ -1,5 +1,5 @@
 function validateIfNewsExists(newsDb, { name }) {
-  newsDb.get('SELECT * FROM events WHERE name = ?', [name], (err, news) => {
+  newsDb.get('SELECT * FROM news WHERE name = ?', [name], (err, news) => {
     if (err) {
       return res.status(500).send({ message: 'Internal server error' })
     }
