@@ -47,9 +47,13 @@ h2.expanded {
     content: 'Em 2004, a prefeitura de São Paulo deu a concessão das operações do local por 20 anos para a empresa EcoUrbis Ambiental.';
 }
 
+#ano2019.expanded:before {
+    content: 'Em 2019, a população que vive próxima ao incinerador de lixo desativado, que inclui artistas, arquitetos e vizinhos da área começou as negociações com a prefeitura de São Paulo, mais especificamente, com o concelho do meio ambiente dentro da subprefeitura (Cades Ipiranga), para a ocupação desse lugar abandonado que por 20 anos ficou sem paradeiro.';
+}
 
 
-#imagem1965, #imagem1974, #imagem1977, #imagem2002, #imagem2004{
+
+#imagem1965, #imagem1974, #imagem1977, #imagem2002, #imagem2004, #imagem2019{
     
     max-width: 40%;
     height: auto;
@@ -60,7 +64,7 @@ h2.expanded {
 }
 
 
-h2.expanded + #imagem1965, h2.expanded + #imagem1974,h2.expanded + #imagem1977, h2.expanded + #imagem2002, h2.expanded + #imagem2004{
+h2.expanded + #imagem1965, h2.expanded + #imagem1974,h2.expanded + #imagem1977, h2.expanded + #imagem2002, h2.expanded + #imagem2004, h2.expanded + #imagem2019{
     display: block;
     opacity: 1; 
 }
