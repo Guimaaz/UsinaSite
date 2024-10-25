@@ -48,6 +48,7 @@ button img {
     justify-content: space-evenly;
     align-items: center;
     flex: 1;
+    white-space: nowrap;
 }
 
 #CelularLogin {
@@ -93,50 +94,61 @@ button img {
     .menu-links {
         display: none;
         flex-direction: column;
-        gap: 20px;
-        width: 100%;
-        background-color: rgba(255, 255, 255, 0.9);
+        gap: 2px;
+        background-color: rgba(255, 255, 255, 1);
         position: absolute;
         top: 60px;
         left: 0;
         z-index: 10;
-        padding: 10px;
         border-radius: 1rem;
+        align-items: center;
+        width: 100%;
+        padding: 10px 20px;
+        
         
     }
 
+    
+
     .menu-links.show {
+        display : flex;
+        max-width: 100%;
+        
+    }
+
+
+    .menu-burguer {
         display: flex;
     }
 
-    .menu-burguer {
-        display: block;
-    }
-
     nav a {
-        display: block;
         color: #000;
-        font-size: 1.25rem;
-        padding: 10px;
-        text-align: center;
+        font-size: 1rem;
+        padding: 10px 0;
         width: 100%;
-        z-index: 10;
+        text-align: left;
+        text-decoration: none;
+        border-bottom: 1px solid #ccc;
     }
 }
 
-.loginicon {
+#loginButton {
     border: none;
-    border-radius: 5px;
-    padding: 10px;
-    transition: all 0.4s;
-}
-
-.loginicon:hover {
-    transform: scale(1.1);
+    background: transparent;
+    outline: none;
+    cursor: pointer;
 }
 
 #dashboardText {
     font-weight: bold;
-    color: #4CAF50; /* Exemplo de cor para destaque */
+    color: #4CAF50;
+    background: #e4e4e4;
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
+    transition: all 0.4s;
 }
 
+#dashboardText:hover {
+    transform: scale(1.1);
+}
