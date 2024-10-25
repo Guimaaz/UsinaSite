@@ -1,15 +1,23 @@
 const UserController = require('../../../db/controllers/UserController')
+const { signUpSchema } = require('../../../utils/schemas/userSchemas')
 
 async function signUp(app) {
   app.post('/auth/signup', async (req, res) => {
     try {
-      const { username, email, password } = req.body
+      const signUpInformations = signUpSchema.safeParse(req.body)
 
-      if (!username || !email || !password) {
-        return res.status(400).send({ message: 'Invalid username or password' })
+      if (!signUpInformations.success || !signUpInformations.data) {
+        return res.status(400).send({
+          error: 'The sign up informations are incomplete or invalid',
+        })
       }
 
-      const userController = new UserController(username, email, password, res)
+      const userController = new UserController(
+        signUpInformations.data.username,
+        signUpInformations.data.email,
+        signUpInformations.data.password,
+        res
+      )
 
       const userExists = await userController.validateIfExists(false)
 

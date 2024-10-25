@@ -3,15 +3,22 @@ const jwt = require('jsonwebtoken')
 
 const UserController = require('../../../db/controllers/UserController')
 const env = require('../../../utils/env')
+const { loginSchema } = require('../../../utils/schemas/userSchemas')
 
 async function login(app) {
   app.post('/auth/login', async (req, res) => {
-    const { username, password } = req.body
+    const loginInformations = loginSchema.safeParse(req.body)
+
+    if (!loginInformations.success || !loginInformations.data) {
+      return res.status(400).send({
+        error: 'The login informations are incomplete or invalid',
+      })
+    }
 
     const userController = new UserController(
-      username,
+      loginInformations.data.username,
       undefined,
-      password,
+      loginInformations.data.password,
       res
     )
 
@@ -22,13 +29,16 @@ async function login(app) {
         return res.status(400).send({ message: 'User not found' })
       }
 
-      const passwordIsValid = bcrypt.compareSync(password, user[0].passwordHash)
+      const passwordIsValid = bcrypt.compareSync(
+        loginInformations.data.password,
+        user[0].passwordHash
+      )
       if (!passwordIsValid) {
         return res.status(401).send({ message: 'Invalid password' })
       }
 
       const token = jwt.sign({ id: user[0]._id }, env.JWT_SECRET, {
-        expiresIn: 86400,
+        expiresIn: 86400, // 24 hours
       })
 
       console.log('Login successful, token generated:', token)
