@@ -1,30 +1,31 @@
-const { matchImageUrl } = require('../../../utils/regex')
 const NewsController = require('../../../db/controllers/NewsController')
+const { createNewsSchema } = require('../../../utils/schemas/newsSchemas')
 
 async function createNewsRoute(app) {
   app.post('/news/create', async (req, res) => {
     try {
-      const { title, content, imageUrl } = req.body
+      const newsInformation = createNewsSchema.safeParse(req.body)
 
-      if (!content || !title || !imageUrl) {
-        return res.status(400).send({ message: 'Invalid data' })
+      if (!newsInformation.success || !newsInformation.data) {
+        return res.status(400).send({
+          error: 'The news informations are incomplete or invalid',
+        })
       }
-      matchImageUrl(imageUrl, res)
 
       const newsController = new NewsController(
         undefined,
-        title,
-        content,
-        imageUrl,
+        newsInformation.data.title,
+        newsInformation.data.content,
+        newsInformation.data.imageUrl,
         res
       )
 
       const newsExists = await newsController.validateIfExists('title')
 
       if (newsExists) {
-        return res
-          .status(400)
-          .send({ message: `News named "${title}" already exists` })
+        return res.status(400).send({
+          message: `News named "${newsInformation.data.title}" already exists`,
+        })
       }
 
       newsController.store()
