@@ -1,11 +1,10 @@
 const NewsController = require('../../../db/controllers/NewsController')
 const { deleteNewsByIdSchema } = require('../../../utils/schemas/newsSchemas')
 
-async function getNewsByIdRoute(app) {
-  app.get('/news/:id', async (req, res) => {
+async function deleteNewsByIdRoute(app) {
+  app.delete('/news/:id', async (req, res) => {
     try {
       const { id } = req.params
-
       const newsInformation = deleteNewsByIdSchema.safeParse(req.params)
 
       if (!newsInformation.success || !newsInformation.data) {
@@ -15,11 +14,12 @@ async function getNewsByIdRoute(app) {
       }
 
       const newsController = new NewsController(id, ...Array(3), res)
-      await newsController.getById()
+
+      await newsController.delete()
     } catch (err) {
-      throw new Error('Error at filtering news', err)
+      throw new Error('Error at filtering event', err)
     }
   })
 }
 
-module.exports = getNewsByIdRoute
+module.exports = deleteNewsByIdRoute

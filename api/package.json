@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "run:db": "node src/db/index.js"
+    "run:db": "node src/db/index.js",
+    "dev": "node src/http/server.js"
   },
   "keywords": [],
   "author": "",
@@ -13,12 +14,16 @@
   "dependencies": {
     "@fastify/cors": "^9.0.1",
     "bcryptjs": "^2.4.3",
+    "dotenv": "^16.4.5",
     "fastify": "^4.28.1",
     "jsonwebtoken": "^9.0.2",
+    "mongodb": "^6.10.0",
+    "mongoose": "^8.7.2",
     "sqlite3": "^5.1.7",
     "zod": "^3.23.8"
   },
   "devDependencies": {
+    "@biomejs/biome": "1.9.4",
     "@types/bcryptjs": "^2.4.6",
     "@types/jsonwebtoken": "^9.0.7"
   }

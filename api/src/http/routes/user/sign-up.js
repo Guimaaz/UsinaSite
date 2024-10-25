@@ -1,31 +1,39 @@
-const bcrypt = require('bcryptjs');
-const { userDb } = require('../../../db');
-
-import validateIfUserExists from '../../../utils/auth/validate-if-user-exists';
+const UserController = require('../../../db/controllers/UserController')
+const { signUpSchema } = require('../../../utils/schemas/userSchemas')
 
 async function signUp(app) {
   app.post('/auth/signup', async (req, res) => {
     try {
-      const { username, password } = req.body;
+      const signUpInformations = signUpSchema.safeParse(req.body)
 
-      if (!username || !password) {
-        return res.status(400).send({ message: "Invalid username or password" })
-      }
-      
-      const hashedPassword = bcrypt.hashSync(password, 8);
-      
-      // Verifica se o usuário já existe
-      const userExists = validateIfUserExists()
-
-      if(userExists) {
-        return res.status(400).send({ message: `User "${username}" already exists` })
+      if (!signUpInformations.success || !signUpInformations.data) {
+        return res.status(400).send({
+          error: 'The sign up informations are incomplete or invalid',
+        })
       }
 
-      createUser(userDb, { username, hashedPassword });
+      const userController = new UserController(
+        signUpInformations.data.username,
+        signUpInformations.data.email,
+        signUpInformations.data.password,
+        res
+      )
+
+      const userExists = await userController.validateIfExists(false)
+
+      if (userExists) {
+        console.log(userExists)
+
+        return res
+          .status(400)
+          .send({ message: `User "${username}" already exists` })
+      }
+
+      userController.store()
     } catch (err) {
-      throw new Error('Error creating user', err)
+      console.log(err)
     }
-  });
+  })
 }
 
-module.exports = signUp;
+module.exports = signUp

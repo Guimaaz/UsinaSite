@@ -1,14 +1,12 @@
-const { newsDb } = require("../../../db")
-
-const getNews = require("../../../utils/news/get-news")
+const NewsController = require('../../../db/controllers/NewsController')
 
 async function getAllNewsRoute(app) {
   app.get('/news', async (req, res) => {
     try {
-      const news = getNews(newsDb, 'all')
+      const newsController = new NewsController(...Array(4), res)
 
-      return res.status(200).send({ news })
-    } catch(err) { 
+      await newsController.getAll()
+    } catch (err) {
       throw new Error('Error at filtering news', err)
     }
   })

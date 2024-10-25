@@ -1,15 +1,26 @@
-const { eventDb } = require("../../../db")
-const deleteEvent = require("../../../utils/events/delete-event")
+const EventController = require('../../../db/controllers/EventController')
+const { deleteEventByIdSchema } = require('../../../utils/schemas/eventSchemas')
 
 async function deleteEventByIdRoute(app) {
   app.delete('/events/:id', async (req, res) => {
     try {
-      const { id } = req.params
+      const eventInformations = deleteEventByIdSchema.safeParse(req.params)
 
-      deleteEvent(eventDb, id)
+      if (!eventInformations.success || !eventInformations.data) {
+        return res.status(400).send({
+          error: 'The news informations are incomplete or invalid',
+        })
+      }
 
-      return res.status(200).send({ message: 'Event deleted successfully' })
-    } catch(err) { 
+      const eventController = new EventController(
+        eventInformations.data.id,
+        ...Array(4),
+        res
+      )
+
+      await eventController.delete(eventInformations.data.id)
+    } catch (err) {
+      console.log(err)
       throw new Error('Error at filtering event', err)
     }
   })

@@ -1,14 +1,14 @@
-const { eventDb } = require("../../../db")
-
-const getEvents = require("../../../utils/events/get-events")
+const EventController = require('../../../db/controllers/EventController')
 
 async function getAllEventsRoute(app) {
   app.get('/events', async (req, res) => {
     try {
-      const events = getEvents(eventDb, 'all')
+      const eventController = new EventController(...Array(5), res)
+
+      const events = await eventController.getAll()
 
       return res.status(200).send({ events })
-    } catch(err) { 
+    } catch (err) {
       throw new Error('Error at filtering event', err)
     }
   })
