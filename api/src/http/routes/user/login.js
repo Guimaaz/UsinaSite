@@ -2,7 +2,7 @@ const bcrypt = require('bcryptjs')
 const jwt = require('jsonwebtoken')
 
 const UserController = require('../../../db/controllers/UserController')
-// const env = require('../../../env')
+const env = require('../../../env')
 
 async function login(app) {
   app.post('/auth/login', async (req, res) => {
@@ -27,7 +27,7 @@ async function login(app) {
         return res.status(401).send({ message: 'Invalid password' })
       }
 
-      const token = jwt.sign({ id: user[0]._id }, process.env.JWT_SECRET, {
+      const token = jwt.sign({ id: user[0]._id }, env.JWT_SECRET, {
         expiresIn: 86400,
       })
 
