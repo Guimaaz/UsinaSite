@@ -1,4 +1,4 @@
-const EventController = require('../../../controllers/EventController')
+const EventController = require('../../../db/controllers/EventController')
 
 async function getEventByIdRoute(app) {
   app.get('/events/:id', async (req, res) => {

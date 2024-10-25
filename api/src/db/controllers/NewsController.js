@@ -1,4 +1,4 @@
-const News = require('../db/models/News')
+const News = require('../models/News')
 
 class NewsController {
   id

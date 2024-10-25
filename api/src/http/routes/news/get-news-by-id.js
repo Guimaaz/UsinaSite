@@ -1,4 +1,4 @@
-const NewsController = require('../../../controllers/NewsController')
+const NewsController = require('../../../db/controllers/NewsController')
 
 async function getNewsByIdRoute(app) {
   app.get('/news/:id', async (req, res) => {

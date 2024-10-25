@@ -1,4 +1,4 @@
-const Event = require('../db/models/Event')
+const Event = require('../models/Event')
 
 class EventController {
   id

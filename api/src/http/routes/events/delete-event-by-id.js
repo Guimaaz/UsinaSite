@@ -1,4 +1,4 @@
-const EventController = require('../../../controllers/EventController')
+const EventController = require('../../../db/controllers/EventController')
 
 async function deleteEventByIdRoute(app) {
   app.delete('/events/:id', async (req, res) => {

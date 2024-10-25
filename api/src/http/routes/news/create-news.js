@@ -1,5 +1,5 @@
 const { matchImageUrl } = require('../../../utils/regex')
-const NewsController = require('../../../controllers/NewsController')
+const NewsController = require('../../../db/controllers/NewsController')
 
 async function createNewsRoute(app) {
   app.post('/news/create', async (req, res) => {

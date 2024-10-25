@@ -1,4 +1,4 @@
-const EventController = require('../../../controllers/EventController')
+const EventController = require('../../../db/controllers/EventController')
 const { matchImageUrl, matchDate } = require('../../../utils/regex')
 
 async function createEventRoute(app) {

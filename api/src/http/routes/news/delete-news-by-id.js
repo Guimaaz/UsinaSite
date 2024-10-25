@@ -1,6 +1,4 @@
-const NewsController = require('../../../controllers/NewsController')
-const { newsDb } = require('../../../db')
-const deleteNews = require('../../../utils/news/delete-news')
+const NewsController = require('../../../db/controllers/NewsController')
 
 async function deleteNewsByIdRoute(app) {
   app.delete('/news/:id', async (req, res) => {

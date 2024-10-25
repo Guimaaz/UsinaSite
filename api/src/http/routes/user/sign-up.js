@@ -1,4 +1,4 @@
-const UserController = require('../../../controllers/UserController')
+const UserController = require('../../../db/controllers/UserController')
 
 async function signUp(app) {
   app.post('/auth/signup', async (req, res) => {
