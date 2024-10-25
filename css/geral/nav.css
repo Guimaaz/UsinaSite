@@ -123,3 +123,20 @@ button img {
         z-index: 10;
     }
 }
+
+.loginicon {
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    transition: all 0.4s;
+}
+
+.loginicon:hover {
+    transform: scale(1.1);
+}
+
+#dashboardText {
+    font-weight: bold;
+    color: #4CAF50; /* Exemplo de cor para destaque */
+}
+
