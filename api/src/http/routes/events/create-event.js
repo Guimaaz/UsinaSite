@@ -1,33 +1,32 @@
 const EventController = require('../../../db/controllers/EventController')
-const { matchImageUrl, matchDate } = require('../../../utils/regex')
+const { createEventSchema } = require('../../../utils/schemas/eventSchemas')
 
 async function createEventRoute(app) {
   app.post('/events/create', async (req, res) => {
     try {
-      const { name, content, eventDate, imageUrl } = req.body
+      const eventInformations = createEventSchema.safeParse(req.body)
 
-      if (!name || !content || !eventDate || !imageUrl) {
-        return res.status(400).send({ message: 'Invalid data' })
+      if (!eventInformations.success || !eventInformations.data) {
+        return res.status(400).send({
+          error: 'The event informations are incomplete or invalid',
+        })
       }
-
-      matchImageUrl(imageUrl, res)
-      matchDate(eventDate, res)
 
       const eventController = new EventController(
         undefined,
-        name,
-        content,
-        imageUrl,
-        eventDate,
+        eventInformations.data.name,
+        eventInformations.data.content,
+        eventInformations.data.imageUrl,
+        eventInformations.data.eventDate,
         res
       )
 
       const eventExists = await eventController.validateIfExists('name')
 
       if (eventExists) {
-        return res
-          .status(400)
-          .send({ message: `Event named "${name}" already exists` })
+        return res.status(400).send({
+          message: `Event named "${eventInformations.data.name}" already exists`,
+        })
       }
 
       eventController.store()

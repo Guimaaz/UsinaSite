@@ -18,19 +18,27 @@ class EventController {
   }
 
   store() {
-    const event = new Event({
-      name: this.name,
-      content: this.content,
-      imageUrl: this.imageUrl,
-      eventDate: Date(this.eventDate),
-    })
-
     try {
+      const eventDateUTC = new Date(this.eventDate)
+
+      if (Number.isNaN(eventDateUTC.getTime())) {
+        return this.res.status(400).send({ message: 'Invalid date format.' })
+      }
+
+      const event = new Event({
+        name: this.name,
+        content: this.content,
+        imageUrl: this.imageUrl,
+        eventDate: eventDateUTC,
+      })
+
       event.save()
+      return this.res
+        .status(201)
+        .send({ message: 'Event created successfully', event })
     } catch (err) {
-      this.res.status(500).send({ message: 'Error creating event' })
-    } finally {
-      this.res.status(201).send({ message: 'Event created successfully' })
+      console.error('Error creating event:', err)
+      return this.res.status(500).send({ message: 'Error creating event' })
     }
   }
 
