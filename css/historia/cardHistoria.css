@@ -43,9 +43,13 @@ h2.expanded {
     content: 'Em 2002, após muita luta da população de São Paulo, mais especificamente na região do Ipiranga, na zona sul de São Paulo, o incinerador vergueiro foi finalmente desativado, sendo um marco para a população do Ipiranga, resultando em um futuro mais ecológico para São Paulo.';
 }
 
+#ano2004.expanded:before {
+    content: 'Em 2004, a prefeitura de São Paulo deu a concessão das operações do local por 20 anos para a empresa EcoUrbis Ambiental.';
+}
 
 
-#imagem1965, #imagem1974, #imagem1977, #imagem2002 {
+
+#imagem1965, #imagem1974, #imagem1977, #imagem2002, #imagem2004{
     
     max-width: 40%;
     height: auto;
@@ -56,7 +60,7 @@ h2.expanded {
 }
 
 
-h2.expanded + #imagem1965, h2.expanded + #imagem1974,h2.expanded + #imagem1977, h2.expanded + #imagem2002{
+h2.expanded + #imagem1965, h2.expanded + #imagem1974,h2.expanded + #imagem1977, h2.expanded + #imagem2002, h2.expanded + #imagem2004{
     display: block;
     opacity: 1; 
 }
