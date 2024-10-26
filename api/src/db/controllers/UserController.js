@@ -41,9 +41,7 @@ class UserController {
     if (onlyUsername) {
       const userExists = await User.find({ username: this.username })
 
-      if (userExists.length > 0) return userExists
-
-      return false
+      return userExists.length > 0 ? userExists : false
     }
 
     const userExists = await User.find({
@@ -51,9 +49,7 @@ class UserController {
       email: this.email,
     })
 
-    if (userExists.length > 0) return userExists
-
-    return false
+    return userExists.length > 0 ? userExists : false
   }
 }
 
