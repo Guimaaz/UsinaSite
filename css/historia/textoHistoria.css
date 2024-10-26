@@ -1,5 +1,5 @@
 .textoHistoria h1 {
-    text-decoration: underline;
+    text-decoration: none;
     text-align: center;
     font-family: "Afacad Flux", sans-serif;
     font-optical-sizing: auto;
@@ -42,3 +42,24 @@ img#card1{
     object-fit: contain;
     border-radius: 0.5rem;
 }
+
+@media (max-width: 768px) {
+    .textoHistoria h1 {
+        font-size: 2em;
+        margin: 1.25rem 0;
+    }
+
+    .textoHistoria p {
+        max-width: 90%; 
+        font-size: 1em;
+        margin: 0.625rem auto; 
+        padding: 1rem; 
+    }
+
+    
+}
+
+
+
+
+

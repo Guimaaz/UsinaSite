@@ -16,19 +16,44 @@
     text-decoration: none;
 }
 
-.Card1,
-.Card2,
+.Card1
+ {
+    max-width: 100%;
+    flex: 3;
+    height: 100%;
+    transition: flex 0.5s ease;
+    cursor: pointer;
+    background-image: url(/imagens/imgdevs/guimaaz.png);
+    background-size: cover;
+    background-position: center;
+    margin-right: 0.15625rem;
+    border-radius: 5%;
+
+}
+
+.Card2 {
+    max-width: 100%;
+    flex: 3;
+    height: 100%;
+    transition: flex 0.5s ease;
+    cursor: pointer;
+  
+    background-size: cover;
+    background-position: center;
+    margin-right: 0.15625rem;
+    border-radius: 5%;
+}
 .Card3 {
     max-width: 100%;
     flex: 3;
     height: 100%;
     transition: flex 0.5s ease;
     cursor: pointer;
+  
     background-size: cover;
     background-position: center;
     margin-right: 0.15625rem;
     border-radius: 5%;
-
 }
 
 .Card1:hover,
@@ -42,10 +67,32 @@
 
 
 
+
+.Card1 h1,
+.Card2 h1,
+.Card3 h1 {
+    backdrop-filter: blur(5px);
+    margin-top: 10rem;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    text-align: center;
+    font-family: "Afacad Flux", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+    
+
+}
+
+
+
+
 .Card1 p,
 .Card2 p,
 .Card3 p {
-    color: rgb(0, 0, 0);
+    backdrop-filter: blur(10px);
+    color: rgb(255, 255, 255);
     margin-top: 1rem;
     border-radius: 5%;
     margin-left: 1rem;
@@ -60,28 +107,21 @@
 
 }
 
-img#card1,
-img#card2,
-img#card3 {
-    display: flex;
-    width: 100%;
-    height: 50%;
-    object-fit: cover;
-    border-radius: 0.5rem;
-}
+
 
 .Card1,
 .Card2,
 .Card3 {
+    
     box-shadow: 0.625rem 0.625rem 0.625rem rgba(0, 0, 0, 0.178);
 
 
-    background-color: #efefee
+    background-color: #578acc
 }
 
 
 .Card button {
-    background-color: rgb(139, 207, 83);
+    background-color: rgba(0, 0, 0, 0.301);
     border: none;
     width: 12.5rem;
     height: 3.125rem;
