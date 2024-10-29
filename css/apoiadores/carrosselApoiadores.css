@@ -5,6 +5,13 @@
     position: relative;
     height: 6.25rem; 
     overflow: hidden;
+    mask-image: linear-gradient(
+        to right,
+        rgba(0,0,0,0),
+        rgba(0,0,0,1) 20%,
+        rgba(0,0,0,1) 80%,
+        rgba(0,0,0,0));
+       
 }
 
 .item {
@@ -13,11 +20,12 @@
     background-color: black;
     border-radius: 0.375rem; 
     position: absolute;
-    left: 100%;
+    left: calc(200px * 8);
     animation-name: scrollLeft;
     animation-duration: 30s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
+    
 }
 
 .item1 {
