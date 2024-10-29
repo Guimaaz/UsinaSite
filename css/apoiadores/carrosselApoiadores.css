@@ -1,0 +1,30 @@
+.carrossel{
+    border: 1px solid black;
+    max-width: 90%;
+    margin-inline: auto;
+    position: relative;
+    height: 100px;
+    overflow: hidden;
+
+}
+
+.item {
+    width: 200px;
+    height: 100px;
+    background-color: black;
+    border-radius: 6px;
+    position: absolute;
+    left: 100%;
+    animation-name: scrollLeft;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+
+
+@keyframes scrollLeft {
+    to {
+        left: -200px;
+    }
+}
