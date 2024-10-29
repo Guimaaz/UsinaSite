@@ -19,6 +19,7 @@
     "jsonwebtoken": "^9.0.2",
     "mongodb": "^6.10.0",
     "mongoose": "^8.7.2",
+    "nodemailer": "^6.9.15",
     "sqlite3": "^5.1.7",
     "zod": "^3.23.8"
   },

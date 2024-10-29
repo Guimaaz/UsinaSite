@@ -3,8 +3,9 @@ const cors = require('@fastify/cors')
 const mongoose = require('mongoose')
 
 // AUTH ROUTES
-const signUp = require('./routes/user/sign-up')
-const login = require('./routes/user/login')
+const signUp = require('./routes/auth/sign-up')
+const login = require('./routes/auth/login')
+const forgotPassword = require('./routes/auth/forgot-password')
 
 // EVENTS ROUTES
 const createEventRoute = require('./routes/events/create-event')
@@ -41,6 +42,7 @@ app.register(cors, {
 // AUTH ROUTES
 app.register(signUp)
 app.register(login)
+app.register(forgotPassword)
 
 // EVENTS ROUTES
 app.register(createEventRoute)
