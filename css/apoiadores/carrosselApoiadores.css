@@ -16,12 +16,35 @@
     position: absolute;
     left: 100%;
     animation-name: scrollLeft;
-    animation-duration: 3s;
+    animation-duration: 30s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
 
-
+.item1 {
+    animation-delay: calc(30s/8 * (8 - 1) * - 1);
+}
+.item2 {
+    animation-delay:calc(30s/8 * (8 - 2) * - 1) ;
+}
+.item3 {
+    animation-delay:calc(30s/8 * (8 - 3) * - 1) ;
+}
+.item4 {
+    animation-delay:calc(30s/8 * (8 - 4) * - 1) ;
+}
+.item5 {
+    animation-delay:calc(30s/8 * (8 - 5) * - 1) ;
+}
+.item6 {
+    animation-delay:calc(30s/8 * (8 - 6) * - 1) ;
+}
+.item7 {
+    animation-delay:calc(30s/8 * (8 - 7) * - 1) ;
+}
+.item8 {
+    animation-delay:calc(30s/8 * (8 - 8) * - 1) ;
+}
 
 @keyframes scrollLeft {
     to {
