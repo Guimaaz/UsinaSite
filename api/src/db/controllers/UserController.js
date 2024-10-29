@@ -41,9 +41,7 @@ class UserController {
     if (onlyUsername) {
       const userExists = await User.find({ username: this.username })
 
-      if (userExists.length > 0) return userExists
-
-      return false
+      return userExists.length > 0 ? userExists : false
     }
 
     const userExists = await User.find({
@@ -51,9 +49,35 @@ class UserController {
       email: this.email,
     })
 
-    if (userExists.length > 0) return userExists
+    return userExists.length > 0 ? userExists : false
+  }
 
-    return false
+  async updatePassword(newPassword) {
+    try {
+      const user = await User.findOne({ email: this.email })
+
+      if (!user) {
+        return this.res
+          .status(404)
+          .send({ message: `User with email: ${this.email} wasn't found` })
+      }
+
+      const hashedPassword = bcrypt.hashSync(newPassword, 8)
+      user.password = newPassword
+      user.passwordHash = hashedPassword
+
+      await user.save()
+
+      return this.res
+        .status(200)
+        .send({
+          message: `Password updated successfully for user ${this.email}`,
+        })
+    } catch (e) {
+      return this.res
+        .status(500)
+        .send({ message: `Error updating password for user ${this.email}` })
+    }
   }
 }
 
