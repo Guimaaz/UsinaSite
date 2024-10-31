@@ -41,11 +41,14 @@ async function login(app) {
         expiresIn: 86400, // 24 hours
       })
 
-      console.log('Login successful, token generated:', token)
+      res.cookie('token', token, {
+        httpOnly: true,
+        secure: process.env.NODE_ENV === 'production',
+        maxAge: 86400 * 1000,
+      })
 
       return res.status(200).send({
         message: 'Login successful',
-        token: token,
       })
     } catch (err) {
       console.error('Error during login:', err)

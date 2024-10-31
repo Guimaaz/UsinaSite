@@ -8,14 +8,13 @@ function authenticate(req, res, next) {
     return res.status(403).send({ message: 'No token provided' })
   }
 
-  jwt.verify(token, env.JWT_SECRET, (err, decoded) => {
-    if (err) {
-      return res.status(401).send({ message: 'Unauthorized' })
-    }
-
-    req.userId = decoded.id
+  try {
+    const decoded = jwt.verify(token, env.JWT_SECRET)
+    req.userId = decoded.Id
     next()
-  })
+  } catch (e) {
+    return res.status(401).send({ message: 'Unauthorized' })
+  }
 }
 
 module.exports = authenticate
