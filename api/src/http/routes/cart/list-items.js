@@ -1,13 +1,14 @@
 const CartController = require('../../../db/controllers/CartController')
 const authenticate = require('../../../middlewares/authenticate')
 
-async function getOrCreateCart(app) {
-  app.post('/cart', authenticate, async (req, res) => {
+async function listItems(app) {
+  app.get('/cart/items', authenticate, async (req, res) => {
     const userId = req.user.id
+
     const cartController = new CartController(userId, res)
 
-    await cartController.getOrCreateCart()
+    await cartController.listItems()
   })
 }
 
-module.exports = getOrCreateCart
+module.exports = listItems

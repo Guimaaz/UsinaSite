@@ -23,7 +23,7 @@ class CartController {
     }
   }
 
-  async addItem(itemId) {
+  async addItem(itemId, quantity) {
     try {
       const cart = await Cart.findOne({ user: this.userId })
 
@@ -36,11 +36,15 @@ class CartController {
         return this.res.status(404).send({ message: 'Item not found' })
       }
 
-      if (!cart.items.include(itemId)) {
-        cart.items.push(itemId)
-        await cart.save()
+      const existingItem = cart.items.find(i => i.itemId.toString() === itemId)
+
+      if (existingItem) {
+        existingItem.quantity += quantity
+      } else {
+        cart.items.push({ itemId, quantity })
       }
 
+      await cart.save()
       return this.res.status(200).send(cart)
     } catch (e) {
       console.error(e)
@@ -56,7 +60,9 @@ class CartController {
         return this.res.status(400).send({ message: 'Cart not found' })
       }
 
-      cart.items = cart.items.filter(item => item.toString() !== itemId)
+      cart.items = cart.items.filter(
+        cartItem => cartItem.itemId.toString() !== itemId
+      )
       await cart.save()
 
       return this.res.status(200).send(cart)
@@ -68,7 +74,9 @@ class CartController {
 
   async listItems() {
     try {
-      const cart = await Cart.findOne({ user: this.userId }).populate('items')
+      const cart = await Cart.findOne({ user: this.userId }).populate(
+        'items.itemId'
+      )
 
       if (!cart) {
         return this.res.status(400).send({ message: 'Cart not found' })
