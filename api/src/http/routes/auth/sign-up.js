@@ -26,7 +26,9 @@ async function signUp(app) {
 
         return res
           .status(400)
-          .send({ message: `User "${username}" already exists` })
+          .send({
+            message: `User "${signUpInformations.data.username}" already exists`,
+          })
       }
 
       userController.store()
