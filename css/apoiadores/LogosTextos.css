@@ -13,3 +13,37 @@ img#vemDoXingu {
     padding: 0;
     transform: translate(-10rem,6rem);
 }
+
+img#Sementes {
+    width: auto;
+    height: 4rem;
+    position: relative;
+    padding: 0;
+    transform: translate(-12rem,6.5rem);
+}
+
+@media (max-width : 768px) {
+    img#PDRSXingu {
+        width: auto;
+        height: 4rem;
+        position: relative;
+        padding: 0;
+        transform: translate(-8rem,6rem);
+    }
+    
+    img#vemDoXingu {
+        width: auto;
+        height: 4rem;
+        position: relative;
+        padding: 0;
+        transform: translate(-8rem,5.5rem);
+    }
+    
+    img#Sementes {
+        width: auto;
+        height: 4rem;
+        position: relative;
+        padding: 0;
+        transform: translate(-10rem,6rem);
+    }
+}
