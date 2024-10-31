@@ -66,21 +66,24 @@
     background-image: url(/imagens/imgeral/UsinaLogo.png);
     background-size: contain;        
     background-repeat: no-repeat; 
-    background-position: center;    
+    background-position: center; 
+    filter: grayscale(10);   
 }
 .item6 {
     animation-delay: calc(30s / 8 * (8 - 6) * -1);
     background-image: url(/imagens/imgeral/UsinaLogo.png);
     background-size: contain;        
     background-repeat: no-repeat; 
-    background-position: center;    
+    background-position: center;  
+    filter: grayscale(10);  
 }
 .item7 {
     animation-delay: calc(30s / 8 * (8 - 7) * -1);
     background-image: url(/imagens/imgeral/UsinaLogo.png);
     background-size: contain;        
     background-repeat: no-repeat; 
-    background-position: center;    
+    background-position: center; 
+    filter: grayscale(10);   
 }
 .item8 {
     animation-delay: calc(30s / 8 * (8 - 8) * -1);
@@ -88,6 +91,7 @@
     background-size: contain;        
     background-repeat: no-repeat; 
     background-position: center;    
+    filter: grayscale(10);
 }
 
 @keyframes scrollLeft {
