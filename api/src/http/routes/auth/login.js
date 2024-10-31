@@ -43,10 +43,10 @@ async function login(app) {
 
       res.setCookie('token', token, {
         httpOnly: true,
-        secure: false, // process.env.NODE_ENV === 'production',
+        secure: true, // process.env.NODE_ENV === 'production',
         maxAge: 86400 * 1000,
         path: '/',
-        sameSite: 'Strict',
+        sameSite: 'None',
       })
 
       return res.status(200).send({
