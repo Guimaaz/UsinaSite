@@ -17,8 +17,14 @@ const deleteEventByIdRoute = require('./routes/events/delete-event-by-id')
 const createNewsRoute = require('./routes/news/create-news')
 const deleteNewsByIdRoute = require('./routes/news/delete-news-by-id')
 const getAllNewsRoute = require('./routes/news/get-all-news')
-
 const getNewsByIdRoute = require('./routes/news/get-news-by-id')
+
+// CART ROUTES
+const getOrCreateCartRoute = require('./routes/cart/get-or-create-cart')
+const addItemsToCartRoute = require('./routes/cart/add-items')
+const clearCartRoute = require('./routes/cart/clear-cart')
+const listCartItemsRoute = require('./routes/cart/list-items')
+const removeItemFromCartRoute = require('./routes/cart/remove-item')
 
 const env = require('../utils/env')
 
@@ -56,6 +62,12 @@ app.register(createNewsRoute)
 app.register(deleteNewsByIdRoute)
 app.register(getAllNewsRoute)
 app.register(getNewsByIdRoute)
+
+app.register(getOrCreateCartRoute)
+app.register(addItemsToCartRoute)
+app.register(clearCartRoute)
+app.register(listCartItemsRoute)
+app.register(removeItemFromCartRoute)
 
 app
   .listen({
