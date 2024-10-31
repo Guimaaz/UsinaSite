@@ -37,6 +37,13 @@
     background-position: center;  
     filter: grayscale(10);  
     opacity: 0.5;
+    transition: 1s ease;
+
+}
+
+.item1:hover{
+    opacity: 1;
+    filter: grayscale(0);
 }
 .item2 {
     animation-delay: calc(30s / 13 * (13 - 2) * -1);
@@ -46,6 +53,13 @@
     background-position: center;   
     filter: grayscale(10); 
     opacity: 0.5;
+    transition: 1s ease;
+
+}
+
+.item2:hover{
+    opacity:1;
+    filter:grayscale(0)
 }
 .item3 {
     animation-delay: calc(30s / 13 * (13 - 3) * -1);
@@ -55,7 +69,16 @@
     background-position: center;
     filter: grayscale(10);  
     opacity: 0.5;  
+    transition: 1s ease;
+
 }
+
+.item3:hover{
+    opacity: 1;
+    filter: grayscale(0);
+}
+
+
 .item4 {
     animation-delay: calc(30s / 13 * (13 - 4) * -1);
     background-image: url(/imagens/imagensapoiadores/Abong.png);
@@ -76,26 +99,41 @@
 }
 .item6 {
     animation-delay: calc(30s / 13 * (13 - 6) * -1);
-    background-image: url(/imagens/imgeral/UsinaLogo.png);
+    background-image: url(/imagens/imagensapoiadores/APIB.png);
     background-size: contain;        
     background-repeat: no-repeat; 
     background-position: center;  
-    filter: grayscale(10); 
-    filter:opacity(0.5); 
+    filter: grayscale(10);  
     opacity: 0.5;
+    transition: 1s ease;
 }
+
+.item6:hover{
+    opacity: 1;
+    filter: grayscale(0);
+  
+}
+
 .item7 {
     animation-delay: calc(30s / 13 * (13 - 7) * -1);
-    background-image: url(/imagens/imgeral/UsinaLogo.png);
+    background-image: url(/imagens/imagensapoiadores/Conaq.png);
     background-size: contain;        
     background-repeat: no-repeat; 
     background-position: center; 
     filter: grayscale(10);   
     opacity: 0.5;
+    transition: 1s ease;
+
+    
+}
+
+.item7:hover {
+    opacity: 1;
+    filter: grayscale(0);
 }
 .item8 {
     animation-delay: calc(30s / 13 * (13 - 8) * -1);
-    background-image: url(/imagens/imgeral/UsinaLogo.png);
+    background-image: url(/imagens/imagensapoiadores/Observatorio.png);
     background-size: contain;        
     background-repeat: no-repeat; 
     background-position: center;    
@@ -104,7 +142,7 @@
 }
 .item9 {
     animation-delay: calc(30s / 13 * (13 - 9) * -1);
-    background-image: url(/imagens/imgeral/UsinaLogo.png);
+    background-image: url(/imagens/imagensapoiadores/ObservatorioClima.png);
     background-size: contain;        
     background-repeat: no-repeat; 
     background-position: center;    
@@ -113,7 +151,7 @@
 }
 .item10 {
     animation-delay: calc(30s / 13 * (13 - 10) * -1);
-    background-image: url(/imagens/imgeral/UsinaLogo.png);
+    background-image: url(/imagens/imagensapoiadores/Raisq.png);
     background-size: contain;        
     background-repeat: no-repeat; 
     background-position: center;    
@@ -122,7 +160,7 @@
 }
 .item11 {
     animation-delay: calc(30s / 13 * (13 - 11) * -1);
-    background-image: url(/imagens/imgeral/UsinaLogo.png);
+    background-image: url(/imagens/imagensapoiadores/RioNegro.png);
     background-size: contain;        
     background-repeat: no-repeat; 
     background-position: center;    
@@ -131,7 +169,7 @@
 }
 .item12 {
     animation-delay: calc(30s / 13 * (13 - 12) * -1);
-    background-image: url(/imagens/imgeral/UsinaLogo.png);
+    background-image: url(/imagens/imagensapoiadores/RMA.png);
     background-size: contain;        
     background-repeat: no-repeat; 
     background-position: center;    
@@ -140,7 +178,7 @@
 }
 .item13 {
     animation-delay: calc(30s / 13 * (13 - 13) * -1);
-    background-image: url(/imagens/imgeral/UsinaLogo.png);
+    background-image: url(/imagens/imagensapoiadores/SementesXingu.png);
     background-size: contain;        
     background-repeat: no-repeat; 
     background-position: center;    
