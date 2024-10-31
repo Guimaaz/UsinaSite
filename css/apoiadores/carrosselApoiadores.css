@@ -31,31 +31,35 @@
 
 .item1 {
     animation-delay: calc(30s / 8 * (8 - 1) * -1);
-    background-image: url(/imagens/imgeral/UsinaLogo.png);
+    background-image: url(/imagens/imagensapoiadores/vemDoXingu.png);
     background-size: contain;        
     background-repeat: no-repeat; 
-    background-position: center;    
+    background-position: center;  
+    filter: grayscale(10);  
 }
 .item2 {
     animation-delay: calc(30s / 8 * (8 - 2) * -1);
-    background-image: url(/imagens/imgeral/UsinaLogo.png);
+    background-image: url(/imagens/imagensapoiadores/PDRSXingu.png);
     background-size: contain;        
     background-repeat: no-repeat; 
-    background-position: center;    
+    background-position: center;   
+    filter: grayscale(10); 
 }
 .item3 {
     animation-delay: calc(30s / 8 * (8 - 3) * -1);
-    background-image: url(/imagens/imgeral/UsinaLogo.png);
+    background-image: url(/imagens/imagensapoiadores/Sementes.png);
     background-size: contain;        
     background-repeat: no-repeat; 
-    background-position: center;    
+    background-position: center;
+    filter: grayscale(10);    
 }
 .item4 {
     animation-delay: calc(30s / 8 * (8 - 4) * -1);
-    background-image: url(/imagens/imgeral/UsinaLogo.png);
+    background-image: url(/imagens/imagensapoiadores/Abong.png);
     background-size: contain;        
     background-repeat: no-repeat; 
-    background-position: center;    
+    background-position: center;  
+    filter: grayscale(10);  
 }
 .item5 {
     animation-delay: calc(30s / 8 * (8 - 5) * -1);
