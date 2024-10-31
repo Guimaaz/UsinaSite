@@ -37,6 +37,7 @@ const app = fastify()
 
 app.register(cors, {
   origin: '*',
+  credentials: true,
 })
 
 // AUTH ROUTES
