@@ -1,0 +1,15 @@
+img#PDRSXingu {
+    width: auto;
+    height: 4rem;
+    position: relative;
+    padding: 0;
+    transform: translate(-10rem,6.5rem);
+}
+
+img#vemDoXingu {
+    width: auto;
+    height: 4rem;
+    position: relative;
+    padding: 0;
+    transform: translate(-10rem,6rem);
+}
