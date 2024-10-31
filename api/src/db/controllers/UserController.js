@@ -1,6 +1,7 @@
 const bcrypt = require('bcryptjs')
 
 const User = require('../models/User')
+const Cart = require('../models/Cart')
 
 class UserController {
   username
@@ -15,8 +16,10 @@ class UserController {
     this.res = res
   }
 
-  store() {
+  async store() {
     const hashedPassword = bcrypt.hashSync(this.password, 8)
+
+    const cart = await new Cart().save()
 
     const user = new User({
       username: this.username,
@@ -24,6 +27,7 @@ class UserController {
       password: this.password,
       passwordHash: hashedPassword,
       createdAt: new Date(),
+      cart: cart._id,
     })
 
     try {
@@ -68,11 +72,9 @@ class UserController {
 
       await user.save()
 
-      return this.res
-        .status(200)
-        .send({
-          message: `Password updated successfully for user ${this.email}`,
-        })
+      return this.res.status(200).send({
+        message: `Password updated successfully for user ${this.email}`,
+      })
     } catch (e) {
       return this.res
         .status(500)
