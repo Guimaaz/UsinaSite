@@ -1,5 +1,6 @@
 const fastify = require('fastify')
 const cors = require('@fastify/cors')
+const fastifyCookie = require('@fastify/cookie')
 const mongoose = require('mongoose')
 
 // AUTH ROUTES
@@ -41,8 +42,10 @@ db.on('open', () => {
 
 const app = fastify()
 
+app.register(fastifyCookie)
+
 app.register(cors, {
-  origin: '*',
+  origin: 'http://127.0.0.1:5500',
   credentials: true,
 })
 

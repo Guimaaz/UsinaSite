@@ -41,10 +41,12 @@ async function login(app) {
         expiresIn: 86400, // 24 hours
       })
 
-      res.cookie('token', token, {
+      res.setCookie('token', token, {
         httpOnly: true,
-        secure: process.env.NODE_ENV === 'production',
+        secure: false, // process.env.NODE_ENV === 'production',
         maxAge: 86400 * 1000,
+        path: '/',
+        sameSite: 'Strict',
       })
 
       return res.status(200).send({
