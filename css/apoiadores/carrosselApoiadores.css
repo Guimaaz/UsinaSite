@@ -36,6 +36,7 @@
     background-repeat: no-repeat; 
     background-position: center;  
     filter: grayscale(10);  
+    opacity: 0.5;
 }
 .item2 {
     animation-delay: calc(30s / 8 * (8 - 2) * -1);
@@ -44,6 +45,7 @@
     background-repeat: no-repeat; 
     background-position: center;   
     filter: grayscale(10); 
+    opacity: 0.5;
 }
 .item3 {
     animation-delay: calc(30s / 8 * (8 - 3) * -1);
@@ -51,7 +53,8 @@
     background-size: contain;        
     background-repeat: no-repeat; 
     background-position: center;
-    filter: grayscale(10);    
+    filter: grayscale(10);  
+    opacity: 0.5;  
 }
 .item4 {
     animation-delay: calc(30s / 8 * (8 - 4) * -1);
@@ -60,6 +63,7 @@
     background-repeat: no-repeat; 
     background-position: center;  
     filter: grayscale(10);  
+    opacity: 0.5;
 }
 .item5 {
     animation-delay: calc(30s / 8 * (8 - 5) * -1);
@@ -67,7 +71,8 @@
     background-size: contain;        
     background-repeat: no-repeat; 
     background-position: center; 
-    filter: grayscale(10);   
+    filter: grayscale(10); 
+    opacity: 0.5;  
 }
 .item6 {
     animation-delay: calc(30s / 8 * (8 - 6) * -1);
@@ -75,7 +80,9 @@
     background-size: contain;        
     background-repeat: no-repeat; 
     background-position: center;  
-    filter: grayscale(10);  
+    filter: grayscale(10); 
+    filter:opacity(0.5); 
+    opacity: 0.5;
 }
 .item7 {
     animation-delay: calc(30s / 8 * (8 - 7) * -1);
@@ -84,6 +91,7 @@
     background-repeat: no-repeat; 
     background-position: center; 
     filter: grayscale(10);   
+    opacity: 0.5;
 }
 .item8 {
     animation-delay: calc(30s / 8 * (8 - 8) * -1);
@@ -92,6 +100,7 @@
     background-repeat: no-repeat; 
     background-position: center;    
     filter: grayscale(10);
+    opacity: 0.5;
 }
 
 @keyframes scrollLeft {
