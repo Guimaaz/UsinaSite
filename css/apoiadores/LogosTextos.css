@@ -1,17 +1,25 @@
 img#PDRSXingu {
-    width: auto;
-    height: 4rem;
+    width: 12rem;
+    height: auto;
     position: relative;
     padding: 0;
-    transform: translate(-10rem, 6.5rem);
+    transform: translate(0rem, 6.5rem);
+}
+
+h1#PDRSXingu {
+    color: white;
 }
 
 img#vemDoXingu {
-    width: auto;
-    height: 4rem;
+    width: 10rem;
+    height: auto;
     position: relative;
     padding: 0;
-    transform: translate(-10rem, 6rem);
+    transform: translate(0rem, 6rem);
+}
+
+h1#VemDoXingu {
+    color: white;
 }
 
 img#Sementes {
@@ -23,11 +31,15 @@ img#Sementes {
 }
 
 img#Abong {
-    width: auto;
-    height: 4rem;
+    width: 10rem;
+    height: auto;
     position: relative;
     padding: 0;
-    transform: translate(-7rem, 6rem)
+    transform: translate(0rem, 6rem)
+}
+
+h1#Abong{
+    color: white;
 }
 
 img#RCA {
@@ -60,39 +72,52 @@ img#CONAQ {
 }
 
 img#ObservatorioFlorestal {
-    width: auto;
-    height: 4rem;
+    width: 12rem;
+    height: auto;
     position: relative;
     padding: 0;
-    transform: translate(-13rem, 6.4rem);
+    transform: translate(0rem, 6.4rem);
     mix-blend-mode : multiply;
 }
 
 img#ObservatorioClima{
-    width: auto;
-    height: 4rem;
+    width: 15rem;
+    height: auto;
     position: relative;
     padding: 0;
-    transform: translate(-18rem, 6.4rem);
+    transform: translate(0rem, 6.4rem);
     mix-blend-mode : multiply;
+}
+
+h1#CodClima {
+    color: white;
 }
 
 img#RAISG {
-    width: 5rem;
+    width: 8rem;
     height: auto;
     position: relative;
     padding: 0;
-    transform: translate(-9rem, 5.5rem);
+    transform: translate(0rem, 5.5rem);
     mix-blend-mode : multiply;
 
 }
 
+h1#CodFlorestal {
+    color: white;
+}
+h1#RAISG {
+    color: white;
+}
+h1#RioNegro {
+    color: white;
+}
 img#RioNegro {
-    width: 5rem;
+    width: 8rem;
     height: auto;
     position: relative;
     padding: 0;
-    transform: translate(-10rem, 5.5rem);
+    transform: translate(0rem, 5.5rem);
     mix-blend-mode : multiply;
 }
 
@@ -107,6 +132,7 @@ img#RMA {
 
 }
 
+
 img#SementesXingu {
     width: 6rem;
     height: auto;
@@ -120,19 +146,19 @@ img#SementesXingu {
 
 @media (max-width : 768px) {
     img#PDRSXingu {
-        width: auto;
-        height: 4rem;
+        width: 10rem;
+        height: auto;
         position: relative;
         padding: 0;
-        transform: translate(-8rem, 6rem);
+        transform: translate(0rem, 6rem);
     }
 
     img#vemDoXingu {
-        width: auto;
-        height: 4rem;
+        width: 8rem;
+        height: auto;
         position: relative;
         padding: 0;
-        transform: translate(-8rem, 5.5rem);
+        transform: translate(0rem, 5.5rem);
     }
 
     img#Sementes {
@@ -144,11 +170,11 @@ img#SementesXingu {
     }
 
     img#Abong {
-        width:4rem;
+        width:8rem;
         height: auto;
         position: relative;
         padding: 0;
-        transform: translate(-5.2rem, 5.2rem);
+        transform: translate(0rem, 5.2rem);
         mix-blend-mode: multiply;
     }
 
@@ -180,21 +206,21 @@ img#SementesXingu {
     }
 
     img#ObservatorioFlorestal {
-        width: 7rem;
+        width: 9rem;
         height: auto;
         position: relative;
         padding: 0;
-        transform: translate(-9rem, 5rem);
+        transform: translate(0rem, 5rem);
         white-space: nowrap;
        
     }
 
     img#ObservatorioClima {
-        width: 7rem;
+        width: 12rem;
         height: auto;
         position: relative;
         padding: 0;
-        transform: translate(-9.5rem, 5rem);
+        transform: translate(0rem, 5rem);
         white-space: nowrap;
     }
     
@@ -205,21 +231,21 @@ img#SementesXingu {
     }
 
     img#RAISG {
-        width: 4rem;
+        width: 8rem;
         height: auto;
         position: relative;
         padding: 0;
-        transform: translate(-5rem, 4.8rem);
+        transform: translate(0rem, 4.8rem);
         mix-blend-mode : multiply;
     
     }
 
     img#RioNegro {
-        width: 4rem;
+        width: 8rem;
         height: auto;
         position: relative;
         padding: 0;
-        transform: translate(-6rem, 4.8rem);
+        transform: translate(0rem, 4.8rem);
        
     }
 
