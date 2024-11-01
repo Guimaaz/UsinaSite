@@ -87,6 +87,15 @@ img#RAISG {
 
 }
 
+img#RioNegro {
+    width: 5rem;
+    height: auto;
+    position: relative;
+    padding: 0;
+    transform: translate(-10rem, 5.5rem);
+    mix-blend-mode : multiply;
+}
+
 @media (max-width : 768px) {
     img#PDRSXingu {
         width: auto;
