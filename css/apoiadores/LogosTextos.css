@@ -19,7 +19,25 @@ img#Sementes {
     height: 4rem;
     position: relative;
     padding: 0;
-    transform: translate(-12rem,6.5rem);
+    transform: translate(-12rem,6.5rem)
+
+}
+
+img#Abong {
+    width: auto;
+    height: 4rem;
+    position: relative;
+    padding: 0;
+    transform: translate(-7rem,6rem)
+}
+
+img#RCA {
+    width: auto;
+    height: 4rem;
+    position: relative;
+    padding: 0;
+    transform: translate(-3rem,6.5rem);
+    mix-blend-mode: multiply; /* remove o fundo branco da imagem */
 }
 
 @media (max-width : 768px) {
@@ -46,4 +64,15 @@ img#Sementes {
         padding: 0;
         transform: translate(-10rem,6rem);
     }
+
+    img#Abong {
+        width: auto;
+        height: 4rem;
+        position: relative;
+        padding: 0;
+        transform: translate(-5.5rem,5.5rem);
+        mix-blend-mode: multiply;
+    }
+
+
 }
