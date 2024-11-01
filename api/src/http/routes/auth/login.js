@@ -41,13 +41,17 @@ async function login(app) {
         expiresIn: 86400, // 24 hours
       })
 
-      res.setCookie('token', token, {
-        httpOnly: true,
-        secure: true, // process.env.NODE_ENV === 'production',
-        maxAge: 86400 * 1000,
-        path: '/',
-        sameSite: 'None',
-      })
+      // res.setCookie('token', token, {
+      //   httpOnly: true,
+      //   secure: true, // process.env.NODE_ENV === 'production',
+      //   maxAge: 86400,
+      //   path: '/',
+      //   sameSite: 'None',
+      // })
+      res.header(
+        'set-cookie',
+        `token=${token}; HttpOnly; Secure; Max-Age=86400; Path=/; SameSite=None; Partitioned`
+      )
 
       return res.status(200).send({
         message: 'Login successful',

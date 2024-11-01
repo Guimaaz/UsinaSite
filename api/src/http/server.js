@@ -42,7 +42,10 @@ db.on('open', () => {
 
 const app = fastify()
 
-app.register(fastifyCookie)
+app.register(fastifyCookie, {
+  secret: env.JWT_SECRET,
+  hook: 'onRequest',
+})
 
 app.register(cors, {
   origin: 'http://127.0.0.1:5500',
