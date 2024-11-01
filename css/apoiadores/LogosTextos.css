@@ -109,7 +109,7 @@ img#RAISG {
         height: 4rem;
         position: relative;
         padding: 0;
-        transform: translate(-10rem, 6rem);
+        transform: translate(-9rem, 6rem);
     }
 
     img#Abong {
@@ -149,26 +149,26 @@ img#RAISG {
     }
 
     img#ObservatorioFlorestal {
-        width: 5rem;
+        width: 8rem;
         height: auto;
         position: relative;
         padding: 0;
-        transform: translate(-5rem, 6.4rem);
+        transform: translate(-6.5rem, 7rem);
         white-space: nowrap;
        
     }
 
     img#ObservatorioClima {
-        width: 5rem;
+        width: 8rem;
         height: auto;
         position: relative;
         padding: 0;
-        transform: translate(-5rem, 6.4rem);
+        transform: translate(-5.7rem, 7.2rem);
         white-space: nowrap;
     }
     h1#CodFlorestal {
-        width: 50%;
-        margin-left: 4.5rem;
+        width: 25%;
+        margin-left: 9rem;
     }
 
     h1#CodClima{
@@ -177,11 +177,11 @@ img#RAISG {
     }
 
     img#RAISG {
-        width: 5rem;
+        width: 4rem;
         height: auto;
         position: relative;
         padding: 0;
-        transform: translate(-4.5rem, 4.5rem);
+        transform: translate(-5rem, 4.8rem);
         mix-blend-mode : multiply;
     
     }
