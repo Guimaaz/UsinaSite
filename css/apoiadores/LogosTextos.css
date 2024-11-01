@@ -1,0 +1,271 @@
+img#PDRSXingu {
+    width: 12rem;
+    height: auto;
+    position: relative;
+    padding: 0;
+    transform: translate(0rem, 6.5rem);
+}
+
+h1#PDRSXingu {
+    color: white;
+}
+
+img#vemDoXingu {
+    width: 10rem;
+    height: auto;
+    position: relative;
+    padding: 0;
+    transform: translate(0rem, 6rem);
+}
+
+h1#VemDoXingu {
+    color: white;
+}
+
+img#Sementes {
+    width: auto;
+    height: 4rem;
+    position: relative;
+    padding: 0;
+    transform: translate(-12rem, 6.5rem)
+}
+
+img#Abong {
+    width: 10rem;
+    height: auto;
+    position: relative;
+    padding: 0;
+    transform: translate(0rem, 6rem)
+}
+
+h1#Abong{
+    color: white;
+}
+
+img#RCA {
+    width: auto;
+    height: 4rem;
+    position: relative;
+    padding: 0;
+    transform: translate(-4rem, 6.5rem);
+    mix-blend-mode: multiply;
+    /* remove o fundo branco da imagem */
+}
+
+img#APIB {
+    width: auto;
+    height: 4rem;
+    position: relative;
+    padding: 0;
+    transform: translate(-5rem, 6.4rem);
+    mix-blend-mode: multiply;
+}
+
+img#CONAQ {
+
+    width: auto;
+    height: 4rem;
+    position: relative;
+    padding: 0;
+    transform: translate(-6rem, 6.4rem);
+    mix-blend-mode : multiply;
+}
+
+img#ObservatorioFlorestal {
+    width: 12rem;
+    height: auto;
+    position: relative;
+    padding: 0;
+    transform: translate(0rem, 6.4rem);
+    mix-blend-mode : multiply;
+}
+
+img#ObservatorioClima{
+    width: 15rem;
+    height: auto;
+    position: relative;
+    padding: 0;
+    transform: translate(0rem, 6.4rem);
+    mix-blend-mode : multiply;
+}
+
+h1#CodClima {
+    color: white;
+}
+
+img#RAISG {
+    width: 8rem;
+    height: auto;
+    position: relative;
+    padding: 0;
+    transform: translate(0rem, 5.5rem);
+    mix-blend-mode : multiply;
+
+}
+
+h1#CodFlorestal {
+    color: white;
+}
+h1#RAISG {
+    color: white;
+}
+h1#RioNegro {
+    color: white;
+}
+img#RioNegro {
+    width: 8rem;
+    height: auto;
+    position: relative;
+    padding: 0;
+    transform: translate(0rem, 5.5rem);
+    mix-blend-mode : multiply;
+}
+
+img#RMA {
+    width: 6rem;
+    height: auto;
+    position: relative;
+    padding: 0;
+    transform: translate(-6rem, 5.3rem);
+    mix-blend-mode : multiply;
+
+
+}
+
+
+img#SementesXingu {
+    width: 6rem;
+    height: auto;
+    position: relative;
+    padding: 0;
+    transform: translate(-13rem, 6.5rem);
+    mix-blend-mode : multiply;
+}
+
+
+
+@media (max-width : 768px) {
+    img#PDRSXingu {
+        width: 10rem;
+        height: auto;
+        position: relative;
+        padding: 0;
+        transform: translate(0rem, 6rem);
+    }
+
+    img#vemDoXingu {
+        width: 8rem;
+        height: auto;
+        position: relative;
+        padding: 0;
+        transform: translate(0rem, 5.5rem);
+    }
+
+    img#Sementes {
+        width: auto;
+        height: 4rem;
+        position: relative;
+        padding: 0;
+        transform: translate(-9rem, 6rem);
+    }
+
+    img#Abong {
+        width:8rem;
+        height: auto;
+        position: relative;
+        padding: 0;
+        transform: translate(0rem, 5.2rem);
+        mix-blend-mode: multiply;
+    }
+
+    img#RCA {
+        width: auto;
+        height: 4rem;
+        position: relative;
+        padding: 0;
+        transform: translate(-3rem, 6rem);
+
+    }
+
+    img#APIB {
+        width: auto;
+        height: 4rem;
+        position: relative;
+        padding: 0;
+        transform: translate(-5rem, 6rem);
+    }
+
+    img#CONAQ {
+
+        width: auto;
+        height: 4rem;
+        position: relative;
+        padding: 0;
+        transform: translate(-5rem, 6.4rem);
+       
+    }
+
+    img#ObservatorioFlorestal {
+        width: 9rem;
+        height: auto;
+        position: relative;
+        padding: 0;
+        transform: translate(0rem, 5rem);
+        white-space: nowrap;
+       
+    }
+
+    img#ObservatorioClima {
+        width: 12rem;
+        height: auto;
+        position: relative;
+        padding: 0;
+        transform: translate(0rem, 5rem);
+        white-space: nowrap;
+    }
+    
+
+    h1#CodClima{
+        
+        margin-left: 3rem;
+    }
+
+    img#RAISG {
+        width: 8rem;
+        height: auto;
+        position: relative;
+        padding: 0;
+        transform: translate(0rem, 4.8rem);
+        mix-blend-mode : multiply;
+    
+    }
+
+    img#RioNegro {
+        width: 8rem;
+        height: auto;
+        position: relative;
+        padding: 0;
+        transform: translate(0rem, 4.8rem);
+       
+    }
+
+    img#RMA {
+        width: 6rem;
+        height: auto;
+        position: relative;
+        padding: 0;
+        transform: translate(-5.5rem, 4.8rem);
+        mix-blend-mode : multiply;
+    }
+
+    img#SementesXingu {
+        width: 5rem;
+        height: auto;
+        position: relative;
+        padding: 0;
+        transform: translate(-9rem, 5.5rem);
+        mix-blend-mode : multiply;
+    }
+
+
+}
