@@ -80,7 +80,7 @@ img#card3 {
 }
 
 
-.Card button {
+.Card button, #editModeBtn {
     background-color: rgb(139, 207, 83);
     border: none;
     width: 12.5rem;
