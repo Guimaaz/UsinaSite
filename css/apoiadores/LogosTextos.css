@@ -35,7 +35,7 @@ img#RCA {
     height: 4rem;
     position: relative;
     padding: 0;
-    transform: translate(-3rem, 6.5rem);
+    transform: translate(-4rem, 6.5rem);
     mix-blend-mode: multiply;
     /* remove o fundo branco da imagem */
 }
