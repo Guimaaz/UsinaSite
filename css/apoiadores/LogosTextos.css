@@ -68,6 +68,15 @@ img#ObservatorioFlorestal {
     mix-blend-mode : multiply;
 }
 
+img#ObservatorioClima{
+    width: auto;
+    height: 4rem;
+    position: relative;
+    padding: 0;
+    transform: translate(-18rem, 6.4rem);
+    mix-blend-mode : multiply;
+}
+
 @media (max-width : 768px) {
     img#PDRSXingu {
         width: auto;
@@ -139,9 +148,22 @@ img#ObservatorioFlorestal {
        
     }
 
+    img#ObservatorioClima {
+        width: auto;
+        height: 3rem;
+        position: relative;
+        padding: 0;
+        transform: translate(-5.5rem, 6.4rem);
+        white-space: nowrap;
+    }
     h1#CodFlorestal {
         width: 50%;
         margin-left: 4.5rem;
+    }
+
+    h1#CodClima{
+        width: 50%;
+        margin-left: 6rem;
     }
 
 
