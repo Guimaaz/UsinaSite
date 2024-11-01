@@ -40,6 +40,15 @@ img#RCA {
     mix-blend-mode: multiply; /* remove o fundo branco da imagem */
 }
 
+img#APIB{
+    width: auto;
+    height: 4rem;
+    position: relative;
+    padding: 0;
+    transform: translate(-5rem,6.4rem);
+    mix-blend-mode: multiply;
+}
+
 @media (max-width : 768px) {
     img#PDRSXingu {
         width: auto;
@@ -72,6 +81,23 @@ img#RCA {
         padding: 0;
         transform: translate(-5.5rem,5.5rem);
         mix-blend-mode: multiply;
+    }
+
+    img#RCA {
+        width: auto;
+        height: 4rem;
+        position: relative;
+        padding: 0;
+        transform: translate(-3rem,6rem);
+
+    }
+
+    img#APIB{
+        width: auto;
+        height: 4rem;
+        position: relative;
+        padding: 0;
+        transform: translate(-5rem,6rem);
     }
 
 
