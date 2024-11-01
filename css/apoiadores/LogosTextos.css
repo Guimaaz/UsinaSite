@@ -82,7 +82,7 @@ img#RAISG {
     height: auto;
     position: relative;
     padding: 0;
-    transform: translate(-9rem, 6.4rem);
+    transform: translate(-9rem, 5.5rem);
     mix-blend-mode : multiply;
 
 }
@@ -193,6 +193,15 @@ img#RioNegro {
         transform: translate(-5rem, 4.8rem);
         mix-blend-mode : multiply;
     
+    }
+
+    img#RioNegro {
+        width: 4rem;
+        height: auto;
+        position: relative;
+        padding: 0;
+        transform: translate(-6rem, 4.8rem);
+       
     }
 
 
