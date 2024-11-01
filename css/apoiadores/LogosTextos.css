@@ -77,6 +77,47 @@ img#ObservatorioClima{
     mix-blend-mode : multiply;
 }
 
+img#RAISG {
+    width: 5rem;
+    height: auto;
+    position: relative;
+    padding: 0;
+    transform: translate(-9rem, 5.5rem);
+    mix-blend-mode : multiply;
+
+}
+
+img#RioNegro {
+    width: 5rem;
+    height: auto;
+    position: relative;
+    padding: 0;
+    transform: translate(-10rem, 5.5rem);
+    mix-blend-mode : multiply;
+}
+
+img#RMA {
+    width: 6rem;
+    height: auto;
+    position: relative;
+    padding: 0;
+    transform: translate(-6rem, 5.3rem);
+    mix-blend-mode : multiply;
+
+
+}
+
+img#SementesXingu {
+    width: 6rem;
+    height: auto;
+    position: relative;
+    padding: 0;
+    transform: translate(-13rem, 6.5rem);
+    mix-blend-mode : multiply;
+}
+
+
+
 @media (max-width : 768px) {
     img#PDRSXingu {
         width: auto;
@@ -99,15 +140,15 @@ img#ObservatorioClima{
         height: 4rem;
         position: relative;
         padding: 0;
-        transform: translate(-10rem, 6rem);
+        transform: translate(-9rem, 6rem);
     }
 
     img#Abong {
-        width: auto;
-        height: 4rem;
+        width:4rem;
+        height: auto;
         position: relative;
         padding: 0;
-        transform: translate(-5.5rem, 5.5rem);
+        transform: translate(-5.2rem, 5.2rem);
         mix-blend-mode: multiply;
     }
 
@@ -139,31 +180,65 @@ img#ObservatorioClima{
     }
 
     img#ObservatorioFlorestal {
-        width: auto;
-        height: 3rem;
+        width: 7rem;
+        height: auto;
         position: relative;
         padding: 0;
-        transform: translate(-5.5rem, 6.4rem);
+        transform: translate(-9rem, 5rem);
         white-space: nowrap;
        
     }
 
     img#ObservatorioClima {
-        width: auto;
-        height: 3rem;
+        width: 7rem;
+        height: auto;
         position: relative;
         padding: 0;
-        transform: translate(-5.5rem, 6.4rem);
+        transform: translate(-9.5rem, 5rem);
         white-space: nowrap;
     }
-    h1#CodFlorestal {
-        width: 50%;
-        margin-left: 4.5rem;
-    }
+    
 
     h1#CodClima{
-        width: 50%;
-        margin-left: 6rem;
+        
+        margin-left: 3rem;
+    }
+
+    img#RAISG {
+        width: 4rem;
+        height: auto;
+        position: relative;
+        padding: 0;
+        transform: translate(-5rem, 4.8rem);
+        mix-blend-mode : multiply;
+    
+    }
+
+    img#RioNegro {
+        width: 4rem;
+        height: auto;
+        position: relative;
+        padding: 0;
+        transform: translate(-6rem, 4.8rem);
+       
+    }
+
+    img#RMA {
+        width: 6rem;
+        height: auto;
+        position: relative;
+        padding: 0;
+        transform: translate(-5.5rem, 4.8rem);
+        mix-blend-mode : multiply;
+    }
+
+    img#SementesXingu {
+        width: 5rem;
+        height: auto;
+        position: relative;
+        padding: 0;
+        transform: translate(-9rem, 5.5rem);
+        mix-blend-mode : multiply;
     }
 
 
