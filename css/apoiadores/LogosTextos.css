@@ -78,8 +78,8 @@ img#ObservatorioClima{
 }
 
 img#RAISG {
-    width: auto;
-    height: 4rem;
+    width: 5rem;
+    height: auto;
     position: relative;
     padding: 0;
     transform: translate(-9rem, 6.4rem);
