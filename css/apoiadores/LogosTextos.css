@@ -3,7 +3,7 @@ img#PDRSXingu {
     height: 4rem;
     position: relative;
     padding: 0;
-    transform: translate(-10rem,6.5rem);
+    transform: translate(-10rem, 6.5rem);
 }
 
 img#vemDoXingu {
@@ -11,7 +11,7 @@ img#vemDoXingu {
     height: 4rem;
     position: relative;
     padding: 0;
-    transform: translate(-10rem,6rem);
+    transform: translate(-10rem, 6rem);
 }
 
 img#Sementes {
@@ -19,8 +19,7 @@ img#Sementes {
     height: 4rem;
     position: relative;
     padding: 0;
-    transform: translate(-12rem,6.5rem)
-
+    transform: translate(-12rem, 6.5rem)
 }
 
 img#Abong {
@@ -28,7 +27,7 @@ img#Abong {
     height: 4rem;
     position: relative;
     padding: 0;
-    transform: translate(-7rem,6rem)
+    transform: translate(-7rem, 6rem)
 }
 
 img#RCA {
@@ -36,17 +35,28 @@ img#RCA {
     height: 4rem;
     position: relative;
     padding: 0;
-    transform: translate(-3rem,6.5rem);
-    mix-blend-mode: multiply; /* remove o fundo branco da imagem */
+    transform: translate(-3rem, 6.5rem);
+    mix-blend-mode: multiply;
+    /* remove o fundo branco da imagem */
 }
 
-img#APIB{
+img#APIB {
     width: auto;
     height: 4rem;
     position: relative;
     padding: 0;
-    transform: translate(-5rem,6.4rem);
+    transform: translate(-5rem, 6.4rem);
     mix-blend-mode: multiply;
+}
+
+img#CONAQ {
+
+    width: auto;
+    height: 4rem;
+    position: relative;
+    padding: 0;
+    transform: translate(-6rem, 6.4rem);
+    mix-blend-mode : multiply;
 }
 
 @media (max-width : 768px) {
@@ -55,23 +65,23 @@ img#APIB{
         height: 4rem;
         position: relative;
         padding: 0;
-        transform: translate(-8rem,6rem);
+        transform: translate(-8rem, 6rem);
     }
-    
+
     img#vemDoXingu {
         width: auto;
         height: 4rem;
         position: relative;
         padding: 0;
-        transform: translate(-8rem,5.5rem);
+        transform: translate(-8rem, 5.5rem);
     }
-    
+
     img#Sementes {
         width: auto;
         height: 4rem;
         position: relative;
         padding: 0;
-        transform: translate(-10rem,6rem);
+        transform: translate(-10rem, 6rem);
     }
 
     img#Abong {
@@ -79,7 +89,7 @@ img#APIB{
         height: 4rem;
         position: relative;
         padding: 0;
-        transform: translate(-5.5rem,5.5rem);
+        transform: translate(-5.5rem, 5.5rem);
         mix-blend-mode: multiply;
     }
 
@@ -88,16 +98,26 @@ img#APIB{
         height: 4rem;
         position: relative;
         padding: 0;
-        transform: translate(-3rem,6rem);
+        transform: translate(-3rem, 6rem);
 
     }
 
-    img#APIB{
+    img#APIB {
         width: auto;
         height: 4rem;
         position: relative;
         padding: 0;
-        transform: translate(-5rem,6rem);
+        transform: translate(-5rem, 6rem);
+    }
+
+    img#CONAQ {
+
+        width: auto;
+        height: 4rem;
+        position: relative;
+        padding: 0;
+        transform: translate(-5rem, 6.4rem);
+       
     }
 
 
