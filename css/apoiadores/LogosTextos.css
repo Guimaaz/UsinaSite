@@ -59,6 +59,15 @@ img#CONAQ {
     mix-blend-mode : multiply;
 }
 
+img#ObservatorioFlorestal {
+    width: auto;
+    height: 4rem;
+    position: relative;
+    padding: 0;
+    transform: translate(-13rem, 6.4rem);
+    mix-blend-mode : multiply;
+}
+
 @media (max-width : 768px) {
     img#PDRSXingu {
         width: auto;
@@ -118,6 +127,21 @@ img#CONAQ {
         padding: 0;
         transform: translate(-5rem, 6.4rem);
        
+    }
+
+    img#ObservatorioFlorestal {
+        width: auto;
+        height: 3rem;
+        position: relative;
+        padding: 0;
+        transform: translate(-5.5rem, 6.4rem);
+        white-space: nowrap;
+       
+    }
+
+    h1#CodFlorestal {
+        width: 50%;
+        margin-left: 4.5rem;
     }
 
 
