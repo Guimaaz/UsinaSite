@@ -37,21 +37,17 @@ async function login(app) {
         return res.status(401).send({ message: 'Invalid password' })
       }
 
-      const token = jwt.sign({ id: user[0]._id }, env.JWT_SECRET, {
-        expiresIn: 86400, // 24 hours
+      const token = jwt.sign({ id: user[0]._id }, 'usina2024', {
+        expiresIn: '24h', // 24 hours
       })
 
-      // res.setCookie('token', token, {
-      //   httpOnly: true,
-      //   secure: true, // process.env.NODE_ENV === 'production',
-      //   maxAge: 86400,
-      //   path: '/',
-      //   sameSite: 'None',
-      // })
-      res.header(
-        'set-cookie',
-        `token=${token}; HttpOnly; Secure; Max-Age=86400; Path=/; SameSite=None; Partitioned`
-      )
+      res.setCookie('token', token, {
+        httpOnly: true,
+        maxAge: 86400,
+        path: '/',
+        sameSite: 'Lax',
+        secure: false,
+      })
 
       return res.status(200).send({
         message: 'Login successful',

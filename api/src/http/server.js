@@ -7,6 +7,7 @@ const mongoose = require('mongoose')
 const signUp = require('./routes/auth/sign-up')
 const login = require('./routes/auth/login')
 const forgotPassword = require('./routes/auth/forgot-password')
+const verify = require('./routes/auth/verify')
 
 // EVENTS ROUTES
 const createEventRoute = require('./routes/events/create-event')
@@ -42,20 +43,22 @@ db.on('open', () => {
 
 const app = fastify()
 
-app.register(fastifyCookie, {
-  secret: env.JWT_SECRET,
-  hook: 'onRequest',
-})
-
 app.register(cors, {
   origin: 'http://127.0.0.1:5500',
   credentials: true,
+  allowedHeaders: ['Set-Cookie', 'Content-Type'],
+})
+
+app.register(fastifyCookie, {
+  secret: env.JWT_SECRET,
+  hook: 'onRequest',
 })
 
 // AUTH ROUTES
 app.register(signUp)
 app.register(login)
 app.register(forgotPassword)
+app.register(verify)
 
 // EVENTS ROUTES
 app.register(createEventRoute)
@@ -69,6 +72,7 @@ app.register(deleteNewsByIdRoute)
 app.register(getAllNewsRoute)
 app.register(getNewsByIdRoute)
 
+// CART ROUTES
 app.register(getOrCreateCartRoute)
 app.register(addItemsToCartRoute)
 app.register(clearCartRoute)

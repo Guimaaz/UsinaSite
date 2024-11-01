@@ -21,12 +21,12 @@ document.getElementById("loginArea").addEventListener("submit", async function (
     const password = document.getElementById("senha").value;
 
     try {
-        const response = await fetch("http://localhost:3333/auth/login", {
+        const response = await fetch("http://127.0.0.1:3333/auth/login", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
             },
-            credentials: "include",
+            credentials: 'include',
             body: JSON.stringify({ username, password })
         });
 
@@ -35,10 +35,9 @@ document.getElementById("loginArea").addEventListener("submit", async function (
         console.log(data)
 
         if (response.ok) {
-            
             showToast("Login realizado com sucesso!", "success");
             setTimeout(() => {
-                // window.location.href = "../index.html";
+                window.location.href = "../index.html";
             }, 2000);
         } else {
             showToast(data.message || "Erro no login. Verifique suas credenciais.", "error");
