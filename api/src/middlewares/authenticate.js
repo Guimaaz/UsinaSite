@@ -10,7 +10,7 @@ function authenticate(req, res, next) {
 
   try {
     const decoded = jwt.verify(token, env.JWT_SECRET)
-    req.userId = decoded.Id
+    req.user = decoded
     next()
   } catch (e) {
     return res.status(401).send({ message: 'Unauthorized' })
