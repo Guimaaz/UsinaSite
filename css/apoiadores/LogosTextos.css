@@ -113,11 +113,11 @@ img#RAISG {
     }
 
     img#Abong {
-        width: auto;
-        height: 4rem;
+        width:4rem;
+        height: auto;
         position: relative;
         padding: 0;
-        transform: translate(-5.5rem, 5.5rem);
+        transform: translate(-5.2rem, 5.2rem);
         mix-blend-mode: multiply;
     }
 
