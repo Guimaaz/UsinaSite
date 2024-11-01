@@ -103,7 +103,20 @@ img#RMA {
     padding: 0;
     transform: translate(-6rem, 5.3rem);
     mix-blend-mode : multiply;
+
+
 }
+
+img#SementesXingu {
+    width: 6rem;
+    height: auto;
+    position: relative;
+    padding: 0;
+    transform: translate(-13rem, 6.5rem);
+    mix-blend-mode : multiply;
+}
+
+
 
 @media (max-width : 768px) {
     img#PDRSXingu {
@@ -167,31 +180,28 @@ img#RMA {
     }
 
     img#ObservatorioFlorestal {
-        width: 8rem;
+        width: 7rem;
         height: auto;
         position: relative;
         padding: 0;
-        transform: translate(-6.5rem, 7rem);
+        transform: translate(-9rem, 5rem);
         white-space: nowrap;
        
     }
 
     img#ObservatorioClima {
-        width: 8rem;
+        width: 7rem;
         height: auto;
         position: relative;
         padding: 0;
-        transform: translate(-5.7rem, 7.2rem);
+        transform: translate(-9.5rem, 5rem);
         white-space: nowrap;
     }
-    h1#CodFlorestal {
-        width: 25%;
-        margin-left: 9rem;
-    }
+    
 
     h1#CodClima{
-        width: 50%;
-        margin-left: 6rem;
+        
+        margin-left: 3rem;
     }
 
     img#RAISG {
@@ -219,6 +229,15 @@ img#RMA {
         position: relative;
         padding: 0;
         transform: translate(-5.5rem, 4.8rem);
+        mix-blend-mode : multiply;
+    }
+
+    img#SementesXingu {
+        width: 5rem;
+        height: auto;
+        position: relative;
+        padding: 0;
+        transform: translate(-9rem, 5.5rem);
         mix-blend-mode : multiply;
     }
 
