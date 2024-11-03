@@ -25,7 +25,7 @@
     scale: 1 1;
   }
 
-  .efeitoButton {
+  .efeitoButton,#editModeBtn {
     text-decoration: none;
     padding: 0.5rem 0.75rem;
     font-size: 18px;
@@ -34,11 +34,11 @@
     position: relative;
     transition: color 0.25s;
   }
-  .efeitoButton:hover {
+  .efeitoButton:hover,#editModeBtn:hover {
     color: rgb(255, 255, 255);
   }
   
-  .efeitoButton::after {
+  .efeitoButton::after,#editModeBtn::after {
     position: absolute;
     content: "";
     inset: 0;
@@ -48,7 +48,7 @@
     transition: 0.45s;
     border-radius: 10px;
   }
-  .efeitoButton:hover::after {
+  .efeitoButton:hover::after,#editModeBtn:hover::after {
     scale: 1 1;
   }
 
@@ -88,10 +88,39 @@
   width: 16px;
   height: 16px;
   animation: spin 1s linear infinite;
-  margin-left: 8px; /* Espaço entre o texto e o spinner */
+  margin-left: 8px;
 }
 
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
+}
+
+.efeitoButtonDev {
+  text-decoration: none;
+  padding: 0.5rem 0.75rem;
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffffff56;
+  position: relative;
+  transition: color 0.25s;
+}
+
+.efeitoButtonDev:hover {
+  color: rgb(255, 255, 255);
+}
+
+.efeitoButtonDev::after {
+  position: absolute;
+  content: "";
+  inset: 0;
+  background-color: #fefefe;
+  scale: 1 0;
+  z-index: -1;
+  transition: 0.45s;
+  border-radius: 10px;
+}
+
+.efeitoButtonDev:hover::after {
+  scale: 1 1;
 }

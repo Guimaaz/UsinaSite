@@ -1,0 +1,249 @@
+.carrossel {
+    
+    max-width: 90%;
+    margin-inline: auto;
+    position: relative;
+    height: 6.25rem; 
+    overflow: hidden;
+    mask-image: linear-gradient(
+        to right,
+        rgba(0,0,0,0),
+        rgba(0,0,0,1) 20%,
+        rgba(0,0,0,1) 80%,
+        rgba(0,0,0,0));
+       
+}
+
+
+
+.item {
+    width: 12.5rem;
+    height: 6.25rem; 
+    border-radius: 0.375rem; 
+    position: absolute;
+    left: max(calc(350px * 8),100%);
+    animation-name: scrollLeft;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    
+}
+
+.item1 {
+    animation-delay: calc(30s / 13 * (13 - 1) * -1);
+    background-image: url(/imagens/imagensapoiadores/vemDoXingu.png);
+    background-size: contain;        
+    background-repeat: no-repeat; 
+    background-position: center;  
+    filter: grayscale(10);  
+    opacity: 0.5;
+    transition: 1s ease;
+
+}
+
+.item1:hover{
+    opacity: 1;
+    filter: grayscale(0);
+}
+.item2 {
+    animation-delay: calc(30s / 13 * (13 - 2) * -1);
+    background-image: url(/imagens/imagensapoiadores/PDRSXingu.png);
+    background-size: contain;        
+    background-repeat: no-repeat; 
+    background-position: center;   
+    filter: grayscale(10); 
+    opacity: 0.5;
+    transition: 1s ease;
+
+}
+
+.item2:hover{
+    opacity:1;
+    filter:grayscale(0)
+}
+.item3 {
+    animation-delay: calc(30s / 13 * (13 - 3) * -1);
+    background-image: url(/imagens/imagensapoiadores/Sementes.png);
+    background-size: contain;        
+    background-repeat: no-repeat; 
+    background-position: center;
+    filter: grayscale(10);  
+    opacity: 0.5;  
+    transition: 1s ease;
+
+}
+
+.item3:hover{
+    opacity: 1;
+    filter: grayscale(0);
+}
+
+
+.item4 {
+    animation-delay: calc(30s / 13 * (13 - 4) * -1);
+    background-image: url(/imagens/imagensapoiadores/Abong.png);
+    background-size: contain;        
+    background-repeat: no-repeat; 
+    background-position: center;  
+    filter: grayscale(10);  
+    opacity: 0.5;
+    transition: 1s ease;
+}
+
+.item4:hover{
+    opacity: 1;
+    filter: grayscale(0);
+}
+
+.item5 {
+    animation-delay: calc(30s / 13 * (13 - 5) * -1);
+    background-image: url(/imagens/imagensapoiadores/RCA.png);
+    background-size: contain;        
+    background-repeat: no-repeat; 
+    background-position: center; 
+    filter: grayscale(10); 
+    opacity: 0.5;  
+    transition: 1s ease;
+}
+
+.item5:hover{
+    opacity: 1;
+    filter: grayscale(0);
+}
+
+.item6 {
+    animation-delay: calc(30s / 13 * (13 - 6) * -1);
+    background-image: url(/imagens/imagensapoiadores/APIB.png);
+    background-size: contain;        
+    background-repeat: no-repeat; 
+    background-position: center;  
+    filter: grayscale(10);  
+    opacity: 0.5;
+    transition: 1s ease;
+}
+
+.item6:hover{
+    opacity: 1;
+    filter: grayscale(0);
+  
+}
+
+.item7 {
+    animation-delay: calc(30s / 13 * (13 - 7) * -1);
+    background-image: url(/imagens/imagensapoiadores/Conaq.png);
+    background-size: contain;        
+    background-repeat: no-repeat; 
+    background-position: center; 
+    filter: grayscale(10);   
+    opacity: 0.5;
+    transition: 1s ease;
+
+    
+}
+
+.item7:hover {
+    opacity: 1;
+    filter: grayscale(0);
+}
+
+.item8 {
+    animation-delay: calc(30s / 13 * (13 - 8) * -1);
+    background-image: url(/imagens/imagensapoiadores/Observatorio.png);
+    background-size: contain;        
+    background-repeat: no-repeat; 
+    background-position: center;    
+    filter: grayscale(10);
+    opacity: 0.5;
+    transition: 1s ease;
+}
+
+.item8:hover{
+    opacity: 1;
+    filter: grayscale(0);
+}
+
+.item9 {
+    animation-delay: calc(30s / 13 * (13 - 9) * -1);
+    background-image: url(/imagens/imagensapoiadores/ObservatorioClima.png);
+    background-size: contain;        
+    background-repeat: no-repeat; 
+    background-position: center;    
+    filter: grayscale(10);
+    opacity: 0.5;
+    transition: 1s ease;
+}
+
+.item9:hover{
+    opacity: 1;
+    filter: grayscale(0);
+}
+
+.item10 {
+    animation-delay: calc(30s / 13 * (13 - 10) * -1);
+    background-image: url(/imagens/imagensapoiadores/Raisq.png);
+    background-size: contain;        
+    background-repeat: no-repeat; 
+    background-position: center;    
+    filter: grayscale(10);
+    opacity: 0.5;
+    transition: 1s ease;
+}
+
+.item10:hover{
+    opacity: 1;
+    filter: grayscale(0);
+}
+
+.item11 {
+    animation-delay: calc(30s / 13 * (13 - 11) * -1);
+    background-image: url(/imagens/imagensapoiadores/RioNegro.png);
+    background-size: contain;        
+    background-repeat: no-repeat; 
+    background-position: center;    
+    filter: grayscale(10);
+    opacity: 0.5;
+    transition: 1s ease;
+}
+
+.item11:hover{
+    opacity: 1;
+    filter: grayscale(0);
+}
+
+.item12 {
+    animation-delay: calc(30s / 13 * (13 - 12) * -1);
+    background-image: url(/imagens/imagensapoiadores/RMA.png);
+    background-size: contain;        
+    background-repeat: no-repeat; 
+    background-position: center;    
+    filter: grayscale(10);
+    opacity: 0.5;
+    transition: 1s ease;
+}
+
+.item12:hover{
+    opacity: 1;
+    filter: grayscale(0);
+}
+
+.item13 {
+    animation-delay: calc(30s / 13 * (13 - 13) * -1);
+    background-image: url(/imagens/imagensapoiadores/SementesXingu.png);
+    background-size: contain;        
+    background-repeat: no-repeat; 
+    background-position: center;    
+    filter: grayscale(10);
+    opacity: 0.5;
+    transition: 1s ease;
+}
+
+.item13:hover{
+    opacity: 1;
+    filter: grayscale(0);
+}
+
+@keyframes scrollLeft {
+    to {
+        left: -12.5rem; 
+    }
+}
