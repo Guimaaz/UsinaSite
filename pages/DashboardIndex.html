@@ -77,10 +77,10 @@
     </footer>
 
     <script>
-        let isAdmin = true; // Variável para simular que o admin está logado
+        let isAdmin = true; 
         let editMode = false;
 
-        // Exibe o botão de modo de edição se o admin estiver logado
+        
         if (isAdmin) {
             document.getElementById('editModeBtn').style.display = 'block';
         }
@@ -121,7 +121,7 @@
                     link.parentElement.appendChild(button);
                 });
             } else {
-                location.reload(); // Atualiza a página para sair do modo de edição
+                location.reload(); 
             }
         }
     </script>
