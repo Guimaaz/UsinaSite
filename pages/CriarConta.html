@@ -41,16 +41,23 @@
             <a href="./Boletim.html" id="ancora" class="efeito">Boletim</a>
             <a href="./FaleConosco.html" id="ancora" class="efeito">Fale conosco</a>
             <a href="./Apoiadores.html" id="ancora" class="efeito">Apoiadores</a>
+            <div class="galeria">
+                <a href="#" class="efeito" id="ancora" onclick="toggleGaleria(event)">Galeria</a>
+                <div class="opcoes-galeria" style="display: none;">
+                    <a href="./fotos.html" class="efeito">Fotos</a>
+                    <a href="./videos.html" class="efeito">Vídeos</a>
+                </div>
+            </div>
             <a href="./Login.html" id="CelularLogin" class="efeito">Login</a>
-            <button id="login" class="loginicon">
+            <button id="loginButton" class="loginicon">
                 <a href="./Login.html">
-
-                    <img src="../imagens/imgeral/Login.png" alt="Login">
+                    <img id="loginIconImage" src="../imagens/imgeral/Login.png" alt="Login">
+                    <span id="dashboardText" style="display: none; border: none;">Dashboard</span>
                 </a>
             </button>
-
         </div>
     </nav>
+  
     <img id="logo" src="../imagens/imgeral/UsinaLogo.png" alt="">
 
 
@@ -79,6 +86,12 @@
 
 
 </body>
+<script>function toggleGaleria(event) {
+    event.preventDefault(); 
+    const opcoes = document.querySelector('.opcoes-galeria');
+    opcoes.style.display = opcoes.style.display === 'none' ? 'block' : 'none';
+}
+</script>
 <script src="../js/criarConta.js"></script>
 <script>
 
