@@ -15,17 +15,17 @@ async function isUserLoggedIn() {
 
 async function updateNavbarForLoggedInUser() {
   const loginLink = document.getElementById("CelularLogin");
-  const loginIconLink = document.getElementById("loginIconLink");
+  const loginIconLink = document.getElementById("loginOrDashboardBtn");
   const loginIconImage = document.getElementById("loginIconImage");
   const dashboardText = document.getElementById("dashboardText");
 
   if (await isUserLoggedIn()) {
       loginLink.textContent = "Dashboard";
-      loginLink.href = "./dashboard.html";
+      loginLink.href = "./pages/DashboardIndex.html";
 
       loginIconImage.style.display = "none";
       dashboardText.style.display = "inline";
-      loginIconLink.href = "./dashboard.html";
+      loginIconLink.href = "./pages/DashboardIndex.html";
   }
 }
 

@@ -19,7 +19,7 @@ class UserController {
   async store() {
     const hashedPassword = bcrypt.hashSync(this.password, 8)
 
-    const cart = await new Cart().save()
+    // const cart = await new Cart().save()
 
     const user = new User({
       username: this.username,
@@ -27,11 +27,17 @@ class UserController {
       password: this.password,
       passwordHash: hashedPassword,
       createdAt: new Date(),
-      cart: cart._id,
+      // cart: cart._id,
     })
 
     try {
-      user.save()
+      await user.save()
+
+      const cart = new Cart({ user: user._id })
+      await cart.save()
+
+      user.cart = cart._id
+      await user.save()
     } catch (err) {
       this.res
         .status(400)

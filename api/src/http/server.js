@@ -8,6 +8,7 @@ const signUp = require('./routes/auth/sign-up')
 const login = require('./routes/auth/login')
 const forgotPassword = require('./routes/auth/forgot-password')
 const verify = require('./routes/auth/verify')
+const me = require('./routes/auth/me')
 
 // EVENTS ROUTES
 const createEventRoute = require('./routes/events/create-event')
@@ -59,6 +60,7 @@ app.register(signUp)
 app.register(login)
 app.register(forgotPassword)
 app.register(verify)
+app.register(me)
 
 // EVENTS ROUTES
 app.register(createEventRoute)

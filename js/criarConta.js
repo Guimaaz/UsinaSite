@@ -22,7 +22,7 @@ document.getElementById("loginArea").addEventListener("submit", async function (
     const password = document.getElementById("senha").value;
 
     try {
-        const response = await fetch("http://localhost:3333/auth/signup", {
+        const response = await fetch("http://127.0.0.1:3333/auth/signup", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -30,7 +30,7 @@ document.getElementById("loginArea").addEventListener("submit", async function (
             body: JSON.stringify({ email, username, password })
         });
 
-        const data = await response.json();
+        // const data = await response.json();
 
         if (response.ok) {
             showToast("Conta criada com sucesso!", "success");
@@ -38,7 +38,7 @@ document.getElementById("loginArea").addEventListener("submit", async function (
                 window.location.href = "./Login.html";
             }, 2000)
         } else {
-            showToast(data.message || "Erro ao criar a conta. Tente outro nome de usuário ou email.", "error");
+            showToast("Erro ao criar a conta. Tente outro nome de usuário ou email.", "error");
         }
     } catch (error) {
         console.error("Erro:", error);
