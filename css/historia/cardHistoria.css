@@ -102,3 +102,23 @@ h2.expanded+#imagem2023 {
     display: block;
     opacity: 1;
 }
+
+@media (max-width : 768px){
+    #imagem1965,
+#imagem1974,
+#imagem1977,
+#imagem2002,
+#imagem2004,
+#imagem2019,
+#imagem2022,
+#imagem2023 {
+
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+}
