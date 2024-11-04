@@ -1,0 +1,69 @@
+.eventHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8.3rem;
+  margin-top: -9rem;
+}
+
+.eventHeader button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: .75rem;
+  border: 1px solid #4CAF50;
+  border-radius: .5rem;
+  background-color: transparent;
+
+  transition: all 0.2s ease-in-out;
+}
+
+.eventHeader button .plusIcon {
+  width: 20px;
+  height: 20px;
+}
+
+.eventHeader button:hover {
+  background-color: #4CAF50;
+  color: white;
+  transform: scale(0.98);
+}
+
+#EventCard {
+  margin-top: -5rem;
+}
+
+.newsHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8.3rem;
+  margin-top: -3rem;
+}
+
+.newsHeader button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: .75rem;
+  border: 1px solid #4CAF50;
+  border-radius: .5rem;
+  background-color: transparent;
+
+  transition: all 0.2s ease-in-out;
+}
+
+.newsHeader button .plusIcon {
+  width: 20px;
+  height: 20px;
+}
+
+.newsHeader button:hover {
+  background-color: #4CAF50;
+  color: white;
+  transform: scale(0.98);
+}
+
+#NewsCard {
+  margin-top: -5rem;
+}

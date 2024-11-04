@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="../css/colecoes/textos.css">
     <link rel="stylesheet" href="../css/geral/footer.css">
     <link rel="stylesheet" href="../css/geral/container.css">
+    <link rel="stylesheet" href="../css/dashboard/header.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap" rel="stylesheet">
@@ -39,7 +40,7 @@
             <a href="./pages/Apoiadores.html" class="efeito">Apoiadores</a>
             <a href="./pages/Login.html" id="CelularLogin" class="efeito">Login</a>
             <button id="loginButton" class="loginicon">
-                <a href="./pages/Login.html">
+                <a href="./pages/Login.html" id='loginOrDashboardBtn'>
                     <img id="loginIconImage" src="../imagens/imgeral/Login.png" alt="Login">
                     <span id="dashboardText" style="display: none; border: none;">Dashboard</span>
                 </a>
@@ -49,28 +50,29 @@
 
     <img id="logo" src="../imagens/imgeral/UsinaLogo.png" alt="" style="z-index: 10;">
 
-    <a href="http://" id="textoAdm">Bem-vindo ao sistema</a>
-    <button id="editModeBtn" style="display: none;" onclick="toggleEditMode()">Modo de Edição</button>
+    <div class="eventHeader">
+        <h2>Eventos</h2>
+        <button>
+            <i data-lucide="plus" class="plusIcon"></i>
+            Adicionar
+        </button>
+    </div>
 
     <div class="container">
-        <div class="Card">
-            <div class="Card1">
-                <img id="card1" src="../imagens/imgeral/UsinaImagem.jpg" alt="">
-                <p id="cardTitle1">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                <a href="./pages/Boletim.html" id="cardLink1">
-                    <button class="efeitoButton">Saiba Mais</button>
-                </a>
-            </div>
-            <div class="Card2">
-                <img id="card2" src="../imagens/imgeral/EventosUsina.jpg" alt="">
-                <p id="cardTitle2">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                <button class="efeitoButton">Saiba Mais</button>
-            </div>
-            <div class="Card3">
-                <img id="card3" src="../imagens/imgeral/SobreNosUsina.jpeg" alt="">
-                <p id="cardTitle3">Lorem ipsum dolor sit amet consectetur, adipisicing elit Lorem ipsum.</p>
-                <button class="efeitoButton">Saiba Mais</button>
-            </div>
+        <div class="Card" id="EventCard">
+        </div>
+    </div>
+
+    <div class="newsHeader">
+        <h2>Notícias</h2>
+        <button>
+            <i data-lucide="plus" class="plusIcon"></i>
+            Adicionar
+        </button>
+    </div>
+
+    <div class="container">
+        <div class="Card" id="NewsCard">
         </div>
     </div>
 
@@ -78,57 +80,8 @@
         <a class="efeitoRodape" href="./pages/Devs.html" target="_blank">Devs</a>
         <p>Direitos reservados</p>
     </footer>
-
-    <!-- <script>
-        let isAdmin = true; // Variável para simular que o admin está logado
-        let editMode = false;
-
-        // Exibe o botão de modo de edição se o admin estiver logado
-        if (isAdmin) {
-            document.getElementById('editModeBtn').style.display = 'block';
-        }
-
-        function toggleEditMode() {
-            editMode = !editMode;
-
-            if (editMode) {
-                const cardTitles = document.querySelectorAll('p[id^="cardTitle"]');
-                cardTitles.forEach(title => {
-                    let input = document.createElement('input');
-                    input.type = 'text';
-                    input.value = title.textContent;
-                    input.onchange = () => title.textContent = input.value;
-                    title.textContent = '';
-                    title.appendChild(input);
-                });
-
-                const cardImages = document.querySelectorAll('img[id^="card"]');
-                cardImages.forEach(image => {
-                    let button = document.createElement('button');
-                    button.textContent = 'Alterar Imagem';
-                    button.onclick = () => {
-                        let newSrc = prompt("Nova URL da imagem:");
-                        if (newSrc) image.src = newSrc;
-                    };
-                    image.parentElement.appendChild(button);
-                });
-
-                const cardLinks = document.querySelectorAll('a[id^="cardLink"]');
-                cardLinks.forEach(link => {
-                    let button = document.createElement('button');
-                    button.textContent = 'Alterar Link';
-                    button.onclick = () => {
-                        let newHref = prompt("Novo link:");
-                        if (newHref) link.href = newHref;
-                    };
-                    link.parentElement.appendChild(button);
-                });
-            } else {
-                location.reload(); // Atualiza a página para sair do modo de edição
-            }
-        }
-    </script> -->
     <script src="../js/dashboard.js"></script>
+    <script src="../js/navbar.js"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
     <script>
         lucide.createIcons();
