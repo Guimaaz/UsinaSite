@@ -25,20 +25,28 @@
 <body>
     <nav>
         <i data-lucide="menu" class='menu-burguer' onclick="toggleMenu()"></i>
+    
         <div class="menu-links">
-            <a href="./index.html" class="efeito">Coleções</a>
-            <a href="./pages/historia.html" class="efeito">História</a>
-            <a href="./pages/NosApoie.html" class="efeito">Nos Apoie</a>
-            <a href="./pages/Loja.html" class="efeito">Loja</a>
-            <a href="./pages/Eventos.html" class="efeito">Eventos</a>
-            <a href="./pages/Noticias.html" class="efeito">Noticias</a>
-            <a href="./pages/Boletim.html" class="efeito">Boletim</a>
-            <a href="./pages/FaleConosco.html" class="efeito">Fale conosco</a>
-            <a href="./pages/Apoiadores.html" class="efeito">Apoiadores</a>
-            <a href="./pages/Login.html" id="CelularLogin" class="efeito">Login</a>
+            <a href="../index.html" id="ancora" class="efeito">Coleções</a>
+            <a href="./historia.html" id="ancora" class="efeito">História</a>
+            <a href="./NosApoie.html" id="ancora" class="efeito">Nos Apoie</a>
+            <a href="./Loja.html" id="ancora" class="efeito">Loja</a>
+            <a href="./Eventos.html" id="ancora" class="efeito">Eventos</a>
+            <a href="./Noticias.html" id="ancora" class="efeito">Noticias</a>
+            <a href="./Boletim.html" id="ancora" class="efeito">Boletim</a>
+            <a href="./FaleConosco.html" id="ancora" class="efeito">Fale conosco</a>
+            <a href="./Apoiadores.html" id="ancora" class="efeito">Apoiadores</a>
+            <div class="galeria">
+                <a href="#" class="efeito" id="ancora" onclick="toggleGaleria(event)">Galeria</a>
+                <div class="opcoes-galeria" style="display: none;">
+                    <a href="./fotos.html" class="efeito">Fotos</a>
+                    <a href="./videos.html" class="efeito">Vídeos</a>
+                </div>
+            </div>
+            <a href="./Login.html" id="CelularLogin" class="efeito">Login</a>
             <button id="loginButton" class="loginicon">
-                <a href="./pages/Login.html">
-                    <img id="loginIconImage" src="../imagens/imgeral/Login.png" alt="Login">
+                <a href="./Login.html">
+                    <img id="loginIconImage" src="./imagens/imgeral/Login.png" alt="Login">
                     <span id="dashboardText" style="display: none; border: none;">Dashboard</span>
                 </a>
             </button>
