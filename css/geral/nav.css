@@ -41,6 +41,7 @@ button img {
     display: none;
     position: absolute;
     right: 20px;
+    z-index: 1000;
 }
 
 .menu-links {
@@ -49,6 +50,7 @@ button img {
     align-items: center;
     flex: 1;
     white-space: nowrap;
+    z-index: 1000;
 }
 
 #CelularLogin {
@@ -57,14 +59,16 @@ button img {
 
 .galeria {
     position: relative;
+    z-index: 1000;
 }
 
 .opcoes-galeria {
+    width: 100%;
     position: absolute; 
     background: rgba(255, 255, 255, 1);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
-    z-index: 3; 
+    z-index: 1000; 
 }
 
 .opcoes-galeria a {
@@ -74,6 +78,7 @@ button img {
     font-size: large;
     text-decoration: none;
     transition: background 0.3s;
+    
 }
 
 .opcoes-galeria a:hover {
@@ -122,7 +127,7 @@ button img {
         box-shadow: 0.625rem 0.625rem 0.625rem rgba(0, 0, 0, 0.178);
         border-radius: 1.25rem;
         background-color: rgba(255, 255, 255, 0.9);
-        z-index: 10;
+        z-index: 900;
         
     }
 
@@ -142,7 +147,6 @@ button img {
         position: absolute;
         top: 60px;
         left: 0;
-        z-index: 1000;
         border-radius: 1rem;
         align-items: center;
         width: 100%;
@@ -167,7 +171,7 @@ button img {
     }
 
     nav a {
-        z-index: 1000;
+        z-index: 900;
         color: #000;
         font-size: 1rem;
         padding: 10px 0;
