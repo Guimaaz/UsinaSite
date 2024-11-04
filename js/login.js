@@ -1,9 +1,9 @@
 function isUserLoggedIn() {
-    return document.cookie.split('; ').some(cookie => cookie.startsWith("token="))
+    return document.cookie.split('; ').some(cookie => cookie.startsWith("token="));
 }
 
-if(isUserLoggedIn()) {
-    window.location.href = './Dashboard.html'
+if (isUserLoggedIn()) {
+    window.location.href = './Dashboard.html';
 }
 
 document.getElementById("loginArea").addEventListener("submit", async function (e) {
@@ -12,7 +12,7 @@ document.getElementById("loginArea").addEventListener("submit", async function (
     const submitButton = document.getElementById("submit");
     const buttonText = document.getElementById("button-text");
     const spinner = document.getElementById("spinner");
-    
+
     submitButton.disabled = true;
     buttonText.style.display = "none";
     spinner.style.display = "inline-block";
@@ -21,27 +21,30 @@ document.getElementById("loginArea").addEventListener("submit", async function (
     const password = document.getElementById("senha").value;
 
     try {
-        const response = await fetch("http://localhost:3333/auth/login", {
+        const response = await fetch("http://127.0.0.1:3333/auth/login", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
             },
+            credentials: 'include',
             body: JSON.stringify({ username, password })
         });
 
+        console.log(response.status)
         const data = await response.json();
+        console.log(data)
 
         if (response.ok) {
-            document.cookie = `token=${data.token}; max-age=86400; path=/;`;
             showToast("Login realizado com sucesso!", "success");
             setTimeout(() => {
                 window.location.href = "../index.html";
-            }, 2000)
+            }, 2000);
         } else {
             showToast(data.message || "Erro no login. Verifique suas credenciais.", "error");
         }
     } catch (error) {
         console.error("Erro:", error);
+        console.log(error)
         showToast("Erro de conexão com o servidor.", "error");
     } finally {
         submitButton.disabled = false;
@@ -49,7 +52,6 @@ document.getElementById("loginArea").addEventListener("submit", async function (
         spinner.style.display = "none";
     }
 });
-
 
 function showToast(message, type) {
     VanillaToasts.create({

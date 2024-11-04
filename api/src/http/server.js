@@ -1,11 +1,14 @@
 const fastify = require('fastify')
 const cors = require('@fastify/cors')
+const fastifyCookie = require('@fastify/cookie')
 const mongoose = require('mongoose')
 
 // AUTH ROUTES
 const signUp = require('./routes/auth/sign-up')
 const login = require('./routes/auth/login')
 const forgotPassword = require('./routes/auth/forgot-password')
+const verify = require('./routes/auth/verify')
+const me = require('./routes/auth/me')
 
 // EVENTS ROUTES
 const createEventRoute = require('./routes/events/create-event')
@@ -17,8 +20,14 @@ const deleteEventByIdRoute = require('./routes/events/delete-event-by-id')
 const createNewsRoute = require('./routes/news/create-news')
 const deleteNewsByIdRoute = require('./routes/news/delete-news-by-id')
 const getAllNewsRoute = require('./routes/news/get-all-news')
-
 const getNewsByIdRoute = require('./routes/news/get-news-by-id')
+
+// CART ROUTES
+const getOrCreateCartRoute = require('./routes/cart/get-or-create-cart')
+const addItemsToCartRoute = require('./routes/cart/add-items')
+const clearCartRoute = require('./routes/cart/clear-cart')
+const listCartItemsRoute = require('./routes/cart/list-items')
+const removeItemFromCartRoute = require('./routes/cart/remove-item')
 
 const env = require('../utils/env')
 
@@ -36,13 +45,22 @@ db.on('open', () => {
 const app = fastify()
 
 app.register(cors, {
-  origin: '*',
+  origin: 'http://127.0.0.1:5500',
+  credentials: true,
+  allowedHeaders: ['Set-Cookie', 'Content-Type'],
+})
+
+app.register(fastifyCookie, {
+  secret: env.JWT_SECRET,
+  hook: 'onRequest',
 })
 
 // AUTH ROUTES
 app.register(signUp)
 app.register(login)
 app.register(forgotPassword)
+app.register(verify)
+app.register(me)
 
 // EVENTS ROUTES
 app.register(createEventRoute)
@@ -55,6 +73,13 @@ app.register(createNewsRoute)
 app.register(deleteNewsByIdRoute)
 app.register(getAllNewsRoute)
 app.register(getNewsByIdRoute)
+
+// CART ROUTES
+app.register(getOrCreateCartRoute)
+app.register(addItemsToCartRoute)
+app.register(clearCartRoute)
+app.register(listCartItemsRoute)
+app.register(removeItemFromCartRoute)
 
 app
   .listen({
