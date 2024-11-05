@@ -1,7 +1,7 @@
 .carrossel {
     
     max-width: 90%;
-    margin-inline: auto;
+    
     position: relative;
     height: 6.25rem; 
     overflow: hidden;
