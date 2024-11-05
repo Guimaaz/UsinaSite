@@ -2,22 +2,24 @@ footer {
     backdrop-filter: blur(1.875rem);
     box-shadow: 0.625rem 0.625rem 0.625rem 0.625rem rgba(0, 0, 0, 0.705);
     background-color: rgba(255, 255, 255, 0.9);
-    display: flex;
+    display:flex;
     justify-content: center;
-    align-items: center;
     text-align: center;
-    padding: 30px;
-    flex: 1;
-    margin-top: 3rem;
+    padding: 50px;
+    bottom: 0;
+    margin-top: auto; 
+    gap: 5rem;
 }
 
-#footerContatos {
+
+
+#footerContatos,
+#footerInf,
+#footerLoc {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10rem;
 }
-
 footer p,  footer a {
     font-size: large;
     font-family: "Afacad Flux", sans-serif;
@@ -29,7 +31,7 @@ footer p,  footer a {
 footer h6 {
     margin: 0;
     padding-left: 1rem;
-    padding-top: 4.5rem;
+    padding-top: 0.5rem;
 }
 
 footer p {
@@ -46,6 +48,8 @@ footer a {
 @media (max-width: 768px) {
     footer {
         padding: 2rem; 
+        flex-direction: column;
+        gap: 3rem;
     }
 
     #footerContatos {
@@ -58,7 +62,7 @@ footer a {
     }
 
     #footerNumero {
-        padding-left:7rem;
+        padding-left:3rem;
         white-space: nowrap;
     }
 }
