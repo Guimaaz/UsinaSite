@@ -8,6 +8,11 @@
     font-variation-settings: "slnt" 0;
 }
 
+.textoHistoria {
+    margin-bottom: 3rem;
+}
+
+
 .textoHistoria p{
     border-radius: 0.3125rem;
     background-size: 100% 100%;
@@ -31,6 +36,7 @@
     margin: 0;
     padding: 1.25rem;
     gap: 1.875rem;
+    margin-bottom: 3rem;
     
 }
 

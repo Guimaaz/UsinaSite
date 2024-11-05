@@ -47,7 +47,7 @@ footer a {
 
 @media (max-width: 768px) {
     footer {
-        margin-top: 3rem;
+        
         padding: 2rem; 
         flex-direction: column;
         gap: 3rem;
