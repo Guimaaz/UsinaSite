@@ -9,32 +9,39 @@ footer {
     padding: 30px;
     flex: 1;
     margin-top: 3rem;
-    
-  
-    
 }
-footer p{
+
+#footerContatos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer p,  footer a {
     font-size: large;
     font-family: "Afacad Flux", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    font-variation-settings: "slnt" 0;
-    text-decoration: underline;
-    
+}
+
+footer h6 {
+    margin: 0;
+    padding-left: 1rem;
+    padding-top: 4.5rem;
+}
+
+footer p {
+    margin: 0.5rem 0;
 }
 
 footer a {
     margin-bottom: 0.9rem;
     margin-right: 100px;
     text-decoration: none;
-    font-size: large;
-    font-family: "Afacad Flux", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    font-variation-settings: "slnt" 0;
     transition: color 0.25s;
-    
+}
 
+@media (max-width :768px){
+    
 }
