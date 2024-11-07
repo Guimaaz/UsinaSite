@@ -253,9 +253,11 @@
         <div id="footeerContatos">
             <h6 id="footerH6">Nossos contatos :</h6>
             <p id="footerEmail">Usinaecocultural@gmail.com</p>
-            <p id="footerNumero">(55) 11 99999-9999</p>
+            <button id="footerNumero">
+                <img src="./imagens/imgeral/NumeroWhatsapp.png" id="imgFooterNumero" alt="Número de WhatsApp">
+            </button>
+            <audio id="somClique" src="./audios/videoplayback.m4a"></audio>
         </div>
-
     <div class="footerInf">
         <h6>Mais Informações</h6>
         <p>Devs</p>
@@ -266,7 +268,16 @@
     </div>
     </footer>
 </body>
+<script>
+    document.getElementById('footerNumero').addEventListener('click', function() {
+       
+        const som = document.getElementById('somClique');
+        som.play();
 
+       
+        window.open('https://wa.me/SEUNUMERODOTELEFONE', '_blank');
+    });
+</script>
 <script>function toggleGaleria(event) {
         event.preventDefault();
         const opcoes = document.querySelector('.opcoes-galeria');
