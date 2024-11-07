@@ -250,9 +250,9 @@
     </div>
     <footer>
 
-        <div id="footeerContatos">
+        <div id="footerContatos">
             <h6 id="footerH6">Nossos contatos :</h6>
-            <p id="footerEmail">Usinaecocultural@gmail.com</p>
+            <button id="footerEmail"> <img src="./imagens/imgeral/email.png" id="imgFooterEmail" alt=""></button>
             <button id="footerNumero">
                 <img src="./imagens/imgeral/NumeroWhatsapp.png" id="imgFooterNumero" alt="Número de WhatsApp">
             </button>
@@ -268,6 +268,11 @@
     </div>
     </footer>
 </body>
+<script>
+    document.getElementById('footerEmail').addEventListener('click',function(){
+        window.open('https://google.com','_blank');
+    }); 
+</script>
 <script>
     document.getElementById('footerNumero').addEventListener('click', function() {
        

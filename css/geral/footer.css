@@ -11,9 +11,13 @@ footer {
     gap: 5rem;
 }
 
+#footerContato{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
-#footerContatos,
 #footerInf,
 #footerLoc {
     display: flex;
@@ -45,14 +49,14 @@ footer a {
     transition: color 0.25s;
 }
 
-#footerNumero {
+#footerNumero,#footerEmail {
     border: none;
     mix-blend-mode: multiply;
     background-color: white;
     
 }
 
-#imgFooterNumero{
+#imgFooterNumero,#imgFooterEmail{
     height: 2.5rem;
     width: auto;
 }
@@ -74,10 +78,7 @@ footer a {
         padding-top: 1rem; 
     }
 
-    #footerNumero {
-        padding-left:6rem;
-        white-space: nowrap;
-    }
+    
 }
 
     
