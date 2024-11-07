@@ -27,7 +27,7 @@
     padding: 0.625rem; 
 }
 
-#GTcultura,#GTMeio-Ambiente{
+#GTcultura,#GTMeio-Ambiente,#GTComunicacao,#GTArticulacaoPolitica{
     color: #4CAF50;
     text-decoration: none;
     text-align: center;
@@ -40,7 +40,7 @@
 }
 
 
-.imagemContorno1, .imagemContorno2,.imagemContorno3 {
+.imagemContorno1, .imagemContorno2,.imagemContorno3,.imagemContorno4 {
     shape-outside: inset(0);
 }
 .imagemContorno1 {
@@ -67,6 +67,15 @@
     width: 50%; 
     border-radius: 0.3125rem; 
     box-shadow: 0.3125rem 0.3125rem 0.3125rem rgba(0, 0, 0, 0.2);
+}
+
+.imagemContorno4 {
+    float: right;
+    margin: 0 2rem 0 1rem; 
+    width: 50%; 
+    border-radius: 0.3125rem; 
+    box-shadow: 0.3125rem 0.3125rem 0.3125rem rgba(0, 0, 0, 0.2);
+  
 }
 
 #QuemSomos {
