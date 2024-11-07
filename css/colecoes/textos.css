@@ -41,7 +41,7 @@
 
 
 .imagemContorno1, .imagemContorno2,.imagemContorno3,.imagemContorno4 {
-    shape-outside: inset(1px);
+    clip-path: inset(10%);
 }
 .imagemContorno1 {
     float: left;
@@ -105,7 +105,7 @@
 
    .imagemContorno1,.imagemContorno2,.imagemContorno3,.imagemContorno4 {
     
-    shape-outside: inset(1px);
+    clip-path: inset(10%);
    }
 
 
