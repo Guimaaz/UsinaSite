@@ -151,6 +151,7 @@ img#SementesXingu {
         position: relative;
         padding: 0;
         transform: translate(0rem, 6rem);
+
     }
 
     img#vemDoXingu {
@@ -159,6 +160,8 @@ img#SementesXingu {
         position: relative;
         padding: 0;
         transform: translate(0rem, 5.5rem);
+        z-index: -1;
+       
     }
 
     img#Sementes {

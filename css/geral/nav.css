@@ -41,6 +41,7 @@ button img {
     display: none;
     position: absolute;
     right: 20px;
+    z-index: 1000;
 }
 
 .menu-links {
@@ -49,14 +50,58 @@ button img {
     align-items: center;
     flex: 1;
     white-space: nowrap;
+    z-index: 1000;
 }
 
 #CelularLogin {
     display: none;
 }
 
+.galeria {
+    position: relative;
+    z-index: 1000;
+}
+
+.opcoes-galeria {
+    width: 100%;
+    position: absolute; 
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    z-index: 1000; 
+}
+
+.opcoes-galeria a {
+    display: block;
+    padding: 10px;
+    color: #000;
+    font-size: large;
+    text-decoration: none;
+    transition: background 0.3s;
+    
+}
+
+.opcoes-galeria a:hover {
+    background: #e0e0e0; 
+}
+
+
 @media (max-width: 1197px) {
 
+    
+
+
+    .galeria {
+        margin-right: auto;
+        color: #000;
+        font-size: 1rem;
+        padding: 10px 0;
+        width: 100%;
+        text-align: left;
+        text-decoration: none;
+        z-index: 1000;
+        
+    }
     .loginicon {
         display: none;
     }
@@ -65,7 +110,10 @@ button img {
     display: block;
    }
 
+
+   
     nav {
+        z-index: 1000;
         max-width: 100%;
         flex-direction: column;
         justify-content: flex-start;
@@ -79,7 +127,7 @@ button img {
         box-shadow: 0.625rem 0.625rem 0.625rem rgba(0, 0, 0, 0.178);
         border-radius: 1.25rem;
         background-color: rgba(255, 255, 255, 0.9);
-        z-index: 10;
+        z-index: 900;
         
     }
 
@@ -91,7 +139,7 @@ button img {
         height: auto;
     }
 
-    .menu-links {
+    .menu-links{
         display: none;
         flex-direction: column;
         gap: 2px;
@@ -99,7 +147,6 @@ button img {
         position: absolute;
         top: 60px;
         left: 0;
-        z-index: 10;
         border-radius: 1rem;
         align-items: center;
         width: 100%;
@@ -113,15 +160,18 @@ button img {
     .menu-links.show {
         display : flex;
         max-width: 100%;
+        z-index: 1000;
         
     }
 
 
     .menu-burguer {
         display: flex;
+        z-index: 1000;
     }
 
     nav a {
+        z-index: 900;
         color: #000;
         font-size: 1rem;
         padding: 10px 0;
