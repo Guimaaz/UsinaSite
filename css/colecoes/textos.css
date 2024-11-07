@@ -40,7 +40,7 @@
 }
 
 
-.imagemContorno1, .imagemContorno2 {
+.imagemContorno1, .imagemContorno2,.imagemContorno3 {
     shape-outside: inset(0);
 }
 .imagemContorno1 {
@@ -59,6 +59,14 @@
     border-radius: 0.3125rem; 
     box-shadow: 0.3125rem 0.3125rem 0.3125rem rgba(0, 0, 0, 0.2);
   
+}
+
+.imagemContorno3 {
+    float: left;
+    margin:  0 1rem 1rem 0; 
+    width: 50%; 
+    border-radius: 0.3125rem; 
+    box-shadow: 0.3125rem 0.3125rem 0.3125rem rgba(0, 0, 0, 0.2);
 }
 
 #QuemSomos {
@@ -86,9 +94,9 @@
         padding: 1rem; 
     }
 
-   .imagemContorno1,.imagemContorno2 {
+   .imagemContorno1,.imagemContorno2,.imagemContorno3 {
     width: 50%;
-    shape-outside: inset(0);
+    shape-outside: inset(10);
    }
 
 
