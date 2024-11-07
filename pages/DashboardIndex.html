@@ -23,6 +23,10 @@
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="shortcut icon" href="../imagens/imgeral/UsinaLogo.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/dashboard/modal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanillatoasts/vanillatoasts.css">
+    <script src="https://cdn.jsdelivr.net/npm/vanillatoasts/vanillatoasts.js"></script>
+
 </head>
 
 <body>
@@ -52,10 +56,36 @@
 
     <div class="eventHeader">
         <h2>Eventos</h2>
-        <button>
+        <button id="openEventModalBtn">
             <i data-lucide="plus" class="plusIcon"></i>
             Adicionar
         </button>
+
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close-btn" id='closeModalBtn'>&times;</span>
+                <h2>Adicionar evento</h2>
+
+                <form id="eventModalForm">
+                    <label for="name">Nome do evento:</label>
+                    <input type="text" id='name' name='name' required>
+
+                    <label for="content">Conteúdo:</label>
+                    <textarea name="content" id="content" rows="4" required></textarea>
+
+                    <label for="imageLink">Link da Imagem:</label>
+                    <input type="url" name="imageLink" id="imageLink" required>
+
+                    <label for="date">Data do evento:</label>
+                    <input type="date" name="date" id="date" required>
+
+                    <div class="button-group">
+                        <button type="button" id="saveBtn">Adicionar</button>
+                        <button type="button" id="cancelBtn">Cancelar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
     </div>
 
     <div class="container">
@@ -82,6 +112,7 @@
     </footer>
     <script src="../js/dashboard.js"></script>
     <script src="../js/navbar.js"></script>
+    <script src="../js/modal.js"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
     <script>
         lucide.createIcons();
