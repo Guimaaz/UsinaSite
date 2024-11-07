@@ -27,7 +27,7 @@
     padding: 0.625rem; 
 }
 
-#GTcultura{
+#GTcultura,#GTMeio-Ambiente{
     color: #4CAF50;
     text-decoration: none;
     text-align: center;
@@ -39,20 +39,26 @@
     font-size: 2rem;
 }
 
+
+.imagemContorno1, .imagemContorno2 {
+    shape-outside: inset(0);
+}
 .imagemContorno1 {
-    float: right;
-    margin: 0 -2rem 1rem 1rem; 
+    float: left;
+    margin:  0 1rem 2rem 0; 
     width: 50%; 
     border-radius: 0.3125rem; 
-    box-shadow: 0.3125rem 0.3125rem 0.3125rem rgba(0, 0, 0, 0.2); 
+    box-shadow: 0.3125rem 0.3125rem 0.3125rem rgba(0, 0, 0, 0.2);
+   
 }
 
 .imagemContorno2 {
-    float: left;
-    margin:  0 1rem 1rem 0; 
+    float: right;
+    margin: 0 -1rem 0 1rem; 
     width: 50%; 
     border-radius: 0.3125rem; 
-    box-shadow: 0.3125rem 0.3125rem 0.3125rem rgba(0, 0, 0, 0.2); 
+    box-shadow: 0.3125rem 0.3125rem 0.3125rem rgba(0, 0, 0, 0.2);
+  
 }
 
 #QuemSomos {
@@ -87,19 +93,20 @@
 
 
    .imagemContorno1 {
-    float: right;
-    margin: 0 1rem 1rem 1rem; 
-    width: 50%; 
-    border-radius: 0.3125rem; 
-    box-shadow: 0.3125rem 0.3125rem 0.3125rem rgba(0, 0, 0, 0.2); 
-}
-
-.imagemContorno2 {
     float: left;
     margin:  0 1rem 1rem 0; 
     width: 50%; 
     border-radius: 0.3125rem; 
     box-shadow: 0.3125rem 0.3125rem 0.3125rem rgba(0, 0, 0, 0.2); 
+   }
+
+.imagemContorno2 {
+    float: right;
+    margin: 0 1rem 1rem 1rem; 
+    width: 50%; 
+    border-radius: 0.3125rem; 
+    box-shadow: 0.3125rem 0.3125rem 0.3125rem rgba(0, 0, 0, 0.2); 
+    
 }
 }
 
