@@ -41,7 +41,7 @@
 
 
 .imagemContorno1, .imagemContorno2,.imagemContorno3,.imagemContorno4 {
-    shape-outside: inset(0);
+    shape-outside: inset(10);
 }
 .imagemContorno1 {
     float: left;
@@ -103,26 +103,22 @@
         padding: 1rem; 
     }
 
-   .imagemContorno1,.imagemContorno2,.imagemContorno3 {
-    width: 50%;
+   .imagemContorno1,.imagemContorno2,.imagemContorno3,.imagemContorno4 {
+    
     shape-outside: inset(10);
    }
 
 
    .imagemContorno1 {
-    float: left;
+    
     margin:  0 1rem 1rem 0; 
-    width: 50%; 
-    border-radius: 0.3125rem; 
-    box-shadow: 0.3125rem 0.3125rem 0.3125rem rgba(0, 0, 0, 0.2); 
+    
    }
 
 .imagemContorno2 {
-    float: right;
+   
     margin: 0 1rem 1rem 1rem; 
-    width: 50%; 
-    border-radius: 0.3125rem; 
-    box-shadow: 0.3125rem 0.3125rem 0.3125rem rgba(0, 0, 0, 0.2); 
+    
     
 }
 }
