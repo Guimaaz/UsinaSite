@@ -17,7 +17,10 @@ footer {
     align-items: center;
 }
 
-
+#MapaUsina {
+    width: auto;
+    height: 8rem;
+}
 #footerInf,
 #footerLoc {
     display: flex;
@@ -78,6 +81,8 @@ footer a {
     footer h6 {
         padding-top: 1rem; 
     }
+
+   
 
     
 }
