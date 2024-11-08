@@ -59,6 +59,7 @@ footer a {
 #imgFooterNumero,#imgFooterEmail{
     height: 2.5rem;
     width: auto;
+    filter: grayscale(5);
 }
 
 @media (max-width: 768px) {
