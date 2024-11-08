@@ -9,6 +9,7 @@ const login = require('./routes/auth/login')
 const forgotPassword = require('./routes/auth/forgot-password')
 const verify = require('./routes/auth/verify')
 const me = require('./routes/auth/me')
+const logout = require('./routes/auth/logout')
 
 // EVENTS ROUTES
 const createEventRoute = require('./routes/events/create-event')
@@ -61,6 +62,7 @@ app.register(login)
 app.register(forgotPassword)
 app.register(verify)
 app.register(me)
+app.register(logout)
 
 // EVENTS ROUTES
 app.register(createEventRoute)
