@@ -13,6 +13,7 @@ h2 {
     font-style: normal;
     text-decoration: none;
     transition: width 0.5s ease, padding 0.5s ease;
+    
 }
 
 
@@ -28,6 +29,7 @@ h2.expanded {
     width: 100%;
     padding: 3rem;
     text-decoration: none;
+    
 }
 
 
@@ -68,7 +70,7 @@ h2.expanded {
 }
 #ano2023.expanded:before {
     content: 'No dia 27 de maio de 2023, agentes da fiscalização emitiram dois autos de fiscalização, um por ocupação irregular de área municipal e outro pela organização de eventos sem a autorização da prefeitura, além de alegarem que o solo é contaminado sem um laudo, na qual resultou numa multa de mais de 42 mil reais endereçada a uma das principais responsáveis pelo projeto da usina, Débora, sem nenhum tipo de aviso. Resultou em uma parada das atividades da Usina Eco Cultural, mas após alguns meses, esse grupo voltou com as suas atividades nas quais estão presentes até hoje em 2024.';
-
+margin-bottom: 3rem;
 }
 
 
@@ -101,6 +103,7 @@ h2.expanded+#iamgem2022,
 h2.expanded+#imagem2023 {
     display: block;
     opacity: 1;
+    
 }
 
 @media (max-width : 768px){

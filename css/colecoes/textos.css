@@ -27,21 +27,70 @@
     padding: 0.625rem; 
 }
 
-img#fotoesquerda {
-    margin-top: 6.25rem; 
-    margin-bottom: 0.625rem;
+#GTcultura,#GTMeio-Ambiente,#GTComunicacao,#GTArticulacaoPolitica{
+    color: #4CAF50;
+    text-decoration: none;
+    text-align: center;
+    font-family: "Afacad Flux", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+    font-size: 2rem;
 }
 
-img#fotodireita {
-    margin-top: 6.25rem; 
-    margin-bottom: 0.625rem; 
+
+.imagemContorno1, .imagemContorno2,.imagemContorno3,.imagemContorno4 {
+    shape-outside: inset(0px);
+}
+.imagemContorno1 {
+    float: left;
+    margin:  0 1rem 2rem 0; 
+    width: 50%; 
+    border-radius: 0.3125rem; 
+    box-shadow: 0.3125rem 0.3125rem 0.3125rem rgba(0, 0, 0, 0.2);
+   
 }
 
-h1#patrocinadores {
-    font-size: 1.25rem;
+.imagemContorno2 {
+    float: right;
+    margin: 0 -1rem 0 1rem; 
+    width: 50%; 
+    border-radius: 0.3125rem; 
+    box-shadow: 0.3125rem 0.3125rem 0.3125rem rgba(0, 0, 0, 0.2);
+  
 }
+
+.imagemContorno3 {
+    float: left;
+    margin:  0 1rem 1rem 0; 
+    width: 50%; 
+    border-radius: 0.3125rem; 
+    box-shadow: 0.3125rem 0.3125rem 0.3125rem rgba(0, 0, 0, 0.2);
+}
+
+.imagemContorno4 {
+    float: right;
+    margin: 0 -0.75rem 0 -1rem; 
+    width: 50%; 
+    border-radius: 0.3125rem; 
+    box-shadow: 0.3125rem 0.3125rem 0.3125rem rgba(0, 0, 0, 0.2);
+  
+}
+
+#QuemSomos {
+    padding-top: 3rem;
+}
+
+
+
+
 
 @media (max-width: 768px) {
+
+    #QuemSomos {
+        padding-top: 0rem;
+    }
     .textos h1 {
         font-size: 1.5em;
         margin: 1.25rem 0;
@@ -54,9 +103,24 @@ h1#patrocinadores {
         padding: 1rem; 
     }
 
-    .col-md-8 {
-        display: block; 
-    }
+   .imagemContorno1,.imagemContorno2,.imagemContorno3,.imagemContorno4 {
+    
+    shape-outside: inset(0px);
+   }
+
+
+   .imagemContorno1 {
+    
+    margin:  0 1rem 1rem 0; 
+    
+   }
+
+.imagemContorno2 {
+   
+    margin: 0 1rem 1rem 1rem; 
+    
+    
+}
 }
 
 

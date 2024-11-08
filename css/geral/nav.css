@@ -67,7 +67,7 @@ button img {
     position: absolute; 
     background: rgba(255, 255, 255, 1);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
+    border-radius: 1.25rem;
     z-index: 1000; 
 }
 
@@ -78,6 +78,8 @@ button img {
     font-size: large;
     text-decoration: none;
     transition: background 0.3s;
+   
+    
     
 }
 

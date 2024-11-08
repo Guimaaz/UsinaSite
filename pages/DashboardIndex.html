@@ -69,9 +69,9 @@
             Adicionar
         </button>
 
-        <div id="modal" class="modal">
+        <div id="eventModal" class="modal">
             <div class="modal-content">
-                <span class="close-btn" id='closeModalBtn'>&times;</span>
+                <span class="close-btn" id='closeEventModalBtn'>&times;</span>
                 <h2>Adicionar evento</h2>
 
                 <form id="eventModalForm">
@@ -88,8 +88,8 @@
                     <input type="date" name="date" id="date" required>
 
                     <div class="button-group">
-                        <button type="button" id="saveBtn">Adicionar</button>
-                        <button type="button" id="cancelBtn">Cancelar</button>
+                        <button type="button" id="saveEventBtn">Adicionar</button>
+                        <button type="button" id="cancelEventBtn">Cancelar</button>
                     </div>
                 </form>
             </div>
@@ -107,6 +107,29 @@
             <i data-lucide="plus" class="plusIcon"></i>
             Adicionar
         </button>
+
+        <div id="newsModalmodal" class="modal">
+            <div class="modal-content">
+                <span class="close-btn" id='closeNewsModalBtn'>&times;</span>
+                <h2>Adicionar evento</h2>
+
+                <form id="newsModalForm">
+                    <label for="title">Título da notícia:</label>
+                    <input type="text" id='title' name='title' required>
+
+                    <label for="content">Conteúdo:</label>
+                    <textarea name="content" id="content" rows="4" required></textarea>
+
+                    <label for="imageLink">Link da Imagem:</label>
+                    <input type="url" name="imageLink" id="imageLink" required>
+
+                    <div class="button-group">
+                        <button type="button" id="saveNewsBtn">Adicionar</button>
+                        <button type="button" id="cancelNewsBtn">Cancelar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
     </div>
 
     <div class="container">
@@ -114,13 +137,28 @@
         </div>
     </div>
 
+
     <footer>
-        <a class="efeitoRodape" href="./pages/Devs.html" target="_blank">Devs</a>
-        <p>Direitos reservados</p>
+
+        <div id="footeerContatos">
+            <h6 id="footerH6">Nossos contatos :</h6>
+            <p id="footerEmail">Usinaecocultural@gmail.com</p>
+            <p id="footerNumero">(55) 11 99999-9999</p>
+        </div>
+
+        <div class="footerInf">
+            <h6>Mais Informações</h6>
+            <p>Devs</p>
+        </div>
+
+        <div class="footerLoc">
+            <h6>Onde nos encontrar</h6>
+        </div>
     </footer>
     <script src="../js/dashboard.js"></script>
     <script src="../js/navbar.js"></script>
-    <script src="../js/modal.js"></script>
+    <script src="../js/event-modal.js"></script>
+    <script src="../js/news-modal.js"></script>
 
     <script src="https://unpkg.com/lucide@latest"></script>
     <script>
