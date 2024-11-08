@@ -41,7 +41,8 @@
 
 
 .imagemContorno1, .imagemContorno2,.imagemContorno3,.imagemContorno4 {
-    shape-outside: inset(0px);
+    shape-outside:image(1);
+ 
 }
 .imagemContorno1 {
     float: left;
@@ -103,10 +104,7 @@
         padding: 1rem; 
     }
 
-   .imagemContorno1,.imagemContorno2,.imagemContorno3,.imagemContorno4 {
-    
-    shape-outside: inset(0px);
-   }
+   
 
 
    .imagemContorno1 {
