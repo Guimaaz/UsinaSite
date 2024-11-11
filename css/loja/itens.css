@@ -167,6 +167,13 @@ button a {
         margin-left: 0;
     }
 
+    #tituloOferta::after{
+        margin-left: 9rem;
+        content:"  20% OFF" ;
+        color: green;
+        font-size: 0.8rem;
+    }
+
     .item1,
     .item2,
     .item3,
@@ -189,5 +196,19 @@ button a {
     .item4 {
         width: 80%;
         margin-bottom: 1rem;
+    }
+
+    .ofertaDoDia {
+    
+        margin-left: 1rem;
+        height: 20rem;
+        width: 25rem;
+    }  
+
+    #tituloOferta::after{
+        margin-left: 9rem;
+        content:"  20% OFF" ;
+        color: green;
+        font-size: 0.8rem;
     }
 }
