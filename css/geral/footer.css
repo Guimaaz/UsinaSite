@@ -17,9 +17,14 @@ footer {
     align-items: center;
 }
 
+#Estatuto{
+    margin-left: 7rem;
+    margin-top: 5rem;
+}
 #MapaUsina {
     width: auto;
     height: 8rem;
+    border-radius: 2rem;
 }
 #footerInf,
 #footerLoc {
@@ -35,12 +40,9 @@ footer p,  footer a {
     font-style: normal;
 }
 
-footer h6 {
-    margin: 0;
-    padding-left: 1rem;
-    padding-top: 0.5rem;
+#footerH6 {
+    margin-top: 1rem;
 }
-
 footer p {
     margin: 0.5rem 0;
 }
@@ -81,6 +83,14 @@ footer a {
     footer h6 {
         padding-top: 1rem; 
     }
+
+    #Estatuto{
+        margin-left: 4rem;
+        margin-top: 5rem;
+        white-space: nowrap;
+    }
+
+   
 
    
 
