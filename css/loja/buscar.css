@@ -11,6 +11,7 @@
     
 }
 
+
 #textoBusca {
     float: left;
     background-color: transparent;
@@ -34,9 +35,7 @@
     
 }
 
-#ButtonBusca a {
-    text-decoration: none;
-}
+
 
 .lojaBusca img {
     float: left;
