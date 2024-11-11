@@ -29,8 +29,12 @@ footer {
 #footerInf,
 #footerLoc {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
     align-items: center;
+}
+
+#Devs {
+    margin-left: 6rem;
 }
 footer p,  footer a {
     font-size: large;
