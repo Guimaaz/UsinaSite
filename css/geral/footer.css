@@ -71,13 +71,10 @@ footer a {
     filter: grayscale(5);
 }
 
-.termos{
-    margin-top: 10rem;
-   
-}
+
 
 .termos a {
-    margin: 0;
+    margin: 0; 
     text-decoration: none;
 }
 
