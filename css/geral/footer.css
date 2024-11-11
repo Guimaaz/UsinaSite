@@ -71,6 +71,23 @@ footer a {
     filter: grayscale(5);
 }
 
+.termos{
+    margin-top: 10rem;
+   
+}
+
+.termos a {
+    margin: 0;
+    text-decoration: none;
+}
+
+.termos a:not(:last-child)::after {
+    content: "|";
+    margin: 0 0.3rem; 
+    color: black;
+}
+
+
 @media (max-width: 768px) {
     footer {
         margin-top: 3rem;
