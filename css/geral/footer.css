@@ -85,7 +85,7 @@ footer a {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 1112px) {
     footer {
         margin-top: 3rem;
         padding: 2rem; 
