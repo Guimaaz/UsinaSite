@@ -73,7 +73,7 @@
 .Card2 h1,
 .Card3 h1 {
     backdrop-filter: blur(5px);
-    margin-top: 13rem;
+    margin-top: 3rem;
     color: rgb(0, 0, 0);
     text-decoration: none;
     text-align: center;
