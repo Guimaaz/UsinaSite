@@ -81,8 +81,12 @@ footer a {
 
     #footerContatos {
         margin-top: -3rem; 
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
         
     }
+  
 
     footer h6 {
         padding-top: 1rem; 
