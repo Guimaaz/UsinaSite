@@ -22,7 +22,8 @@
     height: 100%;
     transition: flex 0.5s ease;
     cursor: pointer;
-    background-image: url(/imagens/imgdevs/guimaaz.png);
+    /* background-image: url(/imagens/imgdevs/guimaaz.png); */
+    background-color: #b0e0e6;
     background-size: cover;
     background-position: center;
     margin-right: 0.15625rem;
@@ -36,7 +37,7 @@
     height: 100%;
     transition: flex 0.5s ease;
     cursor: pointer;
-    background-image: url(/imagens/imgdevs/guimaaz.png);
+    background-color: #b0e0e6;
     background-size: cover;
     background-position: center;
     margin-right: 0.15625rem;
@@ -49,7 +50,7 @@
     height: 100%;
     transition: flex 0.5s ease;
     cursor: pointer;
-    background-image: url(/imagens/imgdevs/guimaaz.png);
+    background-color: #b0e0e6;
     background-size: cover;
     background-position: center;
     margin-right: 0.15625rem;
