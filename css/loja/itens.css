@@ -143,6 +143,9 @@ button a {
     text-decoration: none;
 }
 
+#imgOferta {
+    mix-blend-mode: multiply;
+}
 
 .ofertas {
     display: flex;
