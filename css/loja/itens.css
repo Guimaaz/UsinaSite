@@ -151,9 +151,9 @@ button a {
     display: flex;
     margin-top: 3rem;
     border-top: 1px solid #ccc;
-    justify-content: start;
+    justify-content: space-around;
 }
-.ofertaDoDia {
+.ofertaDoDia1,.ofertaDoDia2 {
     
     margin-top: 5rem;
     border-radius: 0.8rem;
@@ -163,6 +163,7 @@ button a {
     align-items: center; 
     height: 20rem;
     width: 30rem;
+    
     
 }
 
@@ -195,7 +196,7 @@ button a {
         align-items: center; 
         justify-content: center;   
     }
-    .ofertaDoDia {
+    .ofertaDoDia1,.ofertaDoDia2 {
     
         margin-left: 4rem;
         height: 20rem;
@@ -230,7 +231,7 @@ button a {
         align-items: center; 
         justify-content: center;     
     }
-    .ofertaDoDia {
+    .ofertaDoDia1,.ofertaDoDia2 {
    
         margin-left: 0rem;
         height: 18rem;
