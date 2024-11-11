@@ -27,7 +27,7 @@
     font-size: 1.2rem;
 }
 
-#tituloOferta::afteR{
+#tituloOferta::after{
     margin-left: 11rem;
     content:"  20% OFF" ;
     color: green;
