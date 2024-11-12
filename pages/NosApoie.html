@@ -74,35 +74,31 @@
                 dessa jornada de transformação!</p>
         </div>
     
-       <div class="container">
-        <div class="selecaoApoio">
-            <p>Escolha uma forma de apoiar:</p>
-            <select id="opcoesApoio" onchange="mostrarTexto()">
-                <option value="">Selecione a forma de ajuda</option>
-                <option value="doacaoFinanceira">Doação Financeira</option>
-                <option value="doacaoAlimentos">Doação de Alimentos</option>
-               
-            </select>
-    
-            
-            <div id="doacaoFinanceira" class="TextoOpcao">
-                <p>A Usina Eco Cultural acredita no poder transformador da cultura, educação e sustentabilidade. Com o apoio de pessoas como você, podemos expandir nossos projetos e alcançar ainda mais pessoas em nossa comunidade. Cada doação financeira é um gesto de confiança no nosso trabalho e uma ajuda essencial para mantermos nossas atividades.
+        <div class="container">
+            <div class="selecaoApoio">
+                <p>Escolha uma forma de apoiar:</p>
+                <select id="opcoesApoio" onchange="mostrarTexto()">
+                    <option value="">Selecione a forma de ajuda</option>
+                    <option value="doacaoFinanceira">Doação Financeira</option>
+                    <option value="doacaoAlimentos">Doação de Alimentos</option>
+                </select>
+        
+                <div id="doacaoFinanceira" class="TextoOpcao">
+                    <p>A Usina Eco Cultural acredita no poder transformador da cultura, educação e sustentabilidade. Com o apoio de pessoas como você, podemos expandir nossos projetos e alcançar ainda mais pessoas em nossa comunidade. Cada doação financeira é um gesto de confiança no nosso trabalho e uma ajuda essencial para mantermos nossas atividades.
 
-                    Com a sua contribuição, conseguimos organizar oficinas, eventos culturais e projetos ambientais que transformam vidas, proporcionando conhecimento, lazer e oportunidades para todos. Investir na Usina Eco Cultural é investir em um futuro mais sustentável, inclusivo e consciente.
-                    
-                    Junte-se a nós nessa jornada de impacto positivo! Doe e ajude a construir uma sociedade mais justa e conectada com a natureza.</p>
+                        Com a sua contribuição, conseguimos organizar oficinas, eventos culturais e projetos ambientais que transformam vidas, proporcionando conhecimento, lazer e oportunidades para todos. Investir na Usina Eco Cultural é investir em um futuro mais sustentável, inclusivo e consciente.
+                        
+                        Junte-se a nós nessa jornada de impacto positivo! Doe e ajude a construir uma sociedade mais justa e conectada com a natureza.</p>
                     <img src="../imagens/imgnosapoie/qrCode.png" id="qrcodeFinanceiro" alt="qrcodeFinanceiro">
-            </div>
-            <div id="doacaoAlimentos" class="TextoOpcao">
-                <p>A Usina Eco Cultural está sempre de portas abertas para acolher a comunidade, oferecendo atividades culturais, educativas e sustentáveis. Mas para manter esse espaço acolhedor e de portas abertas, contamos com a sua ajuda! Doando alimentos, você contribui diretamente para nossas oficinas, eventos e encontros, garantindo que possamos proporcionar refeições e lanches para todos os participantes.
+                </div>
+                <div id="doacaoAlimentos" class="TextoOpcao">
+                    <p>A Usina Eco Cultural está sempre de portas abertas para acolher a comunidade, oferecendo atividades culturais, educativas e sustentáveis. Mas para manter esse espaço acolhedor e de portas abertas, contamos com a sua ajuda! Doando alimentos, você contribui diretamente para nossas oficinas, eventos e encontros, garantindo que possamos proporcionar refeições e lanches para todos os participantes.
 
-                    Cada alimento doado é uma forma de fortalecer essa rede de apoio e possibilitar que mais pessoas participem dos nossos projetos. Seja parte dessa causa, ajudando a alimentar nossa missão de construir uma sociedade mais consciente e solidária. Sua doação faz a diferença!</p>
+                        Cada alimento doado é uma forma de fortalecer essa rede de apoio e possibilitar que mais pessoas participem dos nossos projetos. Seja parte dessa causa, ajudando a alimentar nossa missão de construir uma sociedade mais consciente e solidária. Sua doação faz a diferença!</p>
                     <img src="../imagens/imgnosapoie/qrCode.png" id="qrcodeAlimentar" alt="qrcodeAlimentar">
+                </div>
             </div>
-            
         </div>
-    </div>
-</div>
     <footer>
 
         <div id="footerContatos">
@@ -144,20 +140,20 @@
 });
 </script>
 <script>
-    function mostrarTexto() {
-       
-        document.querySelectorAll('.TextoOpcao').forEach(function(elemento) {
-            elemento.style.display = 'none';
-        });
+  function mostrarTexto() {
+    //
+    document.querySelectorAll('.TextoOpcao').forEach(function(elemento) {
+        elemento.style.display = 'none';
+    });
 
-        
-        const opcao = document.getElementById('opcoesApoio').value;
+    
+    const opcao = document.getElementById('opcoesApoio').value;
 
-        
-        if (opcao) {
-            document.getElementById(opcao).style.display = 'block';
-        }
+   
+    if (opcao) {
+        document.getElementById(opcao).style.display = 'block';
     }
+}
 </script>
 
 <script>function toggleGaleria(event) {
