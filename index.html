@@ -283,10 +283,22 @@
     
 </body>
 <script>document.querySelectorAll('nav a').forEach(link => {
-    if (link.href === window.location.href) {
-        link.classList.add('ativo');
-    }
+   // Seleciona todas as âncoras do menu
+const menuLinks = document.querySelectorAll('nav a');
+
+// Verifica a URL atual
+const currentPage = window.location.pathname});
+
+
+menuLinks.forEach(link => {
+  
+  if (link.getAttribute('href') === currentPage) {
+    link.classList.add('ativo');
+  } else {
+    link.classList.remove('ativo'); 
+  }
 });
+
 </script>
 
 <script>
