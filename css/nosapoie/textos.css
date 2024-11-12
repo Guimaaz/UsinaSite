@@ -74,3 +74,11 @@
     margin: auto;
 }
 
+@media (max-width:768px){
+    #qrcodeFinanceiro, #qrcodeAlimentar {
+        mix-blend-mode: multiply;
+        display: block;
+        margin-left: -4rem;
+    }
+}
+
