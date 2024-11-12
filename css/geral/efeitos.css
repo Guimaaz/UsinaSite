@@ -150,3 +150,9 @@
 .efeitoButtonLoja:hover::afterr {
   scale: 1 1;
 }
+
+.ativo {
+  text-decoration: underline;
+  font-weight: bold; 
+  color: rgb(139, 207, 83);
+}

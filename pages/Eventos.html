@@ -33,7 +33,7 @@
             <a href="./historia.html" id="ancora" class="efeito">História</a>
             <a href="./NosApoie.html" id="ancora" class="efeito">Nos Apoie</a>
             <a href="./Loja.html" id="ancora" class="efeito">Loja</a>
-            <a href="./Eventos.html" id="ancora" class="efeito">Eventos</a>
+            <a href="./Eventos.html" id="ancora" class="efeito ativo">Eventos</a>
             <a href="./Noticias.html" id="ancora" class="efeito">Noticias</a>
             <a href="./Boletim.html" id="ancora" class="efeito">Boletim</a>
             <a href="./FaleConosco.html" id="ancora" class="efeito">Fale conosco</a>
@@ -88,6 +88,12 @@
     </footer>
 
 </body>
+<script>document.querySelectorAll('nav a').forEach(link => {
+    if (link.href === window.location.href) {
+        link.classList.add('ativo');
+    }
+});
+</script>
 <script>function toggleGaleria(event) {
     event.preventDefault(); 
     const opcoes = document.querySelector('.opcoes-galeria');

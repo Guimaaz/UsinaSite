@@ -35,7 +35,7 @@
             <a href="./Loja.html" id="ancora" class="efeito">Loja</a>
             <a href="./Eventos.html" id="ancora" class="efeito">Eventos</a>
             <a href="./Noticias.html" id="ancora" class="efeito">Noticias</a>
-            <a href="./Boletim.html" id="ancora" class="efeito">Boletim</a>
+            <a href="./Boletim.html" id="ancora" class="efeito ativo">Boletim</a>
             <a href="./FaleConosco.html" id="ancora" class="efeito">Fale conosco</a>
             <a href="./Apoiadores.html" id="ancora" class="efeito">Apoiadores</a>
             <div class="galeria">
@@ -89,7 +89,14 @@
     
     </footer>
 </body>
+<script>document.querySelectorAll('nav a').forEach(link => {
+    if (link.href === window.location.href) {
+        link.classList.add('ativo');
+    }
+});
+</script>
 <script>
+    
     function toggleMenu() {
      const menu = document.querySelector('.menu-links');  // Seletor correto
      menu.classList.toggle('show');

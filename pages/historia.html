@@ -31,7 +31,7 @@
     
         <div class="menu-links">
             <a href="../index.html" id="ancora" class="efeito">Coleções</a>
-            <a href="./historia.html" id="ancora" class="efeito">História</a>
+            <a href="./historia.html" id="ancora" class="efeito ativo">História</a>
             <a href="./NosApoie.html" id="ancora" class="efeito">Nos Apoie</a>
             <a href="./Loja.html" id="ancora" class="efeito">Loja</a>
             <a href="./Eventos.html" id="ancora" class="efeito">Eventos</a>
@@ -127,6 +127,12 @@
     </footer>
 
 </body>
+<script>document.querySelectorAll('nav a').forEach(link => {
+    if (link.href === window.location.href) {
+        link.classList.add('ativo');
+    }
+});
+</script>
 <script>function toggleGaleria(event) {
     event.preventDefault(); 
     const opcoes = document.querySelector('.opcoes-galeria');

@@ -33,7 +33,7 @@
         <i data-lucide="menu" class='menu-burguer' onclick="toggleMenu()"></i>
 
         <div class="menu-links">
-            <a href="./index.html" id="ancora" class="efeito">Coleções</a>
+            <a href="./index.html" id="ancora" class="efeito ativo">Coleções</a>
             <a href="./pages/historia.html" id="ancora" class="efeito">História</a>
             <a href="./pages/NosApoie.html" id="ancora" class="efeito">Nos Apoie</a>
             <a href="./pages/Loja.html" id="ancora" class="efeito">Loja</a>
@@ -282,6 +282,12 @@
     
     
 </body>
+<script>document.querySelectorAll('nav a').forEach(link => {
+    if (link.href === window.location.href) {
+        link.classList.add('ativo');
+    }
+});
+</script>
 <script>
     document.getElementById('footerEmail').addEventListener('click',function(){
         window.open('https://google.com','_blank');
