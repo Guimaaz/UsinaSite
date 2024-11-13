@@ -37,10 +37,15 @@
 
 
 
+
+
 .lojaBusca img {
     float: left;
     height: 100%;
 }
+
+
+
 
 @media (max-width:768px) {
    .lojaBusca {
@@ -48,4 +53,8 @@
     margin-top: 0.1rem;
    }
 
+   
+  
+
 }
+
