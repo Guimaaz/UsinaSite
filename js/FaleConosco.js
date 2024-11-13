@@ -1,4 +1,4 @@
-document.getElementById('contact-form').addEventListener('submit', function(event) {
+document.getElementById('.OpcaoIntegrante').addEventListener('submit', function(event) {
      
     event.preventDefault();
     
@@ -9,9 +9,10 @@ document.getElementById('contact-form').addEventListener('submit', function(even
     const numero = document.getElementById('numero').value.trim();
     const email = document.getElementById('email').value.trim();
     const conheceu = document.getElementById('conheceu').value.trim()
+    const arte = document.getElementById('arte').value.trim();
 
     
-    if (!assunto || !nome || !sobrenome || !numero || !email || !conheceu) {
+    if (!assunto || !nome || !sobrenome || !numero || !email || !conheceu ||!arte) {
         alert('Por favor, preencha todos os campos antes de enviar.');
         return; 
     }
@@ -23,6 +24,7 @@ document.getElementById('contact-form').addEventListener('submit', function(even
     console.log("Número:", numero);
     console.log("Email:", email);
     console.log("Conheceu:", conheceu)
+    console.log("Arte:", arte);
 
     
     alert('Mensagem enviado com sucesso!');

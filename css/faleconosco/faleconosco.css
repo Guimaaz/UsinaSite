@@ -43,7 +43,7 @@
 }
 
 
-form button {
+.OpcaoIntegrante button {
     background-color: rgb(139, 207, 83);
     border: none;
     width: 12.5rem;
@@ -58,4 +58,15 @@ form button {
     margin: 0 ;
     margin-top: 1rem;
     margin-bottom: 3rem;
+}
+
+#opcoesAssunto {
+    padding: 0.5rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 0.3125rem; 
+    box-shadow: 0.625rem 0.625rem 0.625rem rgba(0, 0, 0, 0.1); 
+    width: 100%;
+    margin: 1.25rem auto;  
 }
