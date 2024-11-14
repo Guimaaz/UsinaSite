@@ -85,7 +85,7 @@ img#card4 {
 }
 
 
-.Card button, #editModeBtn {
+.Card button, #editModeBtn,#languageButton {
     background-color: rgb(139, 207, 83);
     border: none;
     width: 12.5rem;
