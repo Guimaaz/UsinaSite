@@ -4,7 +4,7 @@ de Tecnologia.
 
 | Descrição | Imagem |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------|
-| O projeto visa aprimorar o site da instituição parceira "Usina Eco Cultural" para aumentar seu alcance e atrair potenciais colaboradores. Nossa proposta é desenvolver uma site com um design atrativo e  e funcionalidades úteis, que transmitam a credibilidade da instituição e criem uma experiência agradável para os visitantes.  | <img src="imagens/imgeral/UsinaLogo.png" width="2000"/> |
+| O projeto "Usina Eco Cultural" é uma iniciativa incrível que promove cultura, sustentabilidade e desenvolvimento social, conectando artistas, educadores e a comunidade. Nosso objetivo com o novo site é destacar essas ações transformadoras, oferecendo um design moderno e funcional que facilite o acesso a informações e a interação com colaboradores e parceiros. A plataforma será essencial para ampliar o alcance da Usina, tornando mais fácil para o público acompanhar projetos, participar de eventos e se engajar nas causas promovidas pela instituição. | <img src="imagens/imgeral/UsinaLogo.png" width="2000"/> |
 
 
 
