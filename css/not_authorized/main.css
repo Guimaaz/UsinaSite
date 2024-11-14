@@ -1,0 +1,34 @@
+.main-content {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.main-content h1 {
+  font-size: 6rem;
+}
+
+.main-content p {
+  font-size: 1.25rem;
+}
+
+.main-content button {
+  padding: 0.75rem;
+  border: 0;
+  background-color: rgb(139, 207, 83);
+  border-radius: .25rem;
+
+  transition: all .15s linear;
+}
+
+.main-content button:hover {
+  background-color: rgb(139, 207, 83, 0.8);
+}
+
+footer {
+  margin-top: 13rem;
+}
