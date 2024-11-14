@@ -38,3 +38,15 @@ de Tecnologia.
 | Guilherme Resende De Moura Brasil            | 24.01242-4  |
 | Gustavo Guimarães Rodrigues                  | 24.00805-2  |
 
+
+
+## 🚀 Como Utilizar
+
+### Para visualização do projeto **Usina site**:
+
+### 1. **Clone o repositório:**
+
+    https://github.com/Guimaaz/UsinaSite.git
+
+
+
