@@ -4,7 +4,8 @@ de Tecnologia.
 
 | Descrição | Imagem |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------|
-| O projeto visa aprimorar o site da instituição parceira "Usina Eco Cultural" para aumentar seu alcance e atrair potenciais colaboradores. Nossa proposta é desenvolver uma site com um design atrativo e  e funcionalidades úteis, que transmitam a credibilidade da instituição e criem uma experiência agradável para os visitantes. | <img src="images/fachada_semeador.jpg" width="2000"/> |
+| O projeto visa aprimorar o site da instituição parceira "Usina Eco Cultural" para aumentar seu alcance e atrair potenciais colaboradores. Nossa proposta é desenvolver uma site com um design atrativo e  e funcionalidades úteis, que transmitam a credibilidade da instituição e criem uma experiência agradável para os visitantes.  | <img src="imagens/imgeral/UsinaLogo.png" width="2000"/> |
+
 
 
 ## 🔧 Tecnologias Usadas
