@@ -30,3 +30,11 @@ de Tecnologia.
 ![Nodemailer](https://img.shields.io/badge/Nodemailer-%23009639.svg?style=for-the-badge&logo=nodemailer&logoColor=white)
 
 ![BiomeJS](https://img.shields.io/badge/BiomeJS-%23328AF1.svg?style=for-the-badge&logo=biome&logoColor=white)
+
+## 👨‍💻 Participantes
+| Nome                                         | RA          |
+|----------------------------------------------|-------------|
+| Eike Marchiori Ulinski                       | 24.00682-3  |
+| Guilherme Resende De Moura Brasil            | 24.01242-4  |
+| Gustavo Guimarães Rodrigues                  | 24.00805-2  |
+
