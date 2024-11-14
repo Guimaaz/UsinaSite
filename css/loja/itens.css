@@ -1,0 +1,260 @@
+#tituloCompras {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    text-decoration: none;
+    text-align: center;
+    font-family: "Afacad Flux", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+}
+
+#tituloOferta {
+    text-decoration: none;
+    text-align: center;
+    font-family: "Afacad Flux", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+    margin-left: 0rem
+}
+
+#tituloItemOferta {
+    margin-top: -1rem;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+#tituloOferta::after {
+    margin-left: 11rem;
+    content: "  20% OFF";
+    color: green;
+    font-size: 0.8rem;
+}
+
+#antigopreco {
+    text-decoration: line-through;
+    margin-top: -0.5rem;
+}
+
+#precoOferta {
+    margin-top: -1.5rem;
+    text-decoration: none;
+    text-align: center;
+    font-family: "Afacad Flux", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+    font-size: 2.5rem;
+}
+
+
+
+#imgOferta {
+
+    height: 10rem;
+    width: auto;
+
+}
+
+#h1itenscomprados {
+    margin-top: 2rem;
+    text-decoration: none;
+    text-align: center;
+    font-family: "Afacad Flux", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+    font-size: 1.2rem;
+}
+
+.caixaItens {
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+
+}
+
+
+#locationIcon {
+    height: 5em;
+    width: auto;
+    margin-top: 1rem;
+
+
+}
+
+#paymentIcon {
+    height: 6em;
+    width: auto;
+    margin-top: 0.5rem;
+}
+
+#soldIcon {
+    height: 6em;
+    width: auto;
+    margin-top: 0.5rem;
+}
+
+#plocation,
+#ppayment,
+#psold {
+    margin-top: 1rem;
+
+    font-size: 1.5;
+}
+
+.item1,
+.item2,
+.item3,
+.item4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 20rem;
+    width: 15rem;
+    box-shadow: 0.625rem 0.625rem 0.625rem rgba(0, 0, 0, 0.178);
+    border-radius: 2rem;
+    transition: transform 0.8s ease;
+}
+
+.item1:hover,
+.item2:hover,
+.item3:hover,
+.item4:hover,
+.ofertaDoDia1:hover,
+.ofertaDoDia2:hover {
+    transform: scale(1.05);
+    mix-blend-mode: multiply;
+}
+
+
+#buttonCardLoja {
+    border: none;
+    height: 2rem;
+    border-radius: 0.8rem;
+    width: auto;
+    font-weight: bold;
+    background: rgb(139, 207, 83);
+    cursor: pointer;
+}
+
+button a {
+    text-decoration: none;
+}
+
+#imgOferta {
+    mix-blend-mode: multiply;
+}
+
+.ofertas {
+    display: flex;
+    margin-top: 3rem;
+    border-top: 1px solid #ccc;
+    justify-content: space-around;
+}
+
+.ofertaDoDia1,
+.ofertaDoDia2 {
+
+    margin-top: 5rem;
+    border-radius: 0.8rem;
+    box-shadow: 0.625rem 0.625rem 0.625rem rgba(0, 0, 0, 0.178);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 20rem;
+    width: 30rem;
+    transition: transform 0.8s ease;
+
+
+}
+
+
+@media (max-width:1200px) {
+    .ofertas {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media (max-width:768px) {
+    .caixaItens {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+    }
+
+    .item1,
+    .item2,
+    .item3,
+    .item4 {
+        width: 80%;
+        margin-bottom: 1rem;
+    }
+
+    .ofertas {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .ofertaDoDia1,
+    .ofertaDoDia2 {
+
+        margin-left: 4rem;
+        height: 20rem;
+        width: 25rem;
+    }
+
+    #tituloOferta::after {
+        margin-left: 9rem;
+        content: "  20% OFF";
+        color: green;
+        font-size: 0.8rem;
+    }
+
+}
+
+@media (max-width:575px) {
+    .caixaItens {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+    }
+
+    .item1,
+    .item2,
+    .item3,
+    .item4 {
+        width: 80%;
+        margin-bottom: 1rem;
+    }
+
+    .ofertas {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .ofertaDoDia1,
+    .ofertaDoDia2 {
+
+        margin-left: 0rem;
+        height: 18rem;
+        max-width: 100%;
+    }
+
+    #tituloOferta::after {
+        margin-left: 9rem;
+        content: "  20% OFF";
+        color: green;
+        font-size: 0.8rem;
+    }
+}

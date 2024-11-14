@@ -15,7 +15,7 @@
     position: absolute;
     content: "";
     inset: 0;
-    background-color: #fefefe;
+    background-color: #ECECEC;
     scale: 1 0;
     z-index: -1;
     transition: 0.45s;
@@ -82,8 +82,8 @@
 }
 
 .spinner {
-  border: 3px solid #f3f3f3; /* Cor do fundo do spinner */
-  border-top: 3px solid #4CAF50; /* Cor da borda de rotação */
+  border: 3px solid #f3f3f3; 
+  border-top: 3px solid #4CAF50; 
   border-radius: 50%;
   width: 16px;
   height: 16px;
@@ -123,4 +123,36 @@
 
 .efeitoButtonDev:hover::after {
   scale: 1 1;
+}
+
+
+.efeitoButtonLoja{
+  transition: color 0.25s;
+  color: #000000;
+  
+}
+
+.efeitoButtonLoja:hover {
+  color: rgb(255, 255, 255);
+  
+}
+
+.efeitoButtonLoja::after {
+  position: absolute;
+  content: "";
+  inset: 0;
+  background-color: #fefefe;
+  scale: 1 0;
+  z-index: -1;
+  transition: 0.45s;
+  border-radius: 10px;
+}
+.efeitoButtonLoja:hover::afterr {
+  scale: 1 1;
+}
+
+.ativo {
+  text-decoration: underline;
+  font-weight: bold; 
+  color: rgb(139, 207, 83);
 }

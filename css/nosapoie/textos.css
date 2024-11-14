@@ -1,0 +1,84 @@
+.textoApoie p{
+    border-radius: 0.3125rem; 
+    background-size: 100% 100%;
+    
+    box-shadow: 0.625rem 0.625rem 0.625rem rgba(0, 0, 0, 0.1); 
+    max-width: 80%;
+    margin: 1.25rem auto; 
+    font-family: "Urbanist", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    padding: 0.625rem; 
+    font-size: 1.5rem;
+}
+#h1apoie{
+    text-decoration: 2px underline  rgb(139, 207, 83);
+}
+.tituloApoie h1{
+    font-size: 4rem;
+    text-decoration: none;
+    text-align: center;
+    font-family: "Afacad Flux", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+}
+
+.selecaoApoio {
+    max-width: 80%;
+    margin: 1.25rem auto;
+    font-family: "Urbanist", sans-serif;
+    
+}
+
+.selecaoApoio p {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    border-radius: 0.3125rem; 
+}
+
+.selecaoApoio select {
+    padding: 0.5rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 0.3125rem; 
+    box-shadow: 0.625rem 0.625rem 0.625rem rgba(0, 0, 0, 0.1); 
+    width: 100%;
+    margin: 1.25rem auto; 
+    
+   
+}
+
+.TextoOpcao {
+    display: none;
+    border-radius: 0.3125rem; 
+    box-shadow: 0.625rem 0.625rem 0.625rem rgba(0, 0, 0, 0.1); 
+    width: 100%;
+    margin: 1.25rem auto; 
+    font-family: "Urbanist", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    padding: 0.625rem; 
+    font-size: 1.5rem;
+    
+
+}
+
+#qrcodeFinanceiro, #qrcodeAlimentar {
+    mix-blend-mode: multiply;
+    display: block;
+    margin: auto;
+}
+
+@media (max-width:768px){
+    #qrcodeFinanceiro, #qrcodeAlimentar {
+        mix-blend-mode: multiply;
+        display: block;
+        margin-left: -4rem;
+    }
+}
+

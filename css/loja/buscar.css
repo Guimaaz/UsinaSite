@@ -1,0 +1,60 @@
+.lojaBusca {
+    display: flex;
+    margin-left: 8.5rem;
+    background-color: #Efefef;
+    border-radius: 10px;
+    max-width: 19rem;
+    height: 2rem;
+    margin-top: -3rem;
+    box-shadow: 0.625rem 0.625rem 0.625rem  rgba(0, 0, 0, 0.178);
+    
+    
+}
+
+
+#textoBusca {
+    float: left;
+    background-color: transparent;
+    padding-left: 5px;
+    font-size: 18px;
+    border: none;
+    height: 32px;
+    width: 191px;
+}
+
+#ButtonBusca {
+    border: none;
+    float: left;
+    height: 2rem;
+    border-radius: 0 7px 7px 0;
+    width: 26.5%;
+    font-weight: bold;
+    background: rgb(139, 207, 83);
+    cursor: pointer;
+    
+    
+}
+
+
+
+
+
+.lojaBusca img {
+    float: left;
+    height: 100%;
+}
+
+
+
+
+@media (max-width:768px) {
+   .lojaBusca {
+    margin-left: 2.5rem;
+    margin-top: 0.1rem;
+   }
+
+   
+  
+
+}
+

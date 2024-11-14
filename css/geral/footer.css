@@ -7,7 +7,7 @@ footer {
     text-align: center;
     padding: 50px;
     bottom: 0;
-    margin-top: auto; 
+    margin-top: 3rem; 
     gap: 5rem;
 }
 
@@ -17,12 +17,24 @@ footer {
     align-items: center;
 }
 
-
+#Estatuto{
+    margin-left: 7rem;
+    margin-top: 5rem;
+}
+#MapaUsina {
+    width: auto;
+    height: 8rem;
+    border-radius: 2rem;
+}
 #footerInf,
 #footerLoc {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
     align-items: center;
+}
+
+#Devs {
+    margin-left: 6rem;
 }
 footer p,  footer a {
     font-size: large;
@@ -32,12 +44,9 @@ footer p,  footer a {
     font-style: normal;
 }
 
-footer h6 {
-    margin: 0;
-    padding-left: 1rem;
-    padding-top: 0.5rem;
+#footerH6 {
+    margin-top: 1rem;
 }
-
 footer p {
     margin: 0.5rem 0;
 }
@@ -59,9 +68,24 @@ footer a {
 #imgFooterNumero,#imgFooterEmail{
     height: 2.5rem;
     width: auto;
+    filter: grayscale(5);
 }
 
-@media (max-width: 768px) {
+
+
+.termos a {
+    margin: 0; 
+    text-decoration: none;
+}
+
+.termos a:not(:last-child)::after {
+    content: "|";
+    margin: 0 0.3rem; 
+    color: black;
+}
+
+
+@media (max-width: 1112px) {
     footer {
         margin-top: 3rem;
         padding: 2rem; 
@@ -71,12 +95,26 @@ footer a {
 
     #footerContatos {
         margin-top: -3rem; 
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
         
     }
+  
 
     footer h6 {
         padding-top: 1rem; 
     }
+
+    #Estatuto{
+        margin-left: 4rem;
+        margin-top: 5rem;
+        white-space: nowrap;
+    }
+
+   
+
+   
 
     
 }
