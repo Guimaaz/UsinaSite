@@ -102,7 +102,7 @@ img#card4 {
 }
 
 
-@media (max-width: 1200px) {
+/* @media (max-width: 1200px) {
     .container {
         display: block;
     }
@@ -306,4 +306,4 @@ img#card4 {
         border-radius: 5%;
         padding-bottom: 0.25rem;
     }
-}
+} */
