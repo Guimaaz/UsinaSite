@@ -17,8 +17,21 @@ async function validateUserPermission() {
 
 async function validateOrRedirect() {
   if (!await validateUserPermission()) {
-    window.location.href = "../index.html";
+    window.location.href = "./Not_Authorized.html";
   }
+}
+
+function formatDate(dateString) {
+  const date = new Date(dateString);
+  const year = date.getFullYear();
+  const month = String(date.getMonth() + 1).padStart(2, '0');
+  const day = String(date.getDate()).padStart(2, '0');
+  return `${year}-${month}-${day}`;
+}
+
+function formatDateToDDMMYYYY(dateStr) {
+  const [year, month, day] = dateStr.split("-");
+  return `${day}/${month}/${year}`;
 }
 
 async function loadEvents() {
@@ -42,15 +55,76 @@ async function loadEvents() {
         <a href="./pages/Boletim.html" id="cardLink${index + 1}">
           <button class="efeitoButton">Saiba Mais</button>
         </a>
+        <div id="cardBtns">
+          <button class="editButton" data-index="${index}">Editar</button>
+          <button class="deleteButton">Deletar</button>
+        </div>
       `;
       
       eventCardDiv.appendChild(cardDiv);
     });
+
+    document.querySelectorAll('.editButton').forEach(button => {
+      button.addEventListener('click', function() {
+        const index = this.getAttribute('data-index')
+        console.log(events[index])
+        openModalWithEventData(events[index])
+      })
+    })
     
   } catch (e) {
     console.log(e)
   }
 }
+
+let currentEventId = null
+
+function openModalWithEventData(event) {
+  const nameInput = document.getElementById('editName')
+  const contentTextarea = document.getElementById('editContent')
+  const imageLinkInput = document.getElementById('editImageLink')
+  const dateInput = document.getElementById('editDate')
+
+  nameInput.value = event.name || ''
+  contentTextarea.value = event.content || ''
+  imageLinkInput.value = event.imageUrl || ''
+
+  dateInput.value = formatDate(event.eventDate) || ''
+
+  currentEventId = event._id
+
+  modal.style.display = 'flex'
+}
+
+function saveEditedEvent() {
+  const name = document.getElementById('editName').value
+  const content = document.getElementById('editContent').value
+  const imageLink = document.getElementById('editImageLink').value
+  const date = document.getElementById('editDate').value
+
+  if(!currentEventId) {
+    alert('Evento não encontrado')
+    return
+  }
+
+  const updatedEventData = {
+    name,
+    content,
+    imageUrl,
+    eventDate: formatDateToDDMMYYYY(date)
+  }
+}
+
+document.getElementById('saveEditEventBtn').addEventListener('click', saveEditedEvent)
+
+document.getElementById('closeEditEventModalBtn').addEventListener('click', () => {
+  document.getElementById('editEventModal').style.display = 'none';
+});
+
+// Fecha o modal ao clicar no botão "Cancelar"
+document.getElementById('cancelEditEventBtn').addEventListener('click', () => {
+  document.getElementById('editEventModal').style.display = 'none';
+});
 
 async function loadNews() {
   try {

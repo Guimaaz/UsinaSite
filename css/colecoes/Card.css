@@ -12,7 +12,7 @@
 
 
 
- .Card a {
+.Card a {
     text-decoration: none;
 }
 
@@ -37,11 +37,44 @@
 .Card3:hover,
 .Card4:hover {
     flex: 6;
-
 }
 
+.Card1:hover #cardBtns {
+    display: flex;
+}
 
+.Card2:hover #cardBtns {
+    display: flex;
+}
 
+.Card3:hover #cardBtns {
+    display: flex;
+}
+
+.Card4:hover #cardBtns {
+    display: flex;
+}
+
+#cardBtns {
+    margin-top: 3rem;
+    display: none;
+}
+
+#cardBtns .editButton {
+    margin-right: 1rem;
+    background-color: lightblue;
+    color: black;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+#cardBtns .deleteButton {
+    margin-right: 1rem;
+    background-color: lightcoral;
+    color: black;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
 
 
 .Card1 p,
@@ -81,11 +114,12 @@ img#card4 {
     box-shadow: 0.625rem 0.625rem 0.625rem rgba(0, 0, 0, 0.178);
 
 
-    
+
 }
 
 
-.Card button, #editModeBtn {
+.Card button,
+#editModeBtn {
     background-color: rgb(139, 207, 83);
     border: none;
     width: 12.5rem;
@@ -134,7 +168,7 @@ img#card4 {
     .Card2,
     .Card3,
     .Card4 {
-        transition:none;
+        transition: none;
         text-align: center;
         margin: 2rem 0;
         align-items: center;
@@ -184,7 +218,7 @@ img#card4 {
     .Card2,
     .Card3,
     .Card4 {
-        transition:none;
+        transition: none;
         text-align: center;
         margin: 2rem 0;
         align-items: center;
@@ -246,7 +280,7 @@ img#card4 {
     .Card2,
     .Card3,
     .Card4 {
-        transition:none;
+        transition: none;
         max-width: 100%;
         height: 10%;
         cursor: pointer;
@@ -260,9 +294,6 @@ img#card4 {
 }
 
 @media (max-width: 576px) {
-
-    
-
     .Card {
         display: block;
         flex-direction: row;
@@ -298,7 +329,7 @@ img#card4 {
     .Card2,
     .Card3,
     .Card4 {
-        transition:none;
+        transition: none;
         max-width: 100%;
         height: 10%;
         cursor: pointer;
