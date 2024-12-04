@@ -1,4 +1,4 @@
-.titulo h1 {
+.titulo {
     text-decoration: none;
     text-align: center;
     font-family: "Afacad Flux", sans-serif;
@@ -8,5 +8,3 @@
     font-variation-settings: "slnt" 0;
     text-decoration: 2px underline  rgb(139, 207, 83);
 }
-
-

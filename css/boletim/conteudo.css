@@ -1,0 +1,14 @@
+#imgBoletim1, #imgBoletim2,  #imgBoletim3 {
+    display: flex;
+    width: 40%;
+    height: 50%;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+
+.imagens, .imagens2 {
+    display: flex;
+    gap: 10rem;
+    justify-content: center;
+    padding: 1rem;
+}
