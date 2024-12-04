@@ -6,6 +6,11 @@
     border-radius: 0.5rem;
 }
 
+.conteudo p{
+    margin: 0 auto;
+   
+}
+
 .imagens, .imagens2 {
     display: flex;
     gap: 10rem;
@@ -31,6 +36,13 @@
         padding: 1rem;
        
         
+    }
+
+    .conteudo p {
+        max-width: 100%; 
+        font-size: 1em;
+        margin: 0.625rem auto; 
+        padding: 1rem; 
     }
     
 
