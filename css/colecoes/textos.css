@@ -95,8 +95,17 @@
         padding-top: 0rem;
     }
     .textos h1 {
-        font-size: 1.5em;
+        
         margin: 1.25rem 0;
+        font-size: 2rem;
+    text-decoration: none;
+    text-align: center;
+    font-family: "Afacad Flux", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+    text-decoration: 2px underline  rgb(139, 207, 83);
     }
 
     .textos p {
