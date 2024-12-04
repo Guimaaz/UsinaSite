@@ -21,7 +21,7 @@
         rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-        <link rel="shortcut icon" href="../imagens/imgeral/UsinaLogo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../imagens/imgeral/UsinaLogo.png" type="image/x-icon">
 </head>
 
 <body>
@@ -48,9 +48,10 @@
             </div>
             <a href="./Login.html" id="CelularLogin" class="efeito">Login</a>
             <button id="loginButton" class="loginicon">
-                <a href="./Login.html">
-                    <img id="loginIconImage" src="../imagens/imgeral/Login.png" alt="Login">
+                <a href="./pages/Login.html" id="loginOrDashboardBtn">
+                    <img id="loginIconImage" loading="lazy" src="../imagens/imgeral/Login.png" alt="Login">
                     <span id="dashboardText" style="display: none; border: none;">Dashboard</span>
+                    <span id="cartText" style="display: none; border: none;">Carrinho</span>
                 </a>
             </button>
         </div>
@@ -62,18 +63,22 @@
             <h1 id="h1apoie">Nos Apoie!</h1>
         </div>
         <div class="textoApoie">
-            <p> A Usina Eco Cultural precisa de você para continuar transformando vidas e fortalecendo a comunidade! Com sua
-                ajuda, podemos levar adiante nossos projetos de cultura, educação e sustentabilidade, impactando positivamente o
+            <p> A Usina Eco Cultural precisa de você para continuar transformando vidas e fortalecendo a comunidade! Com
+                sua
+                ajuda, podemos levar adiante nossos projetos de cultura, educação e sustentabilidade, impactando
+                positivamente o
                 nosso meio ambiente e a nossa sociedade.
-    
+
                 Você pode fazer a diferença com doações financeiras, que garantem a manutenção e ampliação das nossas
-                atividades, e também com doações de alimentos, materiais de higiene, e outros itens essenciais para o dia a dia
+                atividades, e também com doações de alimentos, materiais de higiene, e outros itens essenciais para o
+                dia a dia
                 dos nossos eventos e oficinas.
-    
-                Cada contribuição conta e nos permite construir juntos um espaço cada vez mais acolhedor e inclusivo. Seja parte
+
+                Cada contribuição conta e nos permite construir juntos um espaço cada vez mais acolhedor e inclusivo.
+                Seja parte
                 dessa jornada de transformação!</p>
         </div>
-    
+
         <div class="container">
             <div class="selecaoApoio">
                 <p>Escolha uma forma de apoiar:</p>
@@ -82,87 +87,99 @@
                     <option value="doacaoFinanceira">Doação Financeira</option>
                     <option value="doacaoAlimentos">Doação de Alimentos</option>
                 </select>
-        
-                <div id="doacaoFinanceira" class="TextoOpcao">
-                    <p>A Usina Eco Cultural acredita no poder transformador da cultura, educação e sustentabilidade. Com o apoio de pessoas como você, podemos expandir nossos projetos e alcançar ainda mais pessoas em nossa comunidade. Cada doação financeira é um gesto de confiança no nosso trabalho e uma ajuda essencial para mantermos nossas atividades.
 
-                        Com a sua contribuição, conseguimos organizar oficinas, eventos culturais e projetos ambientais que transformam vidas, proporcionando conhecimento, lazer e oportunidades para todos. Investir na Usina Eco Cultural é investir em um futuro mais sustentável, inclusivo e consciente.
-                        
-                        Junte-se a nós nessa jornada de impacto positivo! Doe e ajude a construir uma sociedade mais justa e conectada com a natureza.</p>
+                <div id="doacaoFinanceira" class="TextoOpcao">
+                    <p>A Usina Eco Cultural acredita no poder transformador da cultura, educação e sustentabilidade. Com
+                        o apoio de pessoas como você, podemos expandir nossos projetos e alcançar ainda mais pessoas em
+                        nossa comunidade. Cada doação financeira é um gesto de confiança no nosso trabalho e uma ajuda
+                        essencial para mantermos nossas atividades.
+
+                        Com a sua contribuição, conseguimos organizar oficinas, eventos culturais e projetos ambientais
+                        que transformam vidas, proporcionando conhecimento, lazer e oportunidades para todos. Investir
+                        na Usina Eco Cultural é investir em um futuro mais sustentável, inclusivo e consciente.
+
+                        Junte-se a nós nessa jornada de impacto positivo! Doe e ajude a construir uma sociedade mais
+                        justa e conectada com a natureza.</p>
                     <img src="../imagens/imgnosapoie/qrCode.png" id="qrcodeFinanceiro" alt="qrcodeFinanceiro">
                 </div>
                 <div id="doacaoAlimentos" class="TextoOpcao">
-                    <p>A Usina Eco Cultural está sempre de portas abertas para acolher a comunidade, oferecendo atividades culturais, educativas e sustentáveis. Mas para manter esse espaço acolhedor e de portas abertas, contamos com a sua ajuda! Doando alimentos, você contribui diretamente para nossas oficinas, eventos e encontros, garantindo que possamos proporcionar refeições e lanches para todos os participantes.
+                    <p>A Usina Eco Cultural está sempre de portas abertas para acolher a comunidade, oferecendo
+                        atividades culturais, educativas e sustentáveis. Mas para manter esse espaço acolhedor e de
+                        portas abertas, contamos com a sua ajuda! Doando alimentos, você contribui diretamente para
+                        nossas oficinas, eventos e encontros, garantindo que possamos proporcionar refeições e lanches
+                        para todos os participantes.
 
-                        Cada alimento doado é uma forma de fortalecer essa rede de apoio e possibilitar que mais pessoas participem dos nossos projetos. Seja parte dessa causa, ajudando a alimentar nossa missão de construir uma sociedade mais consciente e solidária. Sua doação faz a diferença!</p>
+                        Cada alimento doado é uma forma de fortalecer essa rede de apoio e possibilitar que mais pessoas
+                        participem dos nossos projetos. Seja parte dessa causa, ajudando a alimentar nossa missão de
+                        construir uma sociedade mais consciente e solidária. Sua doação faz a diferença!</p>
                     <img src="../imagens/imgnosapoie/qrCode.png" id="qrcodeAlimentar" alt="qrcodeAlimentar">
                 </div>
             </div>
         </div>
-    <footer>
+        <footer>
 
-        <div id="footerContatos">
-            <h6 id="footerH6">Nossos contatos :</h6>
-            <button id="footerEmail"> <img src="../imagens/imgeral/email.png" id="imgFooterEmail" alt=""></button>
-            <button id="footerNumero">
-                <img src="../imagens/imgeral/NumeroWhatsapp.png" id="imgFooterNumero">
-            </button>
-        </div>
-
-
-        <div class="footerInf">
-            <h6 id="footerH6">Mais Informações</h6>
-            <a href="https://drive.google.com/file/d/1kDx72fzrCsVuIQG3DY9QdLEcpThjbB56/view?fbclid=PAZXh0bgNhZW0CMTEAAabc06wfFhICfDW4tJ2UJBjwyRyvd636frAaW9HSppAnO-TuD9LKdkk6IRA_aem_bun_HSnO3C0WycvdG6Ob_w"
-                target="_blank" class="efeito" id="Estatuto">Conheça o Nosso Estatuto</a><br>
-            <a href="./Devs.html" target="_blank" class="efeito" id="Devs">Devs</a>
-            <div class="termos">
-                <a href="">Termos e condições</a><a href="">Política de privacidade</a>
+            <div id="footerContatos">
+                <h6 id="footerH6">Nossos contatos :</h6>
+                <button id="footerEmail"> <img src="../imagens/imgeral/email.png" id="imgFooterEmail" alt=""></button>
+                <button id="footerNumero">
+                    <img src="../imagens/imgeral/NumeroWhatsapp.png" id="imgFooterNumero">
+                </button>
             </div>
-        </div>
 
-        <div class="footerLoc">
-            <h6 id="footerH6">Onde nos encontrar</h6>
-            <iframe id="MapaUsina"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.612013689784!2d-46.61707808446465!3d-23.60463296837157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5b68bb1ff91f%3A0x10906e5b4d2852c3!2sR.%20Breno%20Ferraz%20do%20Amaral%2C%20415-B%20-%20Cursino%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2004124-020!5e0!3m2!1spt-BR!2sbr!4v1699485644350!5m2!1spt-BR!2sbr"
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-        </div>
-        <div vw class="enabled">
-            <div vw-access-button class="active"></div>
-            <div vw-plugin-wrapper>
-              <div class="vw-plugin-top-wrapper"></div>
+
+            <div class="footerInf">
+                <h6 id="footerH6">Mais Informações</h6>
+                <a href="https://drive.google.com/file/d/1kDx72fzrCsVuIQG3DY9QdLEcpThjbB56/view?fbclid=PAZXh0bgNhZW0CMTEAAabc06wfFhICfDW4tJ2UJBjwyRyvd636frAaW9HSppAnO-TuD9LKdkk6IRA_aem_bun_HSnO3C0WycvdG6Ob_w"
+                    target="_blank" class="efeito" id="Estatuto">Conheça o Nosso Estatuto</a><br>
+                <a href="./Devs.html" target="_blank" class="efeito" id="Devs">Devs</a>
+                <div class="termos">
+                    <a href="">Termos e condições</a><a href="">Política de privacidade</a>
+                </div>
             </div>
-          </div>
+
+            <div class="footerLoc">
+                <h6 id="footerH6">Onde nos encontrar</h6>
+                <iframe id="MapaUsina"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.612013689784!2d-46.61707808446465!3d-23.60463296837157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5b68bb1ff91f%3A0x10906e5b4d2852c3!2sR.%20Breno%20Ferraz%20do%20Amaral%2C%20415-B%20-%20Cursino%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2004124-020!5e0!3m2!1spt-BR!2sbr!4v1699485644350!5m2!1spt-BR!2sbr"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+            <div vw class="enabled">
+                <div vw-access-button class="active"></div>
+                <div vw-plugin-wrapper>
+                    <div class="vw-plugin-top-wrapper"></div>
+                </div>
+            </div>
 
 
-    </footer>
+        </footer>
 </body>
 <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-  <script>
+<script>
     new window.VLibras.Widget('https://vlibras.gov.br/app');
-  </script>
+</script>
 <script>document.querySelectorAll('nav a').forEach(link => {
-    if (link.href === window.location.href) {
-        link.classList.add('ativo');
-    }
-});
+        if (link.href === window.location.href) {
+            link.classList.add('ativo');
+        }
+    });
 </script>
 <script>
-  function mostrarTexto() {
-    //
-    document.querySelectorAll('.TextoOpcao').forEach(function(elemento) {
-        elemento.style.display = 'none';
-    });
+    function mostrarTexto() {
+        //
+        document.querySelectorAll('.TextoOpcao').forEach(function (elemento) {
+            elemento.style.display = 'none';
+        });
 
-    
-    const opcao = document.getElementById('opcoesApoio').value;
 
-   
-    if (opcao) {
-        document.getElementById(opcao).style.display = 'block';
+        const opcao = document.getElementById('opcoesApoio').value;
+
+
+        if (opcao) {
+            document.getElementById(opcao).style.display = 'block';
+        }
     }
-}
 </script>
 
 <script src="../js/Galeria.js"></script>
@@ -174,6 +191,8 @@
 
 
 </script>
+<script src="/js/navbar.js"></script>
+
 <script src="https://unpkg.com/lucide@latest"></script>
 <script>
     lucide.createIcons()

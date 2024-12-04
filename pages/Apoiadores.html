@@ -23,13 +23,13 @@
         rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-        <link rel="shortcut icon" href="../imagens/imgeral/UsinaLogo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../imagens/imgeral/UsinaLogo.png" type="image/x-icon">
 </head>
 
 <body>
     <nav>
         <i data-lucide="menu" class='menu-burguer' onclick="toggleMenu()"></i>
-    
+
         <div class="menu-links">
             <a href="../index.html" id="ancora" class="efeito">Coleções</a>
             <a href="./historia.html" id="ancora" class="efeito">História</a>
@@ -49,9 +49,10 @@
             </div>
             <a href="./Login.html" id="CelularLogin" class="efeito">Login</a>
             <button id="loginButton" class="loginicon">
-                <a href="./Login.html">
-                    <img id="loginIconImage" src="../imagens/imgeral/Login.png" alt="Login">
+                <a href="./pages/Login.html" id="loginOrDashboardBtn">
+                    <img id="loginIconImage" loading="lazy" src="../imagens/imgeral/Login.png" alt="Login">
                     <span id="dashboardText" style="display: none; border: none;">Dashboard</span>
+                    <span id="cartText" style="display: none; border: none;">Carrinho</span>
                 </a>
             </button>
         </div>
@@ -75,123 +76,181 @@
     </div>
 
     <div class="tituloApoiadores">
-        
-            <h1>Conheçam Nossos Apoiadores</h1>
 
-            <div class="textosApoiadores">
-                <img id="vemDoXingu" src="../imagens/imagensapoiadores/vemDoXingu.png" alt="" style="z-index: 10;">
-                <h1 id="VemDoXingu">Vem Do Xingu</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, veniam molestias dolores, ducimus corporis necessitatibus maiores amet dolore nihil dicta iure ipsum voluptatem? Itaque, eveniet ipsam. Debitis reiciendis possimus saepe! Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel soluta odio assumenda atque culpa sed repellendus ipsum, cupiditate odit deserunt magnam facere mollitia, ab animi architecto debitis distinctio, eaque perspiciatis.</p>
-                
-                <img id="PDRSXingu" src="../imagens/imagensapoiadores/PDRSXingu.png" alt="">
-                <h1 id="PDRSXingu">PDRS Xingu</h1>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, minima sunt praesentium tempore modin <strong><a href="../index.html">sim</a></strong> ex magni nobis nesciunt quod quia ea aspernatur totam, veniam earum. Voluptate voluptatem provident sed totam. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet consectetur ratione, assumenda reiciendis repudiandae placeat fugiat tempora? Ea vitae, eligendi deserunt cum accusantium pariatur amet sapiente saepe ex illo voluptatem.</p>
+        <h1>Conheçam Nossos Apoiadores</h1>
 
-                <img id="Sementes" src="../imagens/imagensapoiadores/Sementes.png" alt="">
-                <h1>Rede De Sementes</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia atque modi nemo sit quas? Dolore, quae est. Provident dignissimos tempore cupiditate, dolores officia odit itaque placeat nesciunt fuga? Fuga, saepe. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur excepturi aliquid cupiditate earum odit a neque eum voluptatibus perferendis labore atque inventore laboriosam quae dolorum expedita, quibusdam enim, consequuntur temporibus!</p>
-                
-                <img id="Abong" src="../imagens/imagensapoiadores/Abong.png" alt="">
-                <h1 id="Abong">Abong</h1>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis optio, soluta quisquam ullam vel assumenda obcaecati distinctio eius odio consequuntur fuga hic, dignissimos, suscipit blanditiis. Ratione facilis a tenetur explicabo? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi quisquam necessitatibus non, iusto nam quod quae? Officia iure voluptas, doloremque nulla sed accusamus quas, corrupti eaque nostrum eos, quia molestiae?</p>
+        <div class="textosApoiadores">
+            <img id="vemDoXingu" src="../imagens/imagensapoiadores/vemDoXingu.png" alt="" style="z-index: 10;">
+            <h1 id="VemDoXingu">Vem Do Xingu</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, veniam molestias dolores, ducimus
+                corporis necessitatibus maiores amet dolore nihil dicta iure ipsum voluptatem? Itaque, eveniet ipsam.
+                Debitis reiciendis possimus saepe! Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel soluta
+                odio assumenda atque culpa sed repellendus ipsum, cupiditate odit deserunt magnam facere mollitia, ab
+                animi architecto debitis distinctio, eaque perspiciatis.</p>
 
-                <img id="RCA" src="../imagens/imagensapoiadores/RCA.png" alt="">
-                <h1>RCA</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat deleniti voluptate dolores nemo explicabo, velit amet quos temporibus sunt, aliquid fuga possimus harum minus quasi a error excepturi unde magni? Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium harum omnis optio consequuntur tempore amet error officia atque similique nam, ullam doloremque nisi excepturi velit rem at alias maiores numquam.</p>
+            <img id="PDRSXingu" src="../imagens/imagensapoiadores/PDRSXingu.png" alt="">
+            <h1 id="PDRSXingu">PDRS Xingu</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, minima sunt praesentium tempore modin
+                <strong><a href="../index.html">sim</a></strong> ex magni nobis nesciunt quod quia ea aspernatur totam,
+                veniam earum. Voluptate voluptatem provident sed totam. Lorem ipsum dolor, sit amet consectetur
+                adipisicing elit. Amet consectetur ratione, assumenda reiciendis repudiandae placeat fugiat tempora? Ea
+                vitae, eligendi deserunt cum accusantium pariatur amet sapiente saepe ex illo voluptatem.
+            </p>
 
-                <img id="APIB" src="../imagens/imagensapoiadores/APIB.png" alt="">
-                <h1>APIB</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque nihil laboriosam doloremque quia! Nam neque esse quod libero provident repellendus amet minus quas dolore possimus? Numquam quas harum possimus deserunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, repellendus suscipit! Vitae aliquam non quas veritatis odio facere fugiat tenetur sunt earum rem quasi similique sapiente, quaerat amet hic corporis!</p>
+            <img id="Sementes" src="../imagens/imagensapoiadores/Sementes.png" alt="">
+            <h1>Rede De Sementes</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia atque modi nemo sit quas? Dolore, quae
+                est. Provident dignissimos tempore cupiditate, dolores officia odit itaque placeat nesciunt fuga? Fuga,
+                saepe. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur excepturi aliquid cupiditate
+                earum odit a neque eum voluptatibus perferendis labore atque inventore laboriosam quae dolorum expedita,
+                quibusdam enim, consequuntur temporibus!</p>
 
-                <img id="CONAQ" src="../imagens/imagensapoiadores/Conaq.png" alt="">
-                <h1>CONAQ</h1>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam saepe, blanditiis, ex praesentium nobis alias commodi qui repudiandae deserunt quisquam officia non molestiae veniam deleniti exercitationem! Dolores cum enim suscipit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque nihil, suscipit beatae fugiat asperiores blanditiis excepturi doloribus assumenda sunt porro exercitationem est earum a quia voluptatem provident eos tempora? Reiciendis?</p>
+            <img id="Abong" src="../imagens/imagensapoiadores/Abong.png" alt="">
+            <h1 id="Abong">Abong</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis optio, soluta quisquam ullam vel
+                assumenda obcaecati distinctio eius odio consequuntur fuga hic, dignissimos, suscipit blanditiis.
+                Ratione facilis a tenetur explicabo? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi
+                quisquam necessitatibus non, iusto nam quod quae? Officia iure voluptas, doloremque nulla sed accusamus
+                quas, corrupti eaque nostrum eos, quia molestiae?</p>
 
-                <img id="ObservatorioFlorestal" src="../imagens/imagensapoiadores/Observatorio.png" alt="">
-                <h1 id="CodFlorestal">Código Florestal</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui soluta, dolorem provident atque natus, sint commodi earum aperiam vel sunt voluptas consequuntur suscipit consequatur iste est eaque velit veritatis corporis. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni suscipit provident iure. Provident sit rem, explicabo cumque vel omnis dicta quam consequuntur reiciendis repellat ipsum nobis at quis, illo quos.</p>
+            <img id="RCA" src="../imagens/imagensapoiadores/RCA.png" alt="">
+            <h1>RCA</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat deleniti voluptate dolores nemo
+                explicabo, velit amet quos temporibus sunt, aliquid fuga possimus harum minus quasi a error excepturi
+                unde magni? Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium harum omnis optio
+                consequuntur tempore amet error officia atque similique nam, ullam doloremque nisi excepturi velit rem
+                at alias maiores numquam.</p>
 
-                <img id="ObservatorioClima" src="../imagens/imagensapoiadores/ObservatorioClima.png" alt="">
-                <h1 id="CodClima">Observatorio Do Clima</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate illum dolores unde fuga quod, ipsam repellendus deleniti tempore corrupti laudantium, alias rerum cumque sunt veniam numquam consequuntur sapiente voluptate quia? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat commodi fuga ducimus vel harum in optio ab, ullam temporibus impedit accusamus aspernatur possimus sapiente ea officia officiis. Veniam, magnam tempore.</p>
+            <img id="APIB" src="../imagens/imagensapoiadores/APIB.png" alt="">
+            <h1>APIB</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque nihil laboriosam doloremque quia! Nam
+                neque esse quod libero provident repellendus amet minus quas dolore possimus? Numquam quas harum
+                possimus deserunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, repellendus suscipit!
+                Vitae aliquam non quas veritatis odio facere fugiat tenetur sunt earum rem quasi similique sapiente,
+                quaerat amet hic corporis!</p>
 
-                <img id="RAISG" src="../imagens/imagensapoiadores/Raisq.png" alt="">
-                <h1 id="RAISG">RAISG</h1>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur impedit cumque eveniet voluptatibus. Fugiat aliquam eum quos esse alias, dicta, unde impedit nemo placeat facilis saepe consequuntur repellat error excepturi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero libero harum minus autem saepe? Eos voluptate magnam excepturi accusamus distinctio porro. Blanditiis, quo. Rerum tempore aspernatur reprehenderit repudiandae consequuntur magnam?</p>
+            <img id="CONAQ" src="../imagens/imagensapoiadores/Conaq.png" alt="">
+            <h1>CONAQ</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam saepe, blanditiis, ex praesentium nobis
+                alias commodi qui repudiandae deserunt quisquam officia non molestiae veniam deleniti exercitationem!
+                Dolores cum enim suscipit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque nihil,
+                suscipit beatae fugiat asperiores blanditiis excepturi doloribus assumenda sunt porro exercitationem est
+                earum a quia voluptatem provident eos tempora? Reiciendis?</p>
 
-                <img id="RioNegro" src="../imagens/imagensapoiadores/RioNegro.png" alt="">
-                <h1 id="RioNegro">Rio Negro</h1>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia error modi repellat adipisci, nihil saepe hic voluptate laboriosam veniam, inventore consectetur dignissimos quaerat cum ab quidem earum voluptatum iusto? Totam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quod optio consectetur. Ipsam, earum nemo. Tempora consequuntur rerum debitis odio quibusdam! Sint, officia laborum illo ratione magni et odio cum.1</p>
+            <img id="ObservatorioFlorestal" src="../imagens/imagensapoiadores/Observatorio.png" alt="">
+            <h1 id="CodFlorestal">Código Florestal</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui soluta, dolorem provident atque natus, sint
+                commodi earum aperiam vel sunt voluptas consequuntur suscipit consequatur iste est eaque velit veritatis
+                corporis. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni suscipit provident iure.
+                Provident sit rem, explicabo cumque vel omnis dicta quam consequuntur reiciendis repellat ipsum nobis at
+                quis, illo quos.</p>
 
-                <img id="RMA" src="../imagens/imagensapoiadores/RMA.png" alt="">
-                <h1>RMA</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit repudiandae soluta dolorum voluptates ipsam, explicabo commodi magnam laborum odio optio omnis deleniti id voluptatem illo debitis nisi architecto maxime error! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia totam, quaerat facilis suscipit deserunt exercitationem temporibus pariatur in voluptatibus, molestias ipsum possimus illum veritatis fugiat est voluptatem ipsa nostrum quis?</p>
+            <img id="ObservatorioClima" src="../imagens/imagensapoiadores/ObservatorioClima.png" alt="">
+            <h1 id="CodClima">Observatorio Do Clima</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate illum dolores unde fuga quod, ipsam
+                repellendus deleniti tempore corrupti laudantium, alias rerum cumque sunt veniam numquam consequuntur
+                sapiente voluptate quia? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat commodi fuga
+                ducimus vel harum in optio ab, ullam temporibus impedit accusamus aspernatur possimus sapiente ea
+                officia officiis. Veniam, magnam tempore.</p>
 
-                <img id="SementesXingu" src="../imagens/imagensapoiadores/SementesXingu.png" alt="">
-                <h1>Sementes Do Xingu</h1>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis quod cumque a quam reiciendis rem reprehenderit et dolore qui veritatis ullam earum accusantium, nemo consequuntur saepe enim, recusandae expedita. Dolorem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Non fuga, voluptate vitae quod, eveniet obcaecati deserunt corporis facilis ea incidunt cumque eum pariatur. Sint nam dignissimos autem omnis tenetur magnam?</p>
-            </div>
+            <img id="RAISG" src="../imagens/imagensapoiadores/Raisq.png" alt="">
+            <h1 id="RAISG">RAISG</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur impedit cumque eveniet
+                voluptatibus. Fugiat aliquam eum quos esse alias, dicta, unde impedit nemo placeat facilis saepe
+                consequuntur repellat error excepturi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
+                libero harum minus autem saepe? Eos voluptate magnam excepturi accusamus distinctio porro. Blanditiis,
+                quo. Rerum tempore aspernatur reprehenderit repudiandae consequuntur magnam?</p>
 
+            <img id="RioNegro" src="../imagens/imagensapoiadores/RioNegro.png" alt="">
+            <h1 id="RioNegro">Rio Negro</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia error modi repellat adipisci, nihil saepe
+                hic voluptate laboriosam veniam, inventore consectetur dignissimos quaerat cum ab quidem earum
+                voluptatum iusto? Totam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quod
+                optio consectetur. Ipsam, earum nemo. Tempora consequuntur rerum debitis odio quibusdam! Sint, officia
+                laborum illo ratione magni et odio cum.1</p>
 
+            <img id="RMA" src="../imagens/imagensapoiadores/RMA.png" alt="">
+            <h1>RMA</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit repudiandae soluta dolorum voluptates
+                ipsam, explicabo commodi magnam laborum odio optio omnis deleniti id voluptatem illo debitis nisi
+                architecto maxime error! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia totam,
+                quaerat facilis suscipit deserunt exercitationem temporibus pariatur in voluptatibus, molestias ipsum
+                possimus illum veritatis fugiat est voluptatem ipsa nostrum quis?</p>
+
+            <img id="SementesXingu" src="../imagens/imagensapoiadores/SementesXingu.png" alt="">
+            <h1>Sementes Do Xingu</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis quod cumque a quam reiciendis rem
+                reprehenderit et dolore qui veritatis ullam earum accusantium, nemo consequuntur saepe enim, recusandae
+                expedita. Dolorem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Non fuga, voluptate vitae
+                quod, eveniet obcaecati deserunt corporis facilis ea incidunt cumque eum pariatur. Sint nam dignissimos
+                autem omnis tenetur magnam?</p>
         </div>
-        <div vw class="enabled">
-            <div vw-access-button class="active"></div>
-            <div vw-plugin-wrapper>
-              <div class="vw-plugin-top-wrapper"></div>
-            </div>
-          </div>
-        <footer>
 
-            <div id="footerContatos">
-                <h6 id="footerH6">Nossos contatos :</h6>
-                <button id="footerEmail"> <img src="../imagens/imgeral/email.png" id="imgFooterEmail" alt=""></button>
-                <button id="footerNumero">
-                    <img src="../imagens/imgeral/NumeroWhatsapp.png" id="imgFooterNumero" >
-                </button>
+
+    </div>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <footer>
+
+        <div id="footerContatos">
+            <h6 id="footerH6">Nossos contatos :</h6>
+            <button id="footerEmail"> <img src="../imagens/imgeral/email.png" id="imgFooterEmail" alt=""></button>
+            <button id="footerNumero">
+                <img src="../imagens/imgeral/NumeroWhatsapp.png" id="imgFooterNumero">
+            </button>
+        </div>
+
+        <div class="footerInf">
+            <h6 id="footerH6">Mais Informações</h6>
+            <a href="https://drive.google.com/file/d/1kDx72fzrCsVuIQG3DY9QdLEcpThjbB56/view?fbclid=PAZXh0bgNhZW0CMTEAAabc06wfFhICfDW4tJ2UJBjwyRyvd636frAaW9HSppAnO-TuD9LKdkk6IRA_aem_bun_HSnO3C0WycvdG6Ob_w"
+                target="_blank" class="efeito" id="Estatuto">Conheça o Nosso Estatuto</a><br>
+            <a href="./Devs.html" target="_blank" class="efeito" id="Devs">Devs</a>
+            <div class="termos">
+                <a href="">Termos e condições</a><a href="">Política de privacidade</a>
             </div>
-        
-            <div class="footerInf">
-                <h6 id="footerH6">Mais Informações</h6>
-                <a href="https://drive.google.com/file/d/1kDx72fzrCsVuIQG3DY9QdLEcpThjbB56/view?fbclid=PAZXh0bgNhZW0CMTEAAabc06wfFhICfDW4tJ2UJBjwyRyvd636frAaW9HSppAnO-TuD9LKdkk6IRA_aem_bun_HSnO3C0WycvdG6Ob_w" target="_blank" class="efeito" id="Estatuto">Conheça o Nosso Estatuto</a><br>
-                <a href="./Devs.html" target="_blank" class="efeito" id="Devs">Devs</a>
-                <div class="termos">
-                    <a href="">Termos e condições</a><a href="">Política de privacidade</a>
-                </div>
-            </div>
-        
-            <div class="footerLoc">
-                <h6 id="footerH6">Onde nos encontrar</h6>
-                <iframe id="MapaUsina"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.612013689784!2d-46.61707808446465!3d-23.60463296837157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5b68bb1ff91f%3A0x10906e5b4d2852c3!2sR.%20Breno%20Ferraz%20do%20Amaral%2C%20415-B%20-%20Cursino%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2004124-020!5e0!3m2!1spt-BR!2sbr!4v1699485644350!5m2!1spt-BR!2sbr" 
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
-            </div>
-        
-            
-        
-        </footer>
+        </div>
+
+        <div class="footerLoc">
+            <h6 id="footerH6">Onde nos encontrar</h6>
+            <iframe id="MapaUsina"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.612013689784!2d-46.61707808446465!3d-23.60463296837157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5b68bb1ff91f%3A0x10906e5b4d2852c3!2sR.%20Breno%20Ferraz%20do%20Amaral%2C%20415-B%20-%20Cursino%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2004124-020!5e0!3m2!1spt-BR!2sbr!4v1699485644350!5m2!1spt-BR!2sbr"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+
+
+
+    </footer>
 </body>
 <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-  <script>
+<script>
     new window.VLibras.Widget('https://vlibras.gov.br/app');
-  </script>
+</script>
 <script>document.querySelectorAll('nav a').forEach(link => {
-    if (link.href === window.location.href) {
-        link.classList.add('ativo');
-    }
-});
+        if (link.href === window.location.href) {
+            link.classList.add('ativo');
+        }
+    });
 </script>
 <script src="../js/Galeria.js"></script>
+<script src="/js/navbar.js"></script>
+
 <script>
     function toggleMenu() {
-     const menu = document.querySelector('.menu-links');  // Seletor correto
-     menu.classList.toggle('show');
- }
- 
-     
- </script>
- <script src="https://unpkg.com/lucide@latest"></script>
- <script>
-     lucide.createIcons()
- </script>
+        const menu = document.querySelector('.menu-links');  // Seletor correto
+        menu.classList.toggle('show');
+    }
+
+
+</script>
+<script src="https://unpkg.com/lucide@latest"></script>
+<script>
+    lucide.createIcons()
+</script>
+
 </html>

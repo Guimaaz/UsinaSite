@@ -51,9 +51,11 @@
             </div>
             <a href="./pages/Login.html" id="CelularLogin" class="efeito">Login</a>
             <button id="loginButton" class="loginicon">
-                <a href="./pages/Login.html" id='loginOrDashboardBtn'>
-                    <img id="loginIconImage " loading="lazy" src="./imagens/imgeral/Login.png" alt="Login">
+                <a href="./pages/Login.html" id="loginOrDashboardBtn">
+                    <img id="loginIconImage" loading="lazy" src="./imagens/imgeral/Login.png" alt="Login">
                     <span id="dashboardText" style="display: none; border: none;">Dashboard</span>
+                    <span id="cartText" style="display: none; border: none;">Carrinho</span>
+                    <!-- Novo span para o texto "Carrinho" -->
                 </a>
             </button>
         </div>
@@ -356,6 +358,7 @@
     });
 </script>
 <script src="./js/Galeria.js"></script>
+<script src="/js/navbar.js"></script>
 <script>
     function toggleMenu() {
         const menu = document.querySelector('.menu-links');

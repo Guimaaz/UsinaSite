@@ -50,9 +50,10 @@
             </div>
             <a href="./Login.html" id="CelularLogin" class="efeito">Login</a>
             <button id="loginButton" class="loginicon">
-                <a href="./Login.html">
-                    <img id="loginIconImage" src="../imagens/imgeral/Login.png" alt="Login">
+                <a href="./pages/Login.html" id="loginOrDashboardBtn">
+                    <img id="loginIconImage" loading="lazy" src="../imagens/imgeral/Login.png" alt="Login">
                     <span id="dashboardText" style="display: none; border: none;">Dashboard</span>
+                    <span id="cartText" style="display: none; border: none;">Carrinho</span>
                 </a>
             </button>
         </div>
@@ -68,75 +69,77 @@
         </div>
 
         <div class="assunto">
-           
-                <!-- O conteúdo relevante para o "assunto" -->
-<h1>Diga-nos o assunto</h1>
-<select id="opcoesAssunto" onchange="mostrarTexto()">
-    <option value="">Selecione a intenção do contato</option>
-    <option value="Integrante">Ser integrante da Usina eco cultural</option>
-    <option value="Artista">Expor a minha arte em algum evento da Usina</option>
-</select>
 
-<!-- Formulários para cada tipo de assunto -->
-<div class="OpcaoIntegrante" id="Integrante" style="display:none;">
-    <form >
-    <h1>Nome</h1>
-    <input type="text" class="input-text" name="nome" placeholder="Insira seu nome" required>
+            <!-- O conteúdo relevante para o "assunto" -->
+            <h1>Diga-nos o assunto</h1>
+            <select id="opcoesAssunto" onchange="mostrarTexto()">
+                <option value="">Selecione a intenção do contato</option>
+                <option value="Integrante">Ser integrante da Usina eco cultural</option>
+                <option value="Artista">Expor a minha arte em algum evento da Usina</option>
+            </select>
 
-    <h1>Sobrenome</h1>
-    <input type="text" class="input-text" name="sobrenome" placeholder="Insira seu sobrenome" required>
+            <!-- Formulários para cada tipo de assunto -->
+            <div class="OpcaoIntegrante" id="Integrante" style="display:none;">
+                <form>
+                    <h1>Nome</h1>
+                    <input type="text" class="input-text" name="nome" placeholder="Insira seu nome" required>
 
-    <h1>Número</h1>
-    <input type="tel" class="input-text" name="numero" placeholder="Insira seu número" required>
+                    <h1>Sobrenome</h1>
+                    <input type="text" class="input-text" name="sobrenome" placeholder="Insira seu sobrenome" required>
 
-    <h1>Email</h1>
-    <input type="email" class="input-text" name="email" placeholder="Insira seu email" required>
+                    <h1>Número</h1>
+                    <input type="tel" class="input-text" name="numero" placeholder="Insira seu número" required>
 
-    <h1>De onde nos conheceu?</h1>
-    <input type="text" class="input-text" name="conheceu" placeholder="Insira de onde nos conhece" required>
+                    <h1>Email</h1>
+                    <input type="email" class="input-text" name="email" placeholder="Insira seu email" required>
 
-    <button class="efeitoButton" type="submit">Enviar Contato</button>
-</form>
-</div>
+                    <h1>De onde nos conheceu?</h1>
+                    <input type="text" class="input-text" name="conheceu" placeholder="Insira de onde nos conhece"
+                        required>
 
-<div class="OpcaoIntegrante" id="Artista" style="display:none;">
-    <form >
-    <h1>Nome</h1>
-    <input type="text" class="input-text" name="nome" placeholder="Insira seu nome" required>
+                    <button class="efeitoButton" type="submit">Enviar Contato</button>
+                </form>
+            </div>
 
-    <h1>Sobrenome</h1>
-    <input type="text" class="input-text" name="sobrenome" placeholder="Insira seu sobrenome" required>
+            <div class="OpcaoIntegrante" id="Artista" style="display:none;">
+                <form>
+                    <h1>Nome</h1>
+                    <input type="text" class="input-text" name="nome" placeholder="Insira seu nome" required>
 
-    <h1>Número</h1>
-    <input type="tel" class="input-text" name="numero" placeholder="Insira seu número" required>
+                    <h1>Sobrenome</h1>
+                    <input type="text" class="input-text" name="sobrenome" placeholder="Insira seu sobrenome" required>
 
-    <h1>Email</h1>
-    <input type="email" class="input-text" name="email" placeholder="Insira seu email" required>
+                    <h1>Número</h1>
+                    <input type="tel" class="input-text" name="numero" placeholder="Insira seu número" required>
 
-    <h1>De onde nos conheceu?</h1>
-    <input type="text" class="input-text" name="conheceu" placeholder="Insira de onde nos conhece" required>
+                    <h1>Email</h1>
+                    <input type="email" class="input-text" name="email" placeholder="Insira seu email" required>
 
-    <h1>Qual a sua arte</h1>
-    <input type="text" class="input-text" name="arte" placeholder="Insira a sua arte" required>
+                    <h1>De onde nos conheceu?</h1>
+                    <input type="text" class="input-text" name="conheceu" placeholder="Insira de onde nos conhece"
+                        required>
 
-    <button class="efeitoButton" type="submit">Enviar Contato</button>
-</form>
-</div>
+                    <h1>Qual a sua arte</h1>
+                    <input type="text" class="input-text" name="arte" placeholder="Insira a sua arte" required>
 
-
-
+                    <button class="efeitoButton" type="submit">Enviar Contato</button>
+                </form>
             </div>
 
 
+
         </div>
+
+
+    </div>
     </div>
 
     <div vw class="enabled">
         <div vw-access-button class="active"></div>
         <div vw-plugin-wrapper>
-          <div class="vw-plugin-top-wrapper"></div>
+            <div class="vw-plugin-top-wrapper"></div>
         </div>
-      </div>
+    </div>
 
     <footer>
 
@@ -175,25 +178,25 @@
 
 </body>
 <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-  <script>
+<script>
     new window.VLibras.Widget('https://vlibras.gov.br/app');
-  </script>
+</script>
 
 <script>
     function mostrarTexto() {
-    // Ocultar todas as opções de assunto
-    document.querySelectorAll('.OpcaoIntegrante').forEach(function(elemento) {
-        elemento.style.display = 'none';
-    });
+        // Ocultar todas as opções de assunto
+        document.querySelectorAll('.OpcaoIntegrante').forEach(function (elemento) {
+            elemento.style.display = 'none';
+        });
 
-    // Obter o valor da opção selecionada
-    const opcao = document.getElementById('opcoesAssunto').value;
+        // Obter o valor da opção selecionada
+        const opcao = document.getElementById('opcoesAssunto').value;
 
-    // Exibir a opção selecionada
-    if (opcao) {
-        document.getElementById(opcao).style.display = 'block';
+        // Exibir a opção selecionada
+        if (opcao) {
+            document.getElementById(opcao).style.display = 'block';
+        }
     }
-}
 
 </script>
 <script>document.querySelectorAll('nav a').forEach(link => {
@@ -203,6 +206,8 @@
     });
 </script>
 <script src="../js/Galeria.js"></script>
+<script src="/js/navbar.js"></script>
+
 <script>
     function toggleMenu() {
         const menu = document.querySelector('.menu-links');  // Seletor correto

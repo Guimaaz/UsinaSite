@@ -31,6 +31,7 @@ const listCartItemsRoute = require('./routes/cart/list-items')
 const removeItemFromCartRoute = require('./routes/cart/remove-item')
 
 const env = require('../utils/env')
+const updateEventRoute = require('./routes/events/update-event')
 
 mongoose.connect(env.MONGO_URL)
 const db = mongoose.connection
@@ -69,6 +70,7 @@ app.register(createEventRoute)
 app.register(deleteEventByIdRoute)
 app.register(getAllEventsRoute)
 app.register(getEventByIdRoute)
+app.register(updateEventRoute)
 
 // NEWS ROUTES
 app.register(createNewsRoute)

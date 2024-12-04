@@ -24,6 +24,7 @@
     <link rel="shortcut icon" href="../imagens/imgeral/UsinaLogo.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../css/dashboard/modal.css">
+    <link rel="stylesheet" href="../css/dashboard/utils.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanillatoasts/vanillatoasts.css">
     <script src="https://cdn.jsdelivr.net/npm/vanillatoasts/vanillatoasts.js"></script>
 
@@ -52,11 +53,12 @@
             </div>
             <a href="./Login.html" id="CelularLogin" class="efeito">Login</a>
             <button id="loginButton" class="loginicon">
-                <a href="./pages/Login.html" id='loginOrDashboardBtn'>
-                    <img id="loginIconImage" src="../imagens/imgeral/Login.png" alt="Login">
-                    <span id="dashboardText" style="display: none; border: none;">Dashboard</span>
+                <a href="./pages/Login.html" id="loginOrDashboardBtn">
+                    <img id="loginIconImage" loading="lazy" src="./imagens/imgeral/Login.png" alt="Login">
+                    <span id="logoutText" style="display: none; border: none;">Logout</span>
                 </a>
             </button>
+
         </div>
     </nav>
 
@@ -129,25 +131,25 @@
 
     <div class="newsHeader">
         <h2>Notícias</h2>
-        <button>
+        <button id='openNewsModalBtn'>
             <i data-lucide="plus" class="plusIcon"></i>
             Adicionar
         </button>
 
-        <div id="newsModalmodal" class="modal">
+        <div id="newsModal" class="modal">
             <div class="modal-content">
                 <span class="close-btn" id='closeNewsModalBtn'>&times;</span>
-                <h2>Adicionar evento</h2>
+                <h2>Adicionar notícia</h2>
 
                 <form id="newsModalForm">
                     <label for="title">Título da notícia:</label>
                     <input type="text" id='title' name='title' required>
 
                     <label for="content">Conteúdo:</label>
-                    <textarea name="content" id="content" rows="4" required></textarea>
+                    <textarea name="content" id="newsContent" rows="4" required></textarea>
 
                     <label for="imageLink">Link da Imagem:</label>
-                    <input type="url" name="imageLink" id="imageLink" required>
+                    <input type="url" name="imageLink" id="newsImageLink" required>
 
                     <div class="button-group">
                         <button type="button" id="saveNewsBtn">Adicionar</button>
@@ -200,6 +202,8 @@
     <script src="../js/navbar.js"></script>
     <script src="../js/event-modal.js"></script>
     <script src="../js/news-modal.js"></script>
+    <script src="/js/navbar.js"></script>
+
 
     <script src="https://unpkg.com/lucide@latest"></script>
     <script>

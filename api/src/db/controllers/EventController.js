@@ -43,7 +43,7 @@ class EventController {
   }
 
   async delete() {
-    const eventExists = await this.validateIfExists()
+    const eventExists = await this.validateIfExists('id')
 
     if (!eventExists) {
       return this.res
@@ -103,6 +103,29 @@ class EventController {
 
     return true
   }
+
+  async update() {
+    try {
+      const updatedEvent = await Event.findByIdAndUpdate(
+        this.id,
+        {
+          name: this.name,
+          content: this.content,
+          imageUrl: this.imageUrl,
+          eventDate: this.eventDate,
+        },
+        { new: true }
+      );
+
+      console.log(updatedEvent)
+  
+      return updatedEvent;
+    } catch (err) {
+      console.error(err);
+      return null;
+    }
+  }
+  
 }
 
 module.exports = EventController

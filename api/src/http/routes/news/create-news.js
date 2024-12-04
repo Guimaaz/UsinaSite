@@ -4,6 +4,8 @@ const { createNewsSchema } = require('../../../utils/schemas/newsSchemas')
 async function createNewsRoute(app) {
   app.post('/news/create', async (req, res) => {
     try {
+      console.log(req.body)
+
       const newsInformation = createNewsSchema.safeParse(req.body)
 
       if (!newsInformation.success || !newsInformation.data) {
