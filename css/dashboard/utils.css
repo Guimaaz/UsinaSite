@@ -1,0 +1,13 @@
+#logoutText {
+  font-weight: bold;
+  color: #4CAF50;
+  background: #e4e4e4;
+  padding: 10px;
+  border-radius: 5px;
+  display: none;
+  transition: all 0.4s;
+}
+
+#logoutText:hover {
+  transform: scale(1.1);
+}
