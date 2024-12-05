@@ -62,13 +62,14 @@ button img {
     z-index: 1000;
 }
 
+
 .opcoes-galeria {
     width: 100%;
-    position: absolute; 
+    position: absolute;
     background: rgba(255, 255, 255, 1);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 1.25rem;
-    z-index: 1000; 
+    z-index: 1000;
 }
 
 .opcoes-galeria a {
@@ -78,19 +79,19 @@ button img {
     font-size: large;
     text-decoration: none;
     transition: background 0.3s;
-   
-    
-    
+
+
+
 }
 
 .opcoes-galeria a:hover {
-    background: #e0e0e0; 
+    background: #e0e0e0;
 }
 
 
 @media (max-width: 1197px) {
 
-    
+
 
 
     .galeria {
@@ -102,18 +103,19 @@ button img {
         text-align: left;
         text-decoration: none;
         z-index: 1000;
-        
+
     }
+
     .loginicon {
         display: none;
     }
 
-   #CelularLogin{
-    display: block;
-   }
+    #CelularLogin {
+        display: block;
+    }
 
 
-   
+
     nav {
         z-index: 1000;
         max-width: 100%;
@@ -130,7 +132,7 @@ button img {
         border-radius: 1.25rem;
         background-color: rgba(255, 255, 255, 0.9);
         z-index: 900;
-        
+
     }
 
     #logo {
@@ -141,7 +143,7 @@ button img {
         height: auto;
     }
 
-    .menu-links{
+    .menu-links {
         display: none;
         flex-direction: column;
         gap: 2px;
@@ -153,17 +155,17 @@ button img {
         align-items: center;
         width: 100%;
         padding: 10px 20px;
-        
-        
+
+
     }
 
-    
+
 
     .menu-links.show {
-        display : flex;
+        display: flex;
         max-width: 100%;
         z-index: 1000;
-        
+
     }
 
 
@@ -202,5 +204,19 @@ button img {
 }
 
 #dashboardText:hover {
+    transform: scale(1.1);
+}
+
+#cartText {
+    font-weight: bold;
+    color: #4CAF50;
+    background: #e4e4e4;
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
+    transition: all 0.4s;
+}
+
+#cartText:hover {
     transform: scale(1.1);
 }
