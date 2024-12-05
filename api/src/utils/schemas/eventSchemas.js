@@ -33,6 +33,14 @@ const createEventSchema = z.object({
     }),
 })
 
+
+const updateEventSchema = z.object({
+  name: z.string().nonempty('Name is required').optional(),
+  content: z.string().nonempty('Content is required').optional(),
+  imageUrl: z.string().url('Invalid URL format').optional(),
+  eventDate: z.string().regex(/^\d{8}$/, 'Invalid date format (DDMMYYYY)').optional(),
+});
+
 const deleteEventByIdSchema = z.object({
   id: z.string().refine(v => mongoose.Types.ObjectId.isValid(v), {
     message: 'Invalid id format',
@@ -49,4 +57,5 @@ module.exports = {
   createEventSchema,
   deleteEventByIdSchema,
   getEventByIdSchema,
+  updateEventSchema
 }

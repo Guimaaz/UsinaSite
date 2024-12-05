@@ -54,9 +54,10 @@
             </div>
             <a href="./pages/Login.html" id="CelularLogin" class="efeito">Login</a>
             <button id="loginButton" class="loginicon">
-                <a href="./pages/Login.html" id='loginOrDashboardBtn'>
-                    <img id="loginIconImage " loading="lazy" src="./imagens/imgeral/Login.png" alt="Login">
-                    <span id="dashboardText" style="display: none; border: none;">Dashboard
+                <a href="./pages/Login.html" id="loginOrDashboardBtn">
+                    <img id="loginIconImage" loading="lazy" src="./imagens/imgeral/Login.png" alt="Login">
+                    <span id="dashboardText" style="display: none; border: none;">Dashboard</span>
+                    <span id="cartText" style="display: none; border: none;">Carrinho</span>
                 </a>
             </button>
         </div>
@@ -131,6 +132,12 @@
                 todo. O coletivo é plural, multipartidário e horizontal.</p>
 
 
+            <p>O que o Coletivo da Usina Eco-Cultural quer: (Polo Cultural, Museu do Meio Ambiente, Mercado de
+                Alimentação Orgânica e Programa Ruas Abertas na frente da Usina)</p>
+            <br>
+            <h1 id="QuemSomos">Quem Somos</h1>
+            <p>O Coletivo Usina Eco-Cultural é uma organização sem fins lucrativos, criada para proteger, revitalizar e
+                reinventar o uso do antigo Incinerador Vergueiro em São Paulo.</p>
             <p>
                 <img src="./imagens/imgeral/EventosUsina.jpg" alt="" class="imagemContorno1">
 
@@ -174,7 +181,6 @@
                 <strong> Conselho do meio ambiente sustentabilidade e cultura de paz</strong>, foi levado para o debate
                 através da conselheira e arquiteta Débora Machado, como uma necessidade de revitalização da área e
                 transformação do uso para que seja um espaço público e de uso social.
-
             </p>
             <p>
                 Historicamente a edificação, apelidada de Usina Verde, já teve seu território protegido por diversas
@@ -375,6 +381,7 @@
 
 
 
+    
 </body>
 
 
@@ -403,33 +410,38 @@
         }
     });
 
-</script>
+</body>
 
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+<script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+</script>
+<script>
+    document.querySelectorAll('nav a').forEach(link => {
+        const menuLinks = document.querySelectorAll('nav a');
+        const currentPage = window.location.pathname
+    });
+
+
+    menuLinks.forEach(link => {
+        if (link.getAttribute('href') === currentPage) {
+            link.classList.add('ativo');
+        } else {
+            link.classList.remove('ativo');
+        }
+    });
+</script>
 <script>
     document.getElementById('footerEmail').addEventListener('click', function () {
         window.open('https://google.com', '_blank');
-    }); 
-</script>
-<script>
+    });
+
     document.getElementById('footerNumero').addEventListener('click', function () {
-
-
-
-
         window.open('https://wa.me/SEUNUMERODOTELEFONE', '_blank');
     });
 </script>
 <script src="./js/Galeria.js"></script>
-<script>
-    function toggleMenu() {
-        const menu = document.querySelector('.menu-links');
-        menu.classList.toggle('show');
-    }
-</script>
-<script src="https://unpkg.com/lucide@latest"></script>
-<script>
-    lucide.createIcons()
-</script>
+<script src="/js/navbar.js"></script>
 <script>
     
     function toggleMenu() {

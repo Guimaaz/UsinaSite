@@ -9,6 +9,7 @@ const login = require('./routes/auth/login')
 const forgotPassword = require('./routes/auth/forgot-password')
 const verify = require('./routes/auth/verify')
 const me = require('./routes/auth/me')
+const logout = require('./routes/auth/logout')
 
 // EVENTS ROUTES
 const createEventRoute = require('./routes/events/create-event')
@@ -30,6 +31,7 @@ const listCartItemsRoute = require('./routes/cart/list-items')
 const removeItemFromCartRoute = require('./routes/cart/remove-item')
 
 const env = require('../utils/env')
+const updateEventRoute = require('./routes/events/update-event')
 
 mongoose.connect(env.MONGO_URL)
 const db = mongoose.connection
@@ -61,12 +63,14 @@ app.register(login)
 app.register(forgotPassword)
 app.register(verify)
 app.register(me)
+app.register(logout)
 
 // EVENTS ROUTES
 app.register(createEventRoute)
 app.register(deleteEventByIdRoute)
 app.register(getAllEventsRoute)
 app.register(getEventByIdRoute)
+app.register(updateEventRoute)
 
 // NEWS ROUTES
 app.register(createNewsRoute)

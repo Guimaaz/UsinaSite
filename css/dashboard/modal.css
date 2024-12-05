@@ -1,5 +1,5 @@
 .modal {
-  display: none; /* Hidden by default */
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -12,13 +12,17 @@
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
-/* Modal content box */
 .modal-content {
-  position: relative; /* Added to contain the close button */
+  /* position: relative; */
   background-color: white;
   padding: 30px;
   border-radius: 10px;
@@ -29,8 +33,15 @@
 }
 
 @keyframes slideIn {
-  from { transform: translateY(-50px); opacity: 0; }
-  to { transform: translateY(0); opacity: 1; }
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 /* Close button */
@@ -62,7 +73,8 @@ form label {
 }
 
 /* Input and textarea styling */
-form input, form textarea {
+form input,
+form textarea {
   padding: 10px;
   font-size: 16px;
   border: 1px solid #ddd;
@@ -71,7 +83,8 @@ form input, form textarea {
   transition: border-color 0.3s, box-shadow 0.3s;
 }
 
-form input:focus, form textarea:focus {
+form input:focus,
+form textarea:focus {
   border-color: #4a90e2;
   box-shadow: 0px 0px 5px rgba(74, 144, 226, 0.4);
   outline: none;
@@ -86,33 +99,4 @@ form textarea {
   display: flex;
   gap: 10px;
   justify-content: space-between;
-}
-
-/* Save and cancel buttons */
-button#saveBtn, button#cancelBtn {
-  flex: 1;
-  padding: 10px;
-  font-size: 16px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-button#saveBtn {
-  background-color: #4a90e2;
-  color: #fff;
-}
-
-button#saveBtn:hover {
-  background-color: #357ABD;
-}
-
-button#cancelBtn {
-  background-color: #ccc;
-  color: #333;
-}
-
-button#cancelBtn:hover {
-  background-color: #b0b0b0;
 }
