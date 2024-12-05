@@ -55,6 +55,7 @@
             </div>
             <a href="./pages/Login.html" id="CelularLogin" class="efeito">Login</a>
             <button id="loginButton" class="loginicon">
+
                 <a href="./pages/Login.html" id='loginOrDashboardBtn'>
                     <img id="loginIconImage " loading="lazy" src="./imagens/imgeral/Login.png" alt="Login">
                     <span id="dashboardText" style="display: none; border: none;">Dashboard</span>
@@ -176,6 +177,7 @@
                 <strong> Conselho do meio ambiente sustentabilidade e cultura de paz</strong>, foi levado para o debate
                 através da conselheira e arquiteta Débora Machado, como uma necessidade de revitalização da área e
                 transformação do uso para que seja um espaço público e de uso social.
+
 
             </p>
             <p>
@@ -408,13 +410,21 @@
 
 </script>
 
+
 <script>
     document.getElementById('footerEmail').addEventListener('click', function () {
         window.open('https://google.com', '_blank');
     }); 
 </script>
 <script>
+    }); 
+</script>
+<script>
     document.getElementById('footerNumero').addEventListener('click', function () {
+
+
+
+
 
 
 
@@ -439,6 +449,18 @@
         menu.classList.toggle('show');
     }
 </script>
+<script src="https://unpkg.com/lucide@latest"></script>
+<script>
+    lucide.createIcons()
+</script>
+<script>
+
+    function toggleMenu() {
+        const menu = document.querySelector('.menu-links');
+        menu.classList.toggle('show');
+    }
+</script>
+<script src="./js/navbar.js"></script>
 
 <script>
     lucide.createIcons()
