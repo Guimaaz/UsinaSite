@@ -1,18 +1,5 @@
-.tituloApoiadores h1,.textosApoiadores {
-    margin-top: 3rem;
-    text-decoration: none;
-    text-align: center;
-    font-family: "Afacad Flux", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    font-variation-settings: "slnt" 0;
-}
-
-.tituloPrincipal h1 
-{
+.tituloBoletim h1 {
     font-size: 4rem;
-    margin-top: 3rem;
     text-decoration: none;
     text-align: center;
     font-family: "Afacad Flux", sans-serif;
@@ -22,9 +9,11 @@
     font-variation-settings: "slnt" 0;
     text-decoration: 2px underline  rgb(139, 207, 83);
 }
-.textosApoiadores p {
+
+ p {
     border-radius: 0.3125rem; 
-    background-size: 100% 100%;  
+    background-size: 100% 100%;
+    
     box-shadow: 0.625rem 0.625rem 0.625rem rgba(0, 0, 0, 0.1); 
     max-width: 80%;
     margin: 1.25rem auto; 
@@ -36,9 +25,3 @@
 
 }
 
-.textosApoiadores {
-    margin-bottom: 3rem;
-}
-
-
-   

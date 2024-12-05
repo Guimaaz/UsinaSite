@@ -21,9 +21,19 @@
     font-size:larger;
     margin-top: 1rem;
     
+    
 }
 
-
+.tituloContato{
+     text-decoration: none;
+    text-align: center;
+    font-family: "Afacad Flux", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+    text-decoration: 2px underline  rgb(139, 207, 83);
+}
 
 .input-text {
     border: 2px solid #efefef;
@@ -60,10 +70,14 @@
     margin-bottom: 3rem;
 }
 
+.OpcaoIntegrante {
+    margin-top: -5rem;
+}
+
 #opcoesAssunto {
     padding: 0.5rem;
     font-size: 1rem;
-    margin-bottom: 1rem;
+   
     border: none;
     border-radius: 0.3125rem; 
     box-shadow: 0.625rem 0.625rem 0.625rem rgba(0, 0, 0, 0.1); 

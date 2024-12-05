@@ -63,12 +63,23 @@
     <div class="container">
 
         <div class="ajuda">
-            <h1>Entre em contato <br>com a gente</h1>
+            <h1 class="tituloContato">Entre em contato com a gente</h1>
             <p>Envie-nos algumas informações para que possamos entender seu contato. Contate-nos por telefone, email e
                 de outras formas. </p>
         </div>
 
         <div class="assunto">
+           
+                <!-- O conteúdo relevante para o "assunto" -->
+<h1>Diga-nos o assunto</h1>
+<select id="opcoesAssunto" onchange="mostrarTexto()">
+    <option value="">Selecione a intenção do contato</option>
+    <option value="Integrante">Ser integrante da Usina eco cultural</option>
+    <option value="Artista">Expor a minha arte em algum evento da Usina</option>
+</select>
+<div><br></div>
+<div><br></div>
+<div><br></div>
 
             <!-- O conteúdo relevante para o "assunto" -->
             <h1>Diga-nos o assunto</h1>
@@ -114,6 +125,12 @@
 
                     <h1>Email</h1>
                     <input type="email" class="input-text" name="email" placeholder="Insira seu email" required>
+    <button class="efeitoButton" type="submit">Enviar Contato</button>
+</form>
+
+
+
+</div>
 
                     <h1>De onde nos conheceu?</h1>
                     <input type="text" class="input-text" name="conheceu" placeholder="Insira de onde nos conhece"
@@ -157,7 +174,7 @@
                 target="_blank" class="efeito" id="Estatuto">Conheça o Nosso Estatuto</a><br>
             <a href="./Devs.html" target="_blank" class="efeito" id="Devs">Devs</a>
             <div class="termos">
-                <a href="">Termos e condições</a><a href="">Política de privacidade</a>
+                <a href="./termos.html" target="_blank">Termos e condições</a><a href="./politica.html" target="_blank">Política de privacidade</a>
             </div>
         </div>
 
