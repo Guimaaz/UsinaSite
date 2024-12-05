@@ -81,14 +81,6 @@
 <div><br></div>
 <div><br></div>
 
-            <!-- O conteúdo relevante para o "assunto" -->
-            <h1>Diga-nos o assunto</h1>
-            <select id="opcoesAssunto" onchange="mostrarTexto()">
-                <option value="">Selecione a intenção do contato</option>
-                <option value="Integrante">Ser integrante da Usina eco cultural</option>
-                <option value="Artista">Expor a minha arte em algum evento da Usina</option>
-            </select>
-
             <!-- Formulários para cada tipo de assunto -->
             <div class="OpcaoIntegrante" id="Integrante" style="display:none;">
                 <form>
@@ -125,6 +117,12 @@
 
                     <h1>Email</h1>
                     <input type="email" class="input-text" name="email" placeholder="Insira seu email" required>
+
+                    <h1>Qual a sua arte</h1>
+                    <input type="text" class="input-text" name="conheceu" placeholder="Nos conte sua arte"
+                        required>
+
+
     <button class="efeitoButton" type="submit">Enviar Contato</button>
 </form>
 
@@ -132,15 +130,8 @@
 
 </div>
 
-                    <h1>De onde nos conheceu?</h1>
-                    <input type="text" class="input-text" name="conheceu" placeholder="Insira de onde nos conhece"
-                        required>
-
-                    <h1>Qual a sua arte</h1>
-                    <input type="text" class="input-text" name="arte" placeholder="Insira a sua arte" required>
-
-                    <button class="efeitoButton" type="submit">Enviar Contato</button>
-                </form>
+                  
+             
             </div>
 
 
