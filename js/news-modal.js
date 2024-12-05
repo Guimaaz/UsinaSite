@@ -1,27 +1,29 @@
-const modal = document.getElementById("newsModal");
-const openModalBtn = document.getElementById("openNewsModalBtn");
-const closeModalBtn = document.getElementById("closeNewsModalBtn");
-const cancelBtn = document.getElementById("cancelNewsBtn");
+const newsModal = document.getElementById("newsModal");
+const openNewsModalBtn = document.getElementById("openNewsModalBtn");
+const closeNewsModalBtn = document.getElementById("closeNewsModalBtn");
+const cancelNewsBtn = document.getElementById("cancelNewsBtn");
 
-openModalBtn.onclick = () => (modal.style.display = "flex");
-closeModalBtn.onclick = closeModal;
-cancelBtn.onclick = closeModal;
+openNewsModalBtn.onclick = () => (newsModal.style.display = "flex");
+closeNewsModalBtn.onclick = closeModal;
+cancelNewsBtn.onclick = closeModal;
 
 function closeModal() {
-  modal.style.display = "none";
+  newsModal.style.display = "none";
   document.getElementById("newsModalForm").reset();
 }
 
 document.getElementById("saveNewsBtn").addEventListener("click", async () => {
-  const name = document.getElementById("name").value;
-  const content = document.getElementById("content").value;
-  const imageUrl = document.getElementById("imageLink").value;
+  const title = document.getElementById("title").value;
+  const content = document.getElementById("newsContent").value;
+  const imageUrl = document.getElementById("newsImageLink").value;
 
   const data = {
     title,
     content,
     imageUrl,
   };
+
+  console.log(data)
 
   try {
     const response = await fetch("http://127.0.0.1:3333/news/create", {

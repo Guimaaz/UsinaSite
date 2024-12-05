@@ -45,14 +45,17 @@ document.getElementById("saveEventBtn").addEventListener("click", async () => {
         title: "Sucesso",
         text: "Evento adicionado com sucesso!",
         type: "success",
+        positionClass: "bottomRight",
         timeout: 3000,
       });
       closeModal();
+      window.location.reload()
     } else {
       VanillaToasts.create({
         title: "Erro",
         text: "Erro ao adicionar o evento. Tente novamente.",
         type: "error",
+        positionClass: "bottomRight",
         timeout: 3000,
       });
     }
@@ -62,6 +65,7 @@ document.getElementById("saveEventBtn").addEventListener("click", async () => {
       title: "Erro de Conexão",
       text: "Erro na requisição. Verifique sua conexão.",
       type: "error",
+      positionClass: "bottomRight",
       timeout: 3000,
     });
   }
